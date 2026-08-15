@@ -1,4 +1,4 @@
-# Stainless Steel Laser Passivation
+# Stainless steel laser passivation assistance skill
 
 An evidence-aware Agent Skill for analysing and comparing stainless-steel laser-passivation studies. It covers laser-process comparability, surface chemistry and passive-film evidence, electrochemical validation, ageing, measurement quality, and conventional passivation comparators.
 
