@@ -1,0 +1,72 @@
+# D-S2-01-verify-fixtures.yaml
+# ============================================================
+# Validation fixtures for analysis-record structure and semantic failures.
+# Valid samples must pass; invalid samples must exit nonzero or be explicitly marked.
+# Fixture status: maintained
+# 时间：2026-08-14
+# ============================================================
+
+# ---- 合法样本：完整 analysis-record（Auditable Path 报告用）----
+valid:
+  analysis_record_ok:
+    record_version: "0.2"
+    artifact_id: "AR-DEMO-001"
+    artifact_type: "analysis-record"
+    status: draft
+    claims:
+      - claim_id: C1
+        claim_text: "纳秒激光处理 304L 后点蚀电位提高，但缺少膜层/XPS 证据，不能判定形成特定钝化膜"
+        claim_type: performance
+        evidence_level: partially_supported
+        evidence_state: reported_observation
+        source_id: "doi:10.3390/met13030516"
+        evidence_anchor: "p.12, Fig.7"
+        boundary: "304L; 3.5 wt% NaCl; PDP"
+        unit_checked: true
+        reference_electrode: "SCE"
+  frontmatter_ok:
+    name: "stainless-steel-laser-passivation"
+    description: "valid description for testing"
+  source_link_ok:
+    source_id: "doi:10.3390/met13030516"
+    local_path: '<evidence-root>/example-source.pdf'
+    sha256: "24e91e8deb8139a49cb73f3e2341795acad0c825b59123a18a835a20383b1c15"
+
+# ---- 非法样本：验证脚本必须失败 ----
+invalid:
+  missing_source_id:
+    record_version: "0.2"
+    artifact_id: "AR-BAD-01"
+    claims: []
+    error_expectation: "missing required field: source_id"
+  bad_evidence_state:
+    claim_text: "XPS 显示 Cr2O3 增加"
+    evidence_state: "confirmed"          # 自造词，非法
+    error_expectation: "enum validation failed"
+  bad_conclusion_state:
+    conclusion_status: "proven"          # 非法枚举
+    error_expectation: "enum validation failed"
+  missing_unit:
+    icorr: 0.02                          # 无单位
+    error_expectation: "unit required"
+  no_reference_electrode:
+    Ecorr: "-0.3 V"                      # 无 SCE/SHE
+    error_expectation: "reference electrode required"
+  forbidden_mechanism_inference:
+    claim_text: "腐蚀改善证明形成了稳定的 Cr 富集钝化膜"   # 禁用推断
+    evidence_state: "agent_inference"
+    error_expectation: "mechanism inference blocked without film/XPS evidence"
+  cross_grade_extrapolation:
+    claim_text: "304L 结果可直接外推到 316L"
+    error_expectation: "cross-grade extrapolation blocked"
+  cross_protocol_comparison:
+    claim_text: "3.5% NaCl PDP 与 0.5 M H2SO4 EIS 的 Rct 直接比较"
+    error_expectation: "protocol incomparability flagged"
+  figure_only_as_data:
+    evidence_state: "figure_only"
+    used_as: "reported_data"
+    error_expectation: "figure_only cannot support quantitative validation"
+  sha_mismatch:
+    source_id: "doi:10.3390/met13030516"
+    sha256: "0000000000000000000000000000000000000000000000000000000000000000"
+    error_expectation: "sha256 mismatch"

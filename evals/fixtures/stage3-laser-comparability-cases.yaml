@@ -1,0 +1,49 @@
+cases:
+  - comparison_id: CMP-01
+    left: {material_grade: 316L, process_class: laser_passivation_candidate}
+    right: {material_grade: 316L, process_class: laser_passivation_candidate}
+    conditions:
+      grade_match: true
+      process_class_match: true
+      dose_definitions_match: true
+      required_fields_complete: true
+      unresolved_anchors: false
+      missing_noncritical: []
+    expected_status: comparable
+    reasons: [same grade/class and explicit dose definitions]
+  - comparison_id: CMP-02
+    left: {material_grade: 304L, process_class: laser_texturing}
+    right: {material_grade: 304L, process_class: laser_texturing}
+    conditions:
+      grade_match: true
+      process_class_match: true
+      dose_definitions_match: true
+      required_fields_complete: false
+      unresolved_anchors: false
+      missing_noncritical: [atmosphere, pass_count]
+    expected_status: partially_comparable
+    reasons: [noncritical process fields are not reported]
+  - comparison_id: CMP-03
+    left: {material_grade: 304L, process_class: laser_marking}
+    right: {material_grade: 316L, process_class: laser_passivation_candidate}
+    conditions:
+      grade_match: false
+      process_class_match: false
+      dose_definitions_match: false
+      required_fields_complete: true
+      unresolved_anchors: false
+      missing_noncritical: []
+    expected_status: not_comparable
+    reasons: [different grade and process class]
+  - comparison_id: CMP-04
+    left: {material_grade: 316L, process_class: laser_passivation_candidate}
+    right: {material_grade: 316L, process_class: laser_passivation_candidate}
+    conditions:
+      grade_match: true
+      process_class_match: true
+      dose_definitions_match: true
+      required_fields_complete: true
+      unresolved_anchors: true
+      missing_noncritical: []
+    expected_status: needs_user_review
+    reasons: [figure-only spot definition or unresolved page anchor]

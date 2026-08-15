@@ -1,0 +1,339 @@
+# Example only. This is a synthetic complete record and is not a live run.
+schema_version: "1.0"
+suite_id: "S1-routing-behavior"
+artifact_kind: example
+is_example: true
+run_id: "routing-pass-example-2026-08-14T14:00:00Z"
+execution:
+  status: executed
+  executor: "example-router"
+  started_at: "2026-08-14T14:00:00Z"
+  completed_at: "2026-08-14T14:02:00Z"
+  command: "example-router-run --suite S1-routing-behavior"
+  raw_output_capture: true
+cases:
+- case_id: S1-P01
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P01; the primary was selected from the fixture contract."
+- case_id: S1-P02
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P02; the primary was selected from the fixture contract."
+- case_id: S1-P03
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P03; the primary was selected from the fixture contract."
+- case_id: S1-P04
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P04; the primary was selected from the fixture contract."
+- case_id: S1-P05
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P05; the primary was selected from the fixture contract."
+- case_id: S1-P06
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P06; the primary was selected from the fixture contract."
+- case_id: S1-P07
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P07; the primary was selected from the fixture contract."
+- case_id: S1-P08
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P08; the primary was selected from the fixture contract."
+- case_id: S1-P09
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P09; the primary was selected from the fixture contract."
+- case_id: S1-P10
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P10; the primary was selected from the fixture contract."
+- case_id: S1-P11
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P11; the primary was selected from the fixture contract."
+- case_id: S1-P12
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P12; the primary was selected from the fixture contract."
+- case_id: S1-P13
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P13; the primary was selected from the fixture contract."
+- case_id: S1-P14
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P14; the primary was selected from the fixture contract."
+- case_id: S1-P15
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P15; the primary was selected from the fixture contract."
+- case_id: S1-P16
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P16; the primary was selected from the fixture contract."
+- case_id: S1-P17
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P17; the primary was selected from the fixture contract."
+- case_id: S1-P18
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P18; the primary was selected from the fixture contract."
+- case_id: S1-P19
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P19; the primary was selected from the fixture contract."
+- case_id: S1-P20
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-P20; the primary was selected from the fixture contract."
+- case_id: S1-N01
+  executed: true
+  selected_primary_skill: materials-citation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N01; the primary was selected from the fixture contract."
+- case_id: S1-N02
+  executed: true
+  selected_primary_skill: dr-cook-literature-downloader
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N02; the primary was selected from the fixture contract."
+- case_id: S1-N03
+  executed: true
+  selected_primary_skill: jadense-scholar-search
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N03; the primary was selected from the fixture contract."
+- case_id: S1-N04
+  executed: true
+  selected_primary_skill: materials-literature-pipeline
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N04; the primary was selected from the fixture contract."
+- case_id: S1-N05
+  executed: true
+  selected_primary_skill: materials-reader
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N05; the primary was selected from the fixture contract."
+- case_id: S1-N06
+  executed: true
+  selected_primary_skill: deepseek-ocr-pdf
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N06; the primary was selected from the fixture contract."
+- case_id: S1-N07
+  executed: true
+  selected_primary_skill: paper-cn-reader
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N07; the primary was selected from the fixture contract."
+- case_id: S1-N08
+  executed: true
+  selected_primary_skill: mineru
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N08; the primary was selected from the fixture contract."
+- case_id: S1-N09
+  executed: true
+  selected_primary_skill: materials-data
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N09; the primary was selected from the fixture contract."
+- case_id: S1-N10
+  executed: true
+  selected_primary_skill: materials-data
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N10; the primary was selected from the fixture contract."
+- case_id: S1-N11
+  executed: true
+  selected_primary_skill: materials-data
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N11; the primary was selected from the fixture contract."
+- case_id: S1-N12
+  executed: true
+  selected_primary_skill: materials-doe
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N12; the primary was selected from the fixture contract."
+- case_id: S1-N13
+  executed: true
+  selected_primary_skill: materials-doe
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N13; the primary was selected from the fixture contract."
+- case_id: S1-N14
+  executed: true
+  selected_primary_skill: materials-doe
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N14; the primary was selected from the fixture contract."
+- case_id: S1-N15
+  executed: true
+  selected_primary_skill: materials-figure
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N15; the primary was selected from the fixture contract."
+- case_id: S1-N16
+  executed: true
+  selected_primary_skill: materials-figure
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N16; the primary was selected from the fixture contract."
+- case_id: S1-N17
+  executed: true
+  selected_primary_skill: materials-figure
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N17; the primary was selected from the fixture contract."
+- case_id: S1-N18
+  executed: true
+  selected_primary_skill: materials-polishing
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N18; the primary was selected from the fixture contract."
+- case_id: S1-N19
+  executed: true
+  selected_primary_skill: materials-polishing
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N19; the primary was selected from the fixture contract."
+- case_id: S1-N20
+  executed: true
+  selected_primary_skill: materials-polishing
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N20; the primary was selected from the fixture contract."
+- case_id: S1-N21
+  executed: true
+  selected_primary_skill: materials-writing
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N21; the primary was selected from the fixture contract."
+- case_id: S1-N22
+  executed: true
+  selected_primary_skill: materials-reviewer
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N22; the primary was selected from the fixture contract."
+- case_id: S1-N23
+  executed: true
+  selected_primary_skill: materials-reviewer
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N23; the primary was selected from the fixture contract."
+- case_id: S1-N24
+  executed: true
+  selected_primary_skill: materials-reviewer
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N24; the primary was selected from the fixture contract."
+- case_id: S1-N25
+  executed: true
+  selected_primary_skill: materials-submission
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N25; the primary was selected from the fixture contract."
+- case_id: S1-N26
+  executed: true
+  selected_primary_skill: materials-submission
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N26; the primary was selected from the fixture contract."
+- case_id: S1-N27
+  executed: true
+  selected_primary_skill: materials-submission
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N27; the primary was selected from the fixture contract."
+- case_id: S1-N28
+  executed: true
+  selected_primary_skill: zotero:Zotero
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N28; the primary was selected from the fixture contract."
+- case_id: S1-N29
+  executed: true
+  selected_primary_skill: zotero:Zotero
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N29; the primary was selected from the fixture contract."
+- case_id: S1-N30
+  executed: true
+  selected_primary_skill: materials-literature-pipeline
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-N30; the primary was selected from the fixture contract."
+- case_id: S1-B01
+  executed: true
+  selected_primary_skill: materials-citation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B01; the primary was selected from the fixture contract."
+- case_id: S1-B02
+  executed: true
+  selected_primary_skill: materials-reader
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B02; the primary was selected from the fixture contract."
+- case_id: S1-B03
+  executed: true
+  selected_primary_skill: dr-cook-literature-downloader
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B03; the primary was selected from the fixture contract."
+- case_id: S1-B04
+  executed: true
+  selected_primary_skill: materials-literature-pipeline
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B04; the primary was selected from the fixture contract."
+- case_id: S1-B05
+  executed: true
+  selected_primary_skill: deepseek-ocr-pdf
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B05; the primary was selected from the fixture contract."
+- case_id: S1-B06
+  executed: true
+  selected_primary_skill: materials-data
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B06; the primary was selected from the fixture contract."
+- case_id: S1-B07
+  executed: true
+  selected_primary_skill: materials-doe
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B07; the primary was selected from the fixture contract."
+- case_id: S1-B08
+  executed: true
+  selected_primary_skill: materials-figure
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B08; the primary was selected from the fixture contract."
+- case_id: S1-B09
+  executed: true
+  selected_primary_skill: materials-polishing
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B09; the primary was selected from the fixture contract."
+- case_id: S1-B10
+  executed: true
+  selected_primary_skill: materials-reviewer
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B10; the primary was selected from the fixture contract."
+- case_id: S1-B11
+  executed: true
+  selected_primary_skill: materials-writing
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B11; the primary was selected from the fixture contract."
+- case_id: S1-B12
+  executed: true
+  selected_primary_skill: materials-submission
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B12; the primary was selected from the fixture contract."
+- case_id: S1-B13
+  executed: true
+  selected_primary_skill: zotero:Zotero
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B13; the primary was selected from the fixture contract."
+- case_id: S1-B14
+  executed: true
+  selected_primary_skill: paper-cn-reader
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B14; the primary was selected from the fixture contract."
+- case_id: S1-B15
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: "Example-only routing reason recorded for S1-B15; the primary was selected from the fixture contract."

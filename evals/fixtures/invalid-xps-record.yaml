@@ -1,0 +1,20 @@
+record_id: XPS-BAD-001
+sample:
+  material_grade: 304L
+  treatment: laser_passivation_candidate
+reported:
+  energy_calibration: {status: not_reported}
+  charge_correction: {status: not_reported}
+  sputter: {used: true}
+  peaks:
+    - {element: Cr, binding_energy_eV: 576.5, assignment_status: reported, anchor: "Fig. 4"}
+missing_or_blocked: []
+claims:
+  - claim_id: XPS-C1
+    type: mechanism
+    evidence_level: indirect
+    status: supported
+    text: "Corrosion improvement proves a stable Cr-rich passive film."
+evidence:
+  - source_id: doi:10.3390/met13030516
+    anchors: ["Fig. 4"]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stainless Steel Laser Passivation"
+  short_description: "Evidence-aware analysis for stainless-steel laser passivation."
+  default_prompt: "Use $stainless-steel-laser-passivation to analyze laser-passivation evidence, comparability, film chemistry, and corrosion validation."

@@ -1,0 +1,544 @@
+# Stage-1 routing behavior corpus for the final Skill.
+# The counts below are trigger-test cases, not literature-source counts.
+# These prompts are intentionally short and do not contain the expected answer.
+schema_version: "1.0"
+suite_id: "S1-routing-behavior"
+description: >-
+  Natural-language routing corpus for checking whether the stainless-steel
+  laser-passivation Skill wins domain-synthesis requests while yielding
+  retrieval, extraction, data, DOE, figure, writing, review, and submission
+  tasks to their more specific Skills.
+counts:
+  positive_trigger_cases: 20
+  negative_trigger_cases: 30
+  boundary_cases: 15
+cases:
+  # Positive triggers: the requested deliverable is a domain judgment,
+  # cross-paper synthesis, contradiction audit, or evidence-boundary report.
+  - case_id: S1-P01
+    class: positive_trigger
+    request: "判断 316L 激光钝化是否真正改善耐蚀性，并把论文中的观察、作者解释和我的推断分开。"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-citation, materials-reader, materials-data]
+    forbidden_primary_skills: [materials-literature-pipeline, materials-polishing, materials-reviewer]
+    rationale: "需要围绕不锈钢激光钝化证据做分层科学判断，而不是单纯读文献。"
+  - case_id: S1-P02
+    class: positive_trigger
+    request: "比较两篇 304L 激光扫描论文的能量密度、光斑、搭接率和腐蚀协议，判断哪些结果可直接比较。"
+    origin: historical_task
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-citation]
+    forbidden_primary_skills: [materials-doe, materials-figure, materials-literature-pipeline]
+    rationale: "核心产物是激光钝化跨论文可比性判断。"
+  - case_id: S1-P03
+    class: positive_trigger
+    request: "XPS 显示 Cr 富集但 EIS 变差，审计这些矛盾证据，不能替作者强行选一个结论。"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-reviewer]
+    forbidden_primary_skills: [materials-polishing, materials-figure]
+    rationale: "需要领域内矛盾分析和证据边界控制。"
+  - case_id: S1-P04
+    class: positive_trigger
+    request: "评估激光处理和硝酸/柠檬酸钝化的直接对比证据，指出电解液和测试协议不一致造成的限制。"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-citation, materials-reader]
+    forbidden_primary_skills: [materials-literature-pipeline, materials-submission]
+    rationale: "要求比较传统钝化对照的科学有效性并审计协议边界。"
+  - case_id: S1-P05
+    class: positive_trigger
+    request: "现有论文只给极化曲线，能否支持‘形成了更稳定的 Cr 氧化物钝化膜’？请给出证据边界。"
+    origin: historical_task
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader]
+    forbidden_primary_skills: [materials-polishing, materials-writing]
+    rationale: "是从性能证据推断膜层机理的边界审查。"
+  - case_id: S1-P06
+    class: positive_trigger
+    request: "短期浸泡和单个时点 XPS 能不能支撑激光钝化膜长期稳定？请按 aging 证据分级。"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-data]
+    forbidden_primary_skills: [materials-reviewer, materials-polishing]
+    rationale: "需要对激光钝化膜老化/稳定性做领域判断。"
+  - case_id: S1-P07
+    class: positive_trigger
+    request: "把这组 316L 激光钝化文献整理成可审计结论，逐条标记 reported、derived、author interpretation 和 agent inference。"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-data]
+    forbidden_primary_skills: [materials-writing, materials-literature-pipeline]
+    rationale: "请求的是领域证据分层与可审计综合。"
+  - case_id: S1-P08
+    class: positive_trigger
+    request: "跨 304L、316L、430 比较激光钝化效果，避免把不同牌号的结果做成无条件总排名。"
+    origin: historical_task
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-citation]
+    forbidden_primary_skills: [materials-doe, materials-figure]
+    rationale: "涉及牌号边界、过程边界和跨文献证据综合。"
+  - case_id: S1-P09
+    class: positive_trigger
+    request: "论文没有报告光斑和搭接率，判断它与另一篇激光钝化论文是否可比，并列出阻塞项。"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader]
+    forbidden_primary_skills: [materials-doe, materials-data]
+    rationale: "核心是激光过程元数据缺失导致的可比性审计。"
+  - case_id: S1-P10
+    class: positive_trigger
+    request: "作者把 Cr/Fe 比提高解释成耐蚀性提升，检查这个机理链是否被实验数据真正支持。"
+    origin: historical_task
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-reviewer]
+    forbidden_primary_skills: [materials-polishing, materials-writing]
+    rationale: "请求针对激光钝化表面化学到腐蚀性能的机理链。"
+  - case_id: S1-P11
+    class: positive_trigger
+    request: "审查激光钝化论文中的 Mott–Schottky 结论，说明哪些参数可以报告、哪些不能据此宣称膜层机理。"
+    origin: historical_task
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-reviewer]
+    forbidden_primary_skills: [materials-polishing, materials-doe]
+    rationale: "需要对钝化膜半导体表征的领域性解释和批判。"
+  - case_id: S1-P12
+    class: positive_trigger
+    request: "从激光参数、表面化学、膜层形成和腐蚀表现四层证据综合 316L 激光钝化。"
+    origin: synthetic
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-citation, materials-data]
+    forbidden_primary_skills: [materials-literature-pipeline, materials-writing]
+    rationale: "显式要求该 Skill 的四层领域综合。"
+  - case_id: S1-P13
+    class: positive_trigger
+    request: "找出这批激光钝化论文中互相矛盾的结论，并判断矛盾来自材料牌号、工艺还是测试协议。"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-data]
+    forbidden_primary_skills: [materials-polishing, materials-figure]
+    rationale: "要求对不锈钢激光钝化跨论文矛盾进行归因审计。"
+  - case_id: S1-P14
+    class: positive_trigger
+    request: "根据给定 source map 形成证据边界报告，明确哪些激光钝化结论仍只有单篇来源。"
+    origin: historical_task
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-data, materials-citation]
+    forbidden_primary_skills: [materials-literature-pipeline, materials-writing]
+    rationale: "需要将来源映射转成领域结论强度判断。"
+  - case_id: S1-P15
+    class: positive_trigger
+    request: "只有 XPS 化学态变化，没有电化学或长期性能数据，应该把激光钝化效果结论降到什么程度？"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader]
+    forbidden_primary_skills: [materials-reviewer, materials-polishing]
+    rationale: "要求证据层级降级而非一般 XPS 数据提取。"
+  - case_id: S1-P16
+    class: positive_trigger
+    request: "评估不同波长和扫描策略的激光钝化结果，分层讨论工艺窗口，不给出脱离牌号的最佳工艺。"
+    origin: synthetic
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-data]
+    forbidden_primary_skills: [materials-doe, materials-figure]
+    rationale: "核心是领域工艺窗口综合和限制条件。"
+  - case_id: S1-P17
+    class: positive_trigger
+    request: "判断一组激光钝化实验是否同时证明了耐蚀性改善和钝化膜机理，分别给出证据强度。"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-data]
+    forbidden_primary_skills: [materials-polishing, materials-writing]
+    rationale: "需要区分性能结论与机理结论的证据要求。"
+  - case_id: S1-P18
+    class: positive_trigger
+    request: "将激光钝化的短期性能、老化后性能和表面化学变化放在同一证据链中，指出缺失的时间维度。"
+    origin: historical_task
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-data]
+    forbidden_primary_skills: [materials-literature-pipeline, materials-figure]
+    rationale: "请求进行领域证据链和 aging 缺口分析。"
+  - case_id: S1-P19
+    class: positive_trigger
+    request: "比较激光与酸钝化时，哪些条件不一致会使‘激光更好’这一结论失效？"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-citation, materials-reader]
+    forbidden_primary_skills: [materials-reviewer, materials-polishing]
+    rationale: "要求对激光—传统钝化比较进行条件化判断。"
+  - case_id: S1-P20
+    class: positive_trigger
+    request: "基于现有文献给出激光钝化证据的保守结论，并明确不能声称的内容。"
+    origin: synthetic
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-citation]
+    forbidden_primary_skills: [materials-writing, materials-submission]
+    rationale: "是以证据强度和禁用结论为核心的领域综合。"
+
+  # Negative triggers: these requests may mention stainless steel or lasers,
+  # but their primary deliverable belongs to another Skill.
+  - case_id: S1-N01
+    class: negative_trigger
+    request: "搜索 2020 年以后不锈钢激光钝化的论文，并返回 DOI、开放获取链接和去重后的候选表。"
+    origin: real_session
+    expected_primary_skill: materials-citation
+    allowed_collaborators: [jadense-scholar-search, literature-scout]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主产物是文献检索和 DOI 验证，不是证据综合。"
+  - case_id: S1-N02
+    class: negative_trigger
+    request: "把这 12 篇激光钝化论文下载下来，优先找能通过 VPN 获取的 PDF。"
+    origin: real_session
+    expected_primary_skill: dr-cook-literature-downloader
+    allowed_collaborators: [materials-citation]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主任务是全文获取。"
+  - case_id: S1-N03
+    class: negative_trigger
+    request: "从 Crossref、OpenAlex 和 Semantic Scholar 搜索 316L 激光表面处理文献。"
+    origin: synthetic
+    expected_primary_skill: jadense-scholar-search
+    allowed_collaborators: [materials-citation]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "明确要求多提供方检索。"
+  - case_id: S1-N04
+    class: negative_trigger
+    request: "建立一个每周自动更新不锈钢激光钝化文献的候选、去重和 digest 流程。"
+    origin: historical_task
+    expected_primary_skill: materials-literature-pipeline
+    allowed_collaborators: [materials-citation, jadense-scholar-search]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主产物是可重复运行的文献管线。"
+  - case_id: S1-N05
+    class: negative_trigger
+    request: "读取这篇激光钝化 PDF，逐图逐表提取中文深读笔记。"
+    origin: real_session
+    expected_primary_skill: materials-reader
+    allowed_collaborators: [deepseek-ocr-pdf]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主任务是论文阅读和提取。"
+  - case_id: S1-N06
+    class: negative_trigger
+    request: "把扫描版不锈钢激光钝化论文转换成带表格和公式的 Markdown。"
+    origin: synthetic
+    expected_primary_skill: deepseek-ocr-pdf
+    allowed_collaborators: [mineru]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主任务是 PDF/OCR 解析。"
+  - case_id: S1-N07
+    class: negative_trigger
+    request: "把这篇英文激光钝化论文做成保留图表和公式的中文深读 HTML。"
+    origin: historical_task
+    expected_primary_skill: paper-cn-reader
+    allowed_collaborators: [materials-reader]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主产物是完整论文翻译阅读件。"
+  - case_id: S1-N08
+    class: negative_trigger
+    request: "用 MinerU 解析这批激光钝化 PDF，并修复多栏顺序和表格。"
+    origin: synthetic
+    expected_primary_skill: mineru
+    allowed_collaborators: [deepseek-ocr-pdf]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "明确指定 PDF 解析工具和产物。"
+  - case_id: S1-N09
+    class: negative_trigger
+    request: "清理激光钝化数据表的单位、空值和重复行，输出 FAIR 数据包 README。"
+    origin: real_session
+    expected_primary_skill: materials-data
+    allowed_collaborators: [materials-reader]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主任务是数据整理和 FAIR 打包。"
+  - case_id: S1-N10
+    class: negative_trigger
+    request: "审计这份 316L 激光钝化实验记录的数据卡字段是否完整。"
+    origin: historical_task
+    expected_primary_skill: materials-data
+    allowed_collaborators: [materials-reader]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "字段审计本身不要求领域结论。"
+  - case_id: S1-N11
+    class: negative_trigger
+    request: "把 38 篇激光钝化论文的数据表按材料、工艺、测试和来源拆成 CSV。"
+    origin: real_session
+    expected_primary_skill: materials-data
+    allowed_collaborators: [materials-reader, materials-citation]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主产物是结构化数据表。"
+  - case_id: S1-N12
+    class: negative_trigger
+    request: "为 316L 激光功率、扫描速度和搭接率设计一个响应面实验矩阵。"
+    origin: synthetic
+    expected_primary_skill: materials-doe
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-citation, materials-figure]
+    rationale: "主任务是 DOE 设计。"
+  - case_id: S1-N13
+    class: negative_trigger
+    request: "用 Taguchi L9 设计不锈钢激光钝化的三因素三水平试验。"
+    origin: historical_task
+    expected_primary_skill: materials-doe
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-citation, materials-figure]
+    rationale: "明确要求正交试验设计。"
+  - case_id: S1-N14
+    class: negative_trigger
+    request: "审查这个激光钝化 DOE 是否有中心点、重复和随机化。"
+    origin: synthetic
+    expected_primary_skill: materials-doe
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-reviewer]
+    rationale: "主任务是 DOE 设计质量审计。"
+  - case_id: S1-N15
+    class: negative_trigger
+    request: "把 304L 的极化曲线和 EIS 曲线画成投稿级多面板图。"
+    origin: real_session
+    expected_primary_skill: materials-figure
+    allowed_collaborators: [materials-data]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主产物是材料科学图件。"
+  - case_id: S1-N16
+    class: negative_trigger
+    request: "为激光钝化 XPS、SEM 和腐蚀结果制作一张机制示意图。"
+    origin: synthetic
+    expected_primary_skill: materials-figure
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-writing]
+    rationale: "主产物是机制图，而非机制判断。"
+  - case_id: S1-N17
+    class: negative_trigger
+    request: "检查这组激光钝化图的字体、单位、颜色和 TIFF 分辨率是否符合期刊要求。"
+    origin: historical_task
+    expected_primary_skill: materials-figure
+    allowed_collaborators: [materials-submission]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主任务是图件质量和格式检查。"
+  - case_id: S1-N18
+    class: negative_trigger
+    request: "把下面关于 Cr 富集钝化膜的中文段落润色成期刊英文。"
+    origin: real_session
+    expected_primary_skill: materials-polishing
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-writing, materials-reviewer]
+    rationale: "主任务是语言润色。"
+  - case_id: S1-N19
+    class: negative_trigger
+    request: "把这段激光钝化结果改得更简洁，但不要改变作者原意和数据。"
+    origin: historical_task
+    expected_primary_skill: materials-polishing
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-writing]
+    rationale: "是保守改写和语言校准。"
+  - case_id: S1-N20
+    class: negative_trigger
+    request: "检查论文中 passive film、pitting potential 和 repassivation 的英文术语是否统一。"
+    origin: synthetic
+    expected_primary_skill: materials-polishing
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-writing]
+    rationale: "主任务是术语和语言一致性。"
+  - case_id: S1-N21
+    class: negative_trigger
+    request: "根据这些激光钝化数据直接起草论文 Results and Discussion。"
+    origin: real_session
+    expected_primary_skill: materials-writing
+    allowed_collaborators: [stainless-steel-laser-passivation, materials-data]
+    forbidden_primary_skills: [materials-polishing, materials-reviewer]
+    rationale: "主产物是论文段落起草。"
+  - case_id: S1-N22
+    class: negative_trigger
+    request: "模拟审稿人，给这篇不锈钢激光钝化稿件写逐条审稿意见。"
+    origin: historical_task
+    expected_primary_skill: materials-reviewer
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-writing, materials-polishing]
+    rationale: "明确要求同行评审模拟。"
+  - case_id: S1-N23
+    class: negative_trigger
+    request: "做一份激光钝化稿件的 desk-reject 风险和统计方法审查。"
+    origin: synthetic
+    expected_primary_skill: materials-reviewer
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-submission]
+    rationale: "主任务是稿件风险审查。"
+  - case_id: S1-N24
+    class: negative_trigger
+    request: "检查作者是否过度声称耐蚀性提升，并给出审稿报告结构。"
+    origin: real_session
+    expected_primary_skill: materials-reviewer
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-writing]
+    rationale: "虽涉及领域事实，但交付物是审稿报告。"
+  - case_id: S1-N25
+    class: negative_trigger
+    request: "为激光钝化稿件准备 cover letter、highlights 和 submission 文件清单。"
+    origin: historical_task
+    expected_primary_skill: materials-submission
+    allowed_collaborators: [materials-writing, materials-polishing]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主产物是投稿包。"
+  - case_id: S1-N26
+    class: negative_trigger
+    request: "按 CBM 的格式检查这篇不锈钢激光钝化论文的文件、图和补充材料。"
+    origin: synthetic
+    expected_primary_skill: materials-submission
+    allowed_collaborators: [materials-figure, materials-writing]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "是期刊投稿格式检查。"
+  - case_id: S1-N27
+    class: negative_trigger
+    request: "把激光钝化图表和稿件打包成期刊要求的最终上传目录。"
+    origin: real_session
+    expected_primary_skill: materials-submission
+    allowed_collaborators: [materials-figure, materials-data]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主任务是提交文件装配。"
+  - case_id: S1-N28
+    class: negative_trigger
+    request: "在 Zotero 中按 316L、laser passivation 和 corrosion 建立集合并导出 BibTeX。"
+    origin: real_session
+    expected_primary_skill: zotero:Zotero
+    allowed_collaborators: [materials-citation]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主任务是 Zotero 库操作。"
+  - case_id: S1-N29
+    class: negative_trigger
+    request: "把这批文献的 DOI 和引用键同步到 Zotero，并标记重复条目。"
+    origin: historical_task
+    expected_primary_skill: zotero:Zotero
+    allowed_collaborators: [materials-citation]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主任务是文献库维护。"
+  - case_id: S1-N30
+    class: negative_trigger
+    request: "把最近新增的激光钝化论文加入可重复运行的文献 digest，并给出下一轮阅读动作。"
+    origin: synthetic
+    expected_primary_skill: materials-literature-pipeline
+    allowed_collaborators: [materials-citation, materials-reader]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主产物是持续文献管线和阅读动作。"
+
+  # Boundary/neighbor cases: the domain words are present, but a neighboring
+  # Skill owns the primary deliverable. One case intentionally resolves to the
+  # domain Skill because synthesis, not extraction, is the requested endpoint.
+  - case_id: S1-B01
+    class: boundary_conflict
+    request: "只找 2024 年以后关于 316L 激光钝化的 10 篇候选论文，不做质量判断。"
+    origin: real_session
+    expected_primary_skill: materials-citation
+    allowed_collaborators: [jadense-scholar-search]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "只要求候选检索，明确排除质量判断。"
+  - case_id: S1-B02
+    class: boundary_conflict
+    request: "从指定 PDF 中抄录所有激光功率、扫描速度、脉宽和搭接率原文。"
+    origin: historical_task
+    expected_primary_skill: materials-reader
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-data]
+    rationale: "指定 PDF 的逐项提取优先于跨文献综合。"
+  - case_id: S1-B03
+    class: boundary_conflict
+    request: "按 DOI 获取这篇激光钝化论文的可下载全文，并保存到桌面文献文件夹。"
+    origin: real_session
+    expected_primary_skill: dr-cook-literature-downloader
+    allowed_collaborators: [materials-citation]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "请求是下载和保存全文。"
+  - case_id: S1-B04
+    class: boundary_conflict
+    request: "每月检索一次不锈钢激光钝化新文献，自动去重并生成 digest。"
+    origin: synthetic
+    expected_primary_skill: materials-literature-pipeline
+    allowed_collaborators: [materials-citation, jadense-scholar-search]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "周期性运行和 digest 维护属于文献管线。"
+  - case_id: S1-B05
+    class: boundary_conflict
+    request: "把一份扫描版不锈钢激光论文 OCR 成 Markdown，并保留表格。"
+    origin: historical_task
+    expected_primary_skill: deepseek-ocr-pdf
+    allowed_collaborators: [materials-reader]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "OCR 解析是主要交付物。"
+  - case_id: S1-B06
+    class: boundary_conflict
+    request: "将已有激光钝化数据表中的 null、unknown 和 not_reported 统一并输出校验报告。"
+    origin: real_session
+    expected_primary_skill: materials-data
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-polishing]
+    rationale: "主任务是数据字典和空值治理。"
+  - case_id: S1-B07
+    class: boundary_conflict
+    request: "以耐蚀性为响应，设计 316L 激光功率、速度和扫描间距的 Box–Behnken 试验。"
+    origin: synthetic
+    expected_primary_skill: materials-doe
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-figure]
+    rationale: "设计矩阵由 DOE Skill 主导，领域 Skill 只提供约束。"
+  - case_id: S1-B08
+    class: boundary_conflict
+    request: "把激光钝化的 Ecorr、Icorr 和 Epit 数据做成带误差条的 SVG 图。"
+    origin: historical_task
+    expected_primary_skill: materials-figure
+    allowed_collaborators: [materials-data, stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-writing]
+    rationale: "图形生成是主交付物。"
+  - case_id: S1-B09
+    class: boundary_conflict
+    request: "把‘激光钝化后 Cr 富集’这句话改成更审慎的英文，不增加任何新结论。"
+    origin: real_session
+    expected_primary_skill: materials-polishing
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-writing]
+    rationale: "请求强调语言改写且禁止新增结论。"
+  - case_id: S1-B10
+    class: boundary_conflict
+    request: "以审稿人身份检查激光钝化稿件的统计和机制论证，并输出 major/minor comments。"
+    origin: synthetic
+    expected_primary_skill: materials-reviewer
+    allowed_collaborators: [stainless-steel-laser-passivation]
+    forbidden_primary_skills: [materials-submission]
+    rationale: "交付物是审稿意见。"
+  - case_id: S1-B11
+    class: boundary_conflict
+    request: "用已确认的激光钝化结果起草论文 Discussion 两段，保留引用占位符。"
+    origin: historical_task
+    expected_primary_skill: materials-writing
+    allowed_collaborators: [stainless-steel-laser-passivation, materials-citation]
+    forbidden_primary_skills: [materials-polishing]
+    rationale: "交付物是论文段落起草，领域 Skill 提供证据约束。"
+  - case_id: S1-B12
+    class: boundary_conflict
+    request: "按 Journal of Materials Processing Technology 要求准备激光钝化投稿包。"
+    origin: real_session
+    expected_primary_skill: materials-submission
+    allowed_collaborators: [materials-figure, materials-writing]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主任务是期刊投稿装配。"
+  - case_id: S1-B13
+    class: boundary_conflict
+    request: "从 Zotero 导出这 20 篇激光钝化文献的 BibTeX，并检查 DOI 重复。"
+    origin: synthetic
+    expected_primary_skill: zotero:Zotero
+    allowed_collaborators: [materials-citation]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "主任务是 Zotero 导出和库审计。"
+  - case_id: S1-B14
+    class: boundary_conflict
+    request: "把整篇英文激光钝化论文翻译成中文深读稿，图表和公式都要保留。"
+    origin: historical_task
+    expected_primary_skill: paper-cn-reader
+    allowed_collaborators: [materials-reader]
+    forbidden_primary_skills: [stainless-steel-laser-passivation]
+    rationale: "完整翻译深读稿属于专门的论文阅读 Skill。"
+  - case_id: S1-B15
+    class: boundary_conflict
+    request: "先从两篇 PDF 提取激光参数，再判断它们的腐蚀结论是否可比，并写出保守结论。"
+    origin: real_session
+    expected_primary_skill: stainless-steel-laser-passivation
+    allowed_collaborators: [materials-reader, materials-citation]
+    forbidden_primary_skills: [materials-doe, materials-polishing]
+    rationale: "虽然包含提取步骤，但最终交付物是领域可比性和证据边界判断。"

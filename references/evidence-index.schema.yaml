@@ -1,0 +1,17 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "stainless-steel-laser-passivation/evidence-index-entry"
+title: Evidence Index JSONL Entry
+type: object
+additionalProperties: false
+required: [claim_id, source_id, evidence_type, statement, anchor, status]
+properties:
+  claim_id: {type: string, minLength: 1}
+  source_id: {type: string, minLength: 1}
+  evidence_type:
+    type: string
+    enum: [reported_observation, derived_value, author_interpretation, agent_inference]
+  statement: {type: string, minLength: 1}
+  anchor: {type: string, minLength: 1}
+  applicability: {type: string}
+  confidence: {type: string, enum: [high, medium, low, uncertain]}
+  status: {type: string, enum: [supported, partially_supported, uncertain, contradicted, needs_user_review]}

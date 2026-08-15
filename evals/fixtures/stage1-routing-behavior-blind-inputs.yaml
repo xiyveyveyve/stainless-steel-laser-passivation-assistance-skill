@@ -1,0 +1,135 @@
+# Blind routing inputs: deliberately contains only case_id and request per case.
+# Do not use this file as a result; it contains no expected labels or rationale.
+schema_version: "1.0"
+suite_id: "S1-routing-behavior"
+cases:
+- case_id: S1-P01
+  request: "判断 316L 激光钝化是否真正改善耐蚀性，并把论文中的观察、作者解释和我的推断分开。"
+- case_id: S1-P02
+  request: "比较两篇 304L 激光扫描论文的能量密度、光斑、搭接率和腐蚀协议，判断哪些结果可直接比较。"
+- case_id: S1-P03
+  request: "XPS 显示 Cr 富集但 EIS 变差，审计这些矛盾证据，不能替作者强行选一个结论。"
+- case_id: S1-P04
+  request: "评估激光处理和硝酸/柠檬酸钝化的直接对比证据，指出电解液和测试协议不一致造成的限制。"
+- case_id: S1-P05
+  request: "现有论文只给极化曲线，能否支持‘形成了更稳定的 Cr 氧化物钝化膜’？请给出证据边界。"
+- case_id: S1-P06
+  request: "短期浸泡和单个时点 XPS 能不能支撑激光钝化膜长期稳定？请按 aging 证据分级。"
+- case_id: S1-P07
+  request: "把这组 316L 激光钝化文献整理成可审计结论，逐条标记 reported、derived、author interpretation 和 agent inference。"
+- case_id: S1-P08
+  request: "跨 304L、316L、430 比较激光钝化效果，避免把不同牌号的结果做成无条件总排名。"
+- case_id: S1-P09
+  request: "论文没有报告光斑和搭接率，判断它与另一篇激光钝化论文是否可比，并列出阻塞项。"
+- case_id: S1-P10
+  request: "作者把 Cr/Fe 比提高解释成耐蚀性提升，检查这个机理链是否被实验数据真正支持。"
+- case_id: S1-P11
+  request: "审查激光钝化论文中的 Mott–Schottky 结论，说明哪些参数可以报告、哪些不能据此宣称膜层机理。"
+- case_id: S1-P12
+  request: "从激光参数、表面化学、膜层形成和腐蚀表现四层证据综合 316L 激光钝化。"
+- case_id: S1-P13
+  request: "找出这批激光钝化论文中互相矛盾的结论，并判断矛盾来自材料牌号、工艺还是测试协议。"
+- case_id: S1-P14
+  request: "根据给定 source map 形成证据边界报告，明确哪些激光钝化结论仍只有单篇来源。"
+- case_id: S1-P15
+  request: "只有 XPS 化学态变化，没有电化学或长期性能数据，应该把激光钝化效果结论降到什么程度？"
+- case_id: S1-P16
+  request: "评估不同波长和扫描策略的激光钝化结果，分层讨论工艺窗口，不给出脱离牌号的最佳工艺。"
+- case_id: S1-P17
+  request: "判断一组激光钝化实验是否同时证明了耐蚀性改善和钝化膜机理，分别给出证据强度。"
+- case_id: S1-P18
+  request: "将激光钝化的短期性能、老化后性能和表面化学变化放在同一证据链中，指出缺失的时间维度。"
+- case_id: S1-P19
+  request: "比较激光与酸钝化时，哪些条件不一致会使‘激光更好’这一结论失效？"
+- case_id: S1-P20
+  request: "基于现有文献给出激光钝化证据的保守结论，并明确不能声称的内容。"
+- case_id: S1-N01
+  request: "搜索 2020 年以后不锈钢激光钝化的论文，并返回 DOI、开放获取链接和去重后的候选表。"
+- case_id: S1-N02
+  request: "把这 12 篇激光钝化论文下载下来，优先找能通过 VPN 获取的 PDF。"
+- case_id: S1-N03
+  request: "从 Crossref、OpenAlex 和 Semantic Scholar 搜索 316L 激光表面处理文献。"
+- case_id: S1-N04
+  request: "建立一个每周自动更新不锈钢激光钝化文献的候选、去重和 digest 流程。"
+- case_id: S1-N05
+  request: "读取这篇激光钝化 PDF，逐图逐表提取中文深读笔记。"
+- case_id: S1-N06
+  request: "把扫描版不锈钢激光钝化论文转换成带表格和公式的 Markdown。"
+- case_id: S1-N07
+  request: "把这篇英文激光钝化论文做成保留图表和公式的中文深读 HTML。"
+- case_id: S1-N08
+  request: "用 MinerU 解析这批激光钝化 PDF，并修复多栏顺序和表格。"
+- case_id: S1-N09
+  request: "清理激光钝化数据表的单位、空值和重复行，输出 FAIR 数据包 README。"
+- case_id: S1-N10
+  request: "审计这份 316L 激光钝化实验记录的数据卡字段是否完整。"
+- case_id: S1-N11
+  request: "把 38 篇激光钝化论文的数据表按材料、工艺、测试和来源拆成 CSV。"
+- case_id: S1-N12
+  request: "为 316L 激光功率、扫描速度和搭接率设计一个响应面实验矩阵。"
+- case_id: S1-N13
+  request: "用 Taguchi L9 设计不锈钢激光钝化的三因素三水平试验。"
+- case_id: S1-N14
+  request: "审查这个激光钝化 DOE 是否有中心点、重复和随机化。"
+- case_id: S1-N15
+  request: "把 304L 的极化曲线和 EIS 曲线画成投稿级多面板图。"
+- case_id: S1-N16
+  request: "为激光钝化 XPS、SEM 和腐蚀结果制作一张机制示意图。"
+- case_id: S1-N17
+  request: "检查这组激光钝化图的字体、单位、颜色和 TIFF 分辨率是否符合期刊要求。"
+- case_id: S1-N18
+  request: "把下面关于 Cr 富集钝化膜的中文段落润色成期刊英文。"
+- case_id: S1-N19
+  request: "把这段激光钝化结果改得更简洁，但不要改变作者原意和数据。"
+- case_id: S1-N20
+  request: "检查论文中 passive film、pitting potential 和 repassivation 的英文术语是否统一。"
+- case_id: S1-N21
+  request: "根据这些激光钝化数据直接起草论文 Results and Discussion。"
+- case_id: S1-N22
+  request: "模拟审稿人，给这篇不锈钢激光钝化稿件写逐条审稿意见。"
+- case_id: S1-N23
+  request: "做一份激光钝化稿件的 desk-reject 风险和统计方法审查。"
+- case_id: S1-N24
+  request: "检查作者是否过度声称耐蚀性提升，并给出审稿报告结构。"
+- case_id: S1-N25
+  request: "为激光钝化稿件准备 cover letter、highlights 和 submission 文件清单。"
+- case_id: S1-N26
+  request: "按 CBM 的格式检查这篇不锈钢激光钝化论文的文件、图和补充材料。"
+- case_id: S1-N27
+  request: "把激光钝化图表和稿件打包成期刊要求的最终上传目录。"
+- case_id: S1-N28
+  request: "在 Zotero 中按 316L、laser passivation 和 corrosion 建立集合并导出 BibTeX。"
+- case_id: S1-N29
+  request: "把这批文献的 DOI 和引用键同步到 Zotero，并标记重复条目。"
+- case_id: S1-N30
+  request: "把最近新增的激光钝化论文加入可重复运行的文献 digest，并给出下一轮阅读动作。"
+- case_id: S1-B01
+  request: "只找 2024 年以后关于 316L 激光钝化的 10 篇候选论文，不做质量判断。"
+- case_id: S1-B02
+  request: "从指定 PDF 中抄录所有激光功率、扫描速度、脉宽和搭接率原文。"
+- case_id: S1-B03
+  request: "按 DOI 获取这篇激光钝化论文的可下载全文，并保存到桌面文献文件夹。"
+- case_id: S1-B04
+  request: "每月检索一次不锈钢激光钝化新文献，自动去重并生成 digest。"
+- case_id: S1-B05
+  request: "把一份扫描版不锈钢激光论文 OCR 成 Markdown，并保留表格。"
+- case_id: S1-B06
+  request: "将已有激光钝化数据表中的 null、unknown 和 not_reported 统一并输出校验报告。"
+- case_id: S1-B07
+  request: "以耐蚀性为响应，设计 316L 激光功率、速度和扫描间距的 Box–Behnken 试验。"
+- case_id: S1-B08
+  request: "把激光钝化的 Ecorr、Icorr 和 Epit 数据做成带误差条的 SVG 图。"
+- case_id: S1-B09
+  request: "把‘激光钝化后 Cr 富集’这句话改成更审慎的英文，不增加任何新结论。"
+- case_id: S1-B10
+  request: "以审稿人身份检查激光钝化稿件的统计和机制论证，并输出 major/minor comments。"
+- case_id: S1-B11
+  request: "用已确认的激光钝化结果起草论文 Discussion 两段，保留引用占位符。"
+- case_id: S1-B12
+  request: "按 Journal of Materials Processing Technology 要求准备激光钝化投稿包。"
+- case_id: S1-B13
+  request: "从 Zotero 导出这 20 篇激光钝化文献的 BibTeX，并检查 DOI 重复。"
+- case_id: S1-B14
+  request: "把整篇英文激光钝化论文翻译成中文深读稿，图表和公式都要保留。"
+- case_id: S1-B15
+  request: "先从两篇 PDF 提取激光参数，再判断它们的腐蚀结论是否可比，并写出保守结论。"

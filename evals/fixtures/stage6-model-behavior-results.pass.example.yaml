@@ -1,0 +1,113 @@
+# Demonstration of a complete, reviewed run. This is an example artifact, not
+# evidence that a live model run has already been performed.
+schema_version: "1.0"
+suite_id: "S6-model-behavior"
+artifact_kind: example
+is_example: true
+run_id: "example-pass-2026-08-14T12:00:00Z"
+skill_path: "<skill-root>"
+execution:
+  status: executed
+  executor: "example-review-agent"
+  started_at: "2026-08-14T12:00:00Z"
+  completed_at: "2026-08-14T12:08:00Z"
+  command: "fresh-agent-run --suite S6-model-behavior"
+  raw_output_capture: true
+cases:
+  - scenario_id: S6B-01
+    loaded_references: [references/laser-process-metrology.md, references/laser-process-record.schema.yaml, references/laser-comparability.schema.yaml]
+    output:
+      format: markdown
+      raw_text: "输出记录缺失的光斑与搭接率，并把跨论文比较标为待人工核查；报告值、派生量和推断分别列出。"
+    assertions:
+      - {assertion_id: S6B-01-I01, result: pass, observation: "缺失字段被明确列出。", evidence: "输出第1段"}
+      - {assertion_id: S6B-01-I02, result: pass, observation: "可比性被降级为待核查。", evidence: "输出第2段"}
+      - {assertion_id: S6B-01-I03, result: pass, observation: "输出分层标记。", evidence: "输出表格"}
+      - {assertion_id: S6B-01-N01, result: pass, observation: "没有补算同等剂量。", evidence: "全文未出现等热输入断言"}
+      - {assertion_id: S6B-01-E01, result: pass, observation: "没有把缺失元数据转为确认事实。", evidence: "限制段"}
+      - {assertion_id: S6B-01-C01, result: pass, observation: "比较结论附带缺失条件。", evidence: "结论段"}
+    independent_review: {verdict: pass, reviewer: "luna-example-reviewer", reviewer_kind: independent_agent, reviewed_at: "2026-08-14T12:15:00Z", notes: "逐项核对原始输出与断言记录。"}
+
+  - scenario_id: S6B-02
+    loaded_references: [references/corrosion-performance-evidence.md, references/electrochem-record.schema.yaml, references/measurement-quality.md]
+    output:
+      format: markdown
+      raw_text: "当前资料只支持报告极化性能层面的观察；膜层化学机理和长期稳定性仍未由该资料验证。"
+    assertions:
+      - {assertion_id: S6B-02-I01, result: pass, observation: "只报告电化学层面观察并保留协议检查。", evidence: "性能证据段"}
+      - {assertion_id: S6B-02-I02, result: pass, observation: "机理验证被标为缺失。", evidence: "证据边界段"}
+      - {assertion_id: S6B-02-I03, result: pass, observation: "列出需要的表面化学证据。", evidence: "后续证据段"}
+      - {assertion_id: S6B-02-N01, result: pass, observation: "没有指定 Cr/Fe 氧化物机理断言。", evidence: "全文审查"}
+      - {assertion_id: S6B-02-E01, result: pass, observation: "性能与机理层被分开。", evidence: "分层表"}
+      - {assertion_id: S6B-02-C01, result: pass, observation: "协议关键元数据缺失时标为待核查；仅在补齐且相容后作条件化性能比较。", evidence: "可比性段"}
+    independent_review: {verdict: pass, reviewer: "luna-example-reviewer", reviewer_kind: independent_agent, reviewed_at: "2026-08-14T12:16:00Z", notes: "输出未超出输入证据。"}
+
+  - scenario_id: S6B-03
+    loaded_references: [references/surface-chemistry-xps.md, references/xps-record.schema.yaml, references/passive-film-formation.md]
+    output:
+      format: markdown
+      raw_text: "XPS 化学态变化可作为表面观察，但定标、峰拟合和采样深度限制必须保留；性能验证目前缺失。"
+    assertions:
+      - {assertion_id: S6B-03-I01, result: pass, observation: "列出 XPS 方法限制。", evidence: "XPS 方法段"}
+      - {assertion_id: S6B-03-I02, result: pass, observation: "性能验证标为未核实。", evidence: "证据状态表"}
+      - {assertion_id: S6B-03-I03, result: pass, observation: "膜层解释没有被写成唯一机理；本示例将其标为候选并列出验证需求。", evidence: "机制段"}
+      - {assertion_id: S6B-03-N01, result: pass, observation: "没有宣称耐蚀性或长期稳定。", evidence: "结论段"}
+      - {assertion_id: S6B-03-E01, result: pass, observation: "化学观察与性能结论分离。", evidence: "证据边界段"}
+      - {assertion_id: S6B-03-C01, result: pass, observation: "XPS 关键元数据缺失时化学态比较待核查；补齐一致后仅条件化比较，不扩展性能排名。", evidence: "可比性段"}
+    independent_review: {verdict: pass, reviewer: "luna-example-reviewer", reviewer_kind: independent_agent, reviewed_at: "2026-08-14T12:17:00Z", notes: "XPS 证据没有被过度外推。"}
+
+  - scenario_id: S6B-04
+    loaded_references: [references/electrochem-record.schema.yaml, references/measurement-quality.md, references/corrosion-performance-evidence.md, references/passive-film-formation.md]
+    output:
+      format: markdown
+      raw_text: "激光与酸钝化使用不同电解液、参比电极和扫描速率，因此只能作条件化观察，不能直接给出一般性优劣排序。"
+    assertions:
+      - {assertion_id: S6B-04-I01, result: pass, observation: "协议差异逐项列出。", evidence: "协议对照表"}
+      - {assertion_id: S6B-04-I02, result: pass, observation: "比较结论被限制。", evidence: "结论段"}
+      - {assertion_id: S6B-04-I03, result: pass, observation: "提出匹配控制条件。", evidence: "建议段"}
+      - {assertion_id: S6B-04-N01, result: pass, observation: "没有一般性优于断言。", evidence: "全文审查"}
+      - {assertion_id: S6B-04-E01, result: pass, observation: "混杂因素被保留。", evidence: "限制段"}
+      - {assertion_id: S6B-04-C01, result: pass, observation: "标为不可直接比较。", evidence: "可比性标签"}
+    independent_review: {verdict: pass, reviewer: "luna-example-reviewer", reviewer_kind: independent_agent, reviewed_at: "2026-08-14T12:18:00Z", notes: "酸钝化对照没有被无条件排名。"}
+
+  - scenario_id: S6B-05
+    loaded_references: [references/surface-chemistry-xps.md, references/corrosion-performance-evidence.md, references/measurement-quality.md]
+    output:
+      format: markdown
+      raw_text: "XPS 的 Cr 富集与较差的 EIS/极化结果并列保留；需要核查缺陷、协议、采样和时间因素后再判断机制。"
+    assertions:
+      - {assertion_id: S6B-05-I01, result: pass, observation: "冲突结果并列保留。", evidence: "矛盾证据表"}
+      - {assertion_id: S6B-05-I02, result: pass, observation: "给出可检验替代解释。", evidence: "替代解释段"}
+      - {assertion_id: S6B-05-I03, result: pass, observation: "最终判断标为待核查。", evidence: "结论段"}
+      - {assertion_id: S6B-05-N01, result: pass, observation: "没有用 Cr 富集覆盖性能结果。", evidence: "全文审查"}
+      - {assertion_id: S6B-05-E01, result: pass, observation: "未形成唯一因果机制。", evidence: "证据边界段"}
+      - {assertion_id: S6B-05-C01, result: pass, observation: "比较结论保留冲突。", evidence: "可比性标签"}
+    independent_review: {verdict: pass, reviewer: "luna-example-reviewer", reviewer_kind: independent_agent, reviewed_at: "2026-08-14T12:19:00Z", notes: "没有发生选择性证据汇报。"}
+
+  - scenario_id: S6B-06
+    loaded_references: [references/laser-process-metrology.md, references/laser-comparability.schema.yaml, references/passive-film-formation.md]
+    output:
+      format: markdown
+      raw_text: "304L、316L 和 430 的结果按牌号、激光过程及测试协议分层；只在条件相容的子组内讨论趋势。"
+    assertions:
+      - {assertion_id: S6B-06-I01, result: pass, observation: "按牌号、过程和协议分层。", evidence: "分层表"}
+      - {assertion_id: S6B-06-I02, result: pass, observation: "跨牌号外推限制被说明。", evidence: "限制段"}
+      - {assertion_id: S6B-06-I03, result: pass, observation: "比较前检查工艺元数据。", evidence: "过程字段表"}
+      - {assertion_id: S6B-06-N01, result: pass, observation: "没有全球最佳工艺排名。", evidence: "结论段"}
+      - {assertion_id: S6B-06-E01, result: pass, observation: "不同钢种和窗口没有无条件合并。", evidence: "合并规则段"}
+      - {assertion_id: S6B-06-C01, result: pass, observation: "比较限定在相容子组。", evidence: "可比性标签"}
+    independent_review: {verdict: pass, reviewer: "luna-example-reviewer", reviewer_kind: independent_agent, reviewed_at: "2026-08-14T12:20:00Z", notes: "跨牌号外推保持谨慎。"}
+
+  - scenario_id: S6B-07
+    loaded_references: [references/aging-stability.md, references/surface-chemistry-xps.md, references/xps-record.schema.yaml]
+    output:
+      format: markdown
+      raw_text: "24 小时浸泡和单时点 XPS 只能代表短期/单时点证据，当前资料不足以确认激光钝化膜长期稳定。"
+    assertions:
+      - {assertion_id: S6B-07-I01, result: pass, observation: "短期和单时点属性被明确。", evidence: "时间维度表"}
+      - {assertion_id: S6B-07-I02, result: pass, observation: "列出长期证据缺口。", evidence: "aging 缺口段"}
+      - {assertion_id: S6B-07-I03, result: pass, observation: "长期结论被降级。", evidence: "结论段"}
+      - {assertion_id: S6B-07-N01, result: pass, observation: "没有声称服役寿命已建立。", evidence: "全文审查"}
+      - {assertion_id: S6B-07-E01, result: pass, observation: "短期证据没有替代老化证据。", evidence: "证据边界段"}
+      - {assertion_id: S6B-07-C01, result: pass, observation: "长期比较标为待核查。", evidence: "可比性标签"}
+    independent_review: {verdict: pass, reviewer: "luna-example-reviewer", reviewer_kind: independent_agent, reviewed_at: "2026-08-14T12:21:00Z", notes: "没有把短期结果外推为长期稳定。"}

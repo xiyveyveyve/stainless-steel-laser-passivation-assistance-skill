@@ -1,0 +1,2 @@
+source_id,title,year,source_type,material_or_scope,access_status,local_path,sha256,pages,extraction_status,evidence_role,notes
+example:laser-process-001,Example laser-process metrology record,2024,method,316L laser process metadata,metadata_only,examples/sources/example-laser-process-001.pdf,0000000000000000000000000000000000000000000000000000000000000000,12,metadata_only,laser_process_method,Template row; replace with a verified source and SHA-256.

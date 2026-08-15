@@ -1,0 +1,9 @@
+# Minimal source-map integrity regression cases. The companion script creates
+# the temporary artifact and maps so the checks remain portable across hosts.
+cases:
+  - id: missing-file
+    expected_exit: 1
+    expected_error: "local_path does not exist"
+  - id: wrong-sha256
+    expected_exit: 1
+    expected_error: "sha256 mismatch"

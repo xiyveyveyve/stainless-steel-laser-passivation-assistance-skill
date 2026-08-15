@@ -1,0 +1,20 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "stainless-steel-laser-passivation/electrochem-record"
+title: Electrochemical Evidence Record
+type: object
+additionalProperties: false
+required: [record_id, material, electrolyte, test, reported, missing_or_blocked, evidence]
+properties:
+  record_id: {type: string, minLength: 1}
+  material:
+    type: object
+    required: [grade]
+  electrolyte:
+    type: object
+    required: [composition, concentration, pH, temperature_C]
+  test:
+    type: object
+    required: [method, reference_electrode, working_area_cm2, repeats]
+  reported: {type: object}
+  missing_or_blocked: {type: array}
+  evidence: {type: array, minItems: 1}

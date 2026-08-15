@@ -1,0 +1,54 @@
+record_id: LPR-DEMO-001
+material:
+  grade: 304L
+  condition: annealed sheet
+  roughness: "reported; no numeric value in this fixture"
+process:
+  class: laser_passivation_candidate
+  modality: pulsed
+  power_plane: workpiece
+reported:
+  wavelength:
+    value: 1064
+    unit: nm
+    definition: central wavelength
+  average_power:
+    value: 20
+    unit: W
+    definition: average output at the workpiece
+  repetition_rate:
+    value: 100000
+    unit: Hz
+    definition: pulse repetition rate
+  pulse_energy:
+    value: 0.0002
+    unit: J
+    definition: derived from average power and repetition rate
+    derived_from: [average_power, repetition_rate]
+  spot_size:
+    value: 40
+    unit: um
+    definition: 1/e^2 diameter
+  scan_speed:
+    value: 100
+    unit: mm/s
+    definition: programmed scan speed
+  hatch_spacing:
+    value: 20
+    unit: um
+    definition: center-to-center line spacing
+  overlap:
+    value: 0.5
+    unit: fraction
+    definition: nominal geometric overlap from spot diameter and hatch spacing
+    derived_from: [spot_size, hatch_spacing]
+missing_or_blocked:
+  - field: atmosphere
+    status: not_reported
+    note: no shielding-gas description in the source
+comparability:
+  status: partially_comparable
+  reasons: [atmosphere not reported]
+evidence:
+  - source_id: doi:10.1000/example-a
+    anchors: ["p. 4, Fig. 3"]

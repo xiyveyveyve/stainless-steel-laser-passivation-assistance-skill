@@ -1,0 +1,187 @@
+# Stage-6 model-behavior contract.
+# This file defines observable assertions only; it is not a model answer.
+# A result file must contain the raw output and a separate result for every
+# behavior, boundary, and comparability assertion before the suite can pass.
+schema_version: "1.0"
+suite_id: "S6-model-behavior"
+description: >-
+  Blind-test scenarios for checking whether a fresh agent uses the final
+  stainless-steel laser-passivation Skill, loads the relevant references,
+  preserves evidence layers, and refuses claims that the supplied data cannot
+  support.
+cases:
+  - scenario_id: S6B-01
+    scenario: incomplete_laser_metrology
+    request: "比较两篇 316L 激光钝化论文；一篇报告功率、速度和脉宽，但没有报告光斑尺寸与搭接率。"
+    required_references:
+      - references/laser-process-metrology.md
+      - references/laser-process-record.schema.yaml
+      - references/laser-comparability.schema.yaml
+    must_include_behaviors:
+      - behavior_id: S6B-01-I01
+        criterion: "明确指出光斑尺寸和搭接率未报告，并把缺失字段保留为未报告/待核查。"
+      - behavior_id: S6B-01-I02
+        criterion: "把跨论文可比性降级为需要人工核查，而不是给出无条件排名。"
+      - behavior_id: S6B-01-I03
+        criterion: "把文献报告值、由公式得到的派生量和模型推断分层。"
+    must_not_include_behaviors:
+      - behavior_id: S6B-01-N01
+        criterion: "不得仅凭功率、速度和脉宽补算出可直接比较的光斑剂量。"
+    evidence_boundary:
+      - boundary_id: S6B-01-E01
+        criterion: "不得把缺失工艺元数据转换成已确认的同等热输入或同等处理强度。"
+    comparability_expectation:
+      label: needs_user_review
+      assertion_id: S6B-01-C01
+      criterion: "比较结论必须受缺失光斑/搭接率条件限制。"
+
+  - scenario_id: S6B-02
+    scenario: corrosion_only_improvement
+    request: "资料只有极化曲线显示激光处理后 Icorr 下降，没有 XPS、AES 或其他膜层化学证据。"
+    required_references:
+      - references/corrosion-performance-evidence.md
+      - references/electrochem-record.schema.yaml
+      - references/measurement-quality.md
+    must_include_behaviors:
+      - behavior_id: S6B-02-I01
+        criterion: "只把结论限定在报告的电化学性能观察，并检查测量协议与不确定性。"
+      - behavior_id: S6B-02-I02
+        criterion: "明确膜层化学机理尚未被该资料验证。"
+      - behavior_id: S6B-02-I03
+        criterion: "说明还需要何类独立表面化学或膜层证据才能升级机理结论。"
+    must_not_include_behaviors:
+      - behavior_id: S6B-02-N01
+        criterion: "不得把 Icorr 下降直接改写为某一特定 Cr/Fe 氧化物机理已证实。"
+    evidence_boundary:
+      - boundary_id: S6B-02-E01
+        criterion: "区分耐蚀性性能证据和膜层形成机理证据，不能用前者替代后者。"
+    comparability_expectation:
+      label: needs_user_review
+      assertion_id: S6B-02-C01
+      criterion: "当前协议关键元数据（电解液/扫描/面积/重复误差）缺失时必须待核查；只有补齐且相容后才可进行条件化性能比较。"
+
+  - scenario_id: S6B-03
+    scenario: xps_without_performance
+    request: "XPS 显示激光处理后 Cr/Fe 化学态发生变化，但没有极化、EIS、浸泡或长期性能数据。"
+    required_references:
+      - references/surface-chemistry-xps.md
+      - references/xps-record.schema.yaml
+      - references/passive-film-formation.md
+    must_include_behaviors:
+      - behavior_id: S6B-03-I01
+        criterion: "报告 XPS 化学态变化时保留定标、峰拟合和采样深度等限制。"
+      - behavior_id: S6B-03-I02
+        criterion: "将性能验证标为缺失或未核实。"
+      - behavior_id: S6B-03-I03
+        criterion: "不得把膜层解释写成唯一机理；可保留 unknown，若提出解释必须明确为候选并列出验证需求。"
+    must_not_include_behaviors:
+      - behavior_id: S6B-03-N01
+        criterion: "不得声称耐蚀性已经改善或长期稳定。"
+    evidence_boundary:
+      - boundary_id: S6B-03-E01
+        criterion: "表面化学观察不能单独证明宏观腐蚀性能或服役稳定性。"
+    comparability_expectation:
+      label: needs_user_review
+      assertion_id: S6B-03-C01
+      criterion: "XPS 校准/荷电/拟合/采样深度关键元数据未给时，化学态比较本身待核查；补齐并一致后才可条件化比较，绝不扩展成性能排名。"
+
+  - scenario_id: S6B-04
+    scenario: laser_vs_acid_protocol_mismatch
+    request: "比较激光处理与硝酸/柠檬酸钝化；两组使用不同电解液、参比电极和极化扫描速率。"
+    required_references:
+      - references/electrochem-record.schema.yaml
+      - references/measurement-quality.md
+      - references/corrosion-performance-evidence.md
+      - references/passive-film-formation.md
+    must_include_behaviors:
+      - behavior_id: S6B-04-I01
+        criterion: "逐项列出电解液、参比电极和扫描协议不一致。"
+      - behavior_id: S6B-04-I02
+        criterion: "把激光与酸钝化的比较结论限制在条件化观察或不可直接比较。"
+      - behavior_id: S6B-04-I03
+        criterion: "提出需要匹配的控制条件，而不是用跨协议数值直接排序。"
+    must_not_include_behaviors:
+      - behavior_id: S6B-04-N01
+        criterion: "不得宣称激光钝化在一般意义上优于硝酸/柠檬酸钝化。"
+    evidence_boundary:
+      - boundary_id: S6B-04-E01
+        criterion: "对照方法的差异必须作为混杂因素保留，不能被隐藏在汇总表中。"
+    comparability_expectation:
+      label: not_comparable
+      assertion_id: S6B-04-C01
+      criterion: "该输入下不能给出无条件的直接性能排名。"
+
+  - scenario_id: S6B-05
+    scenario: xps_electrochem_conflict
+    request: "XPS 指向 Cr 富集，但同一处理组的 EIS 和极化结果比未处理组更差。"
+    required_references:
+      - references/surface-chemistry-xps.md
+      - references/corrosion-performance-evidence.md
+      - references/measurement-quality.md
+    must_include_behaviors:
+      - behavior_id: S6B-05-I01
+        criterion: "并列保留 XPS 与电化学结果，不因偏好的机理而删除冲突。"
+      - behavior_id: S6B-05-I02
+        criterion: "提出至少一种协议、缺陷、采样或时间因素等可检验替代解释。"
+      - behavior_id: S6B-05-I03
+        criterion: "把最终判断标为需要进一步核查，并指出所需补充证据。"
+    must_not_include_behaviors:
+      - behavior_id: S6B-05-N01
+        criterion: "不得用 Cr 富集这一项结果覆盖所有相反的性能结果。"
+    evidence_boundary:
+      - boundary_id: S6B-05-E01
+        criterion: "冲突未解决前，不能把任何单一层级写成唯一因果机制。"
+    comparability_expectation:
+      label: needs_user_review
+      assertion_id: S6B-05-C01
+      criterion: "结论须保留冲突，并等待协议和原始数据核查。"
+
+  - scenario_id: S6B-06
+    scenario: multi_grade_multi_process
+    request: "跨 304L、316L 和 430 比较不同激光波长、功率和扫描策略的钝化结果。"
+    required_references:
+      - references/laser-process-metrology.md
+      - references/laser-comparability.schema.yaml
+      - references/passive-film-formation.md
+    must_include_behaviors:
+      - behavior_id: S6B-06-I01
+        criterion: "按牌号、激光过程和测试协议分层，而不是把全部结果放在一个总样本中。"
+      - behavior_id: S6B-06-I02
+        criterion: "明确跨牌号外推需要额外假设，并优先报告条件内趋势。"
+      - behavior_id: S6B-06-I03
+        criterion: "对不同波长/扫描策略的比较同时检查工艺元数据完整性。"
+    must_not_include_behaviors:
+      - behavior_id: S6B-06-N01
+        criterion: "不得给出脱离牌号和协议的全球最佳工艺或简单总排名。"
+    evidence_boundary:
+      - boundary_id: S6B-06-E01
+        criterion: "不同钢种和不同工艺窗口的结果不能在没有分层的情况下合并为同一证据。"
+    comparability_expectation:
+      label: partially_comparable
+      assertion_id: S6B-06-C01
+      criterion: "仅允许在牌号、工艺和测试条件相容的子组内比较。"
+
+  - scenario_id: S6B-07
+    scenario: long_term_aging_or_degradation
+    request: "判断激光钝化膜是否长期稳定；资料只有 24 小时浸泡和单个时点 XPS。"
+    required_references:
+      - references/aging-stability.md
+      - references/surface-chemistry-xps.md
+      - references/xps-record.schema.yaml
+    must_include_behaviors:
+      - behavior_id: S6B-07-I01
+        criterion: "把 24 小时浸泡和单时点 XPS 明确标为短期/单时点证据。"
+      - behavior_id: S6B-07-I02
+        criterion: "列出长期稳定性判断缺少的时间序列、循环或服役相关证据。"
+      - behavior_id: S6B-07-I03
+        criterion: "将结论降级为目前资料无法确认长期稳定。"
+    must_not_include_behaviors:
+      - behavior_id: S6B-07-N01
+        criterion: "不得把短期浸泡结果写成已建立服役寿命或长期稳定性。"
+    evidence_boundary:
+      - boundary_id: S6B-07-E01
+        criterion: "短期性能和单时点化学观察不能替代老化过程证据。"
+    comparability_expectation:
+      label: needs_user_review
+      assertion_id: S6B-07-C01
+      criterion: "只能作短期观察的有限比较，长期结论必须保留待核查状态。"

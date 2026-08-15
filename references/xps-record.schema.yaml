@@ -1,0 +1,17 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "stainless-steel-laser-passivation/xps-record"
+title: XPS Evidence Record
+type: object
+additionalProperties: false
+required: [record_id, sample, reported, missing_or_blocked, claims, evidence]
+properties:
+  record_id: {type: string, minLength: 1}
+  sample:
+    type: object
+    required: [material_grade, treatment]
+  reported:
+    type: object
+    required: [energy_calibration, charge_correction, peaks]
+  missing_or_blocked: {type: array}
+  claims: {type: array, minItems: 1}
+  evidence: {type: array, minItems: 1}

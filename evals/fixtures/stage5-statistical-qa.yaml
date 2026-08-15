@@ -1,0 +1,96 @@
+# D-S5-01-statistical-qa.yaml
+# ============================================================
+# Measurement and statistics QA fixtures.
+# Cases exercise repeat counts, uncertainty, design, and failure handling.
+# Fixture status: maintained
+# 时间：2026-08-14
+# ============================================================
+
+statistical_qa_cases:
+# --- 合法（pass）---
+- case_id: SQ-00
+  category: valid
+  description: "完整统计记录（JES 2023 多电极 + Ramos-Negron 2026 双因素 ANOVA+Tukey HSD）"
+  input: {independent_n: 5, technical_n: 3, error_type: "SD", statistical_test: "two-way ANOVA + Tukey HSD", randomization: true, blocking: true, outlier_policy: "pre-registered", sig_alpha: 0.05, effect_size_reported: true}
+  expected: "pass（n/误差/检验/随机化/区组/异常值/功效要素齐全）"
+  assert_regex: "pass"
+# --- 缺陷（fail）---
+- case_id: SQ-01
+  category: n_definition
+  description: "把同一样品重复扫描（technical_n）当作独立样品（independent_n）"
+  input_fragment: "n=12 claimed as independent samples but all from 3 specimens re-measured 4x"
+  expected_failure: "independent_n 与 technical_n 必须分开；重复测量不得冒充独立样品"
+  assert_regex: "independent_n|technical_n"
+- case_id: SQ-02
+  category: error_type
+  description: "只给 error bar 无 SD/SE/CI 说明"
+  input_fragment: "error bars shown, error type not stated (SD/SE/CI unknown)"
+  expected_failure: "error_type 缺失标 not_reported；不可推断误差性质"
+  assert_regex: "error_type|SD|SE|CI"
+- case_id: SQ-03
+  category: outliers
+  description: "异常值静默删除无预注册规则"
+  input_fragment: "outliers removed, no pre-registered criterion or robust method"
+  expected_failure: "异常值处理需规则或稳健统计（Coelho 条件中位数）；静默删除禁止"
+  assert_regex: "outlier|稳健|规则"
+- case_id: SQ-04
+  category: design
+  description: "无随机化/区组设计却宣称处理效应因果"
+  input_fragment: "no randomization or blocking, claims treatment caused the difference"
+  expected_failure: "无设计控制则结论降级；不得宣称因果"
+  assert_regex: "randomization|区组|因果"
+- case_id: SQ-05
+  category: multiple_comparison
+  description: "多组间两两比较未做多重比较校正"
+  input_fragment: "pairwise t-tests across 6 groups without correction"
+  expected_failure: "需 Tukey HSD/ANOVA 或等价校正；未校正则过显著性风险"
+  assert_regex: "Tukey|ANOVA|多重比较|校正"
+- case_id: SQ-06
+  category: significant_digits
+  description: "有效数字过度（如 0.0000001 精度来自仪器分辨率）"
+  input_fragment: "icorr = 0.00000012 A/cm2 reported to 8 significant digits"
+  expected_failure: "有效数字需匹配仪器分辨率与不确定度；禁止虚增精度"
+  assert_regex: "significant|有效数字|uncertainty"
+- case_id: SQ-07
+  category: overinterpretation
+  description: "统计显著等同实际显著（效应量/工程意义未评估）"
+  input_fragment: "p<0.05 declared 'significant improvement' without effect size"
+  expected_failure: "统计显著≠实际显著；需效应量与不确定性表达（Ioannidis 反例）"
+  assert_regex: "effect size|效应量|实际"
+- case_id: SQ-08
+  category: summary
+  description: "只报均值无 n 与离散度"
+  input_fragment: "mean Ecorr = -0.3 V reported, no n or spread"
+  expected_failure: "均值必须配 n 与误差/区间；缺失则不可复算"
+  assert_regex: "n|SD|区间|离散"
+- case_id: SQ-09
+  category: power
+  description: "功效不足时宣称'无差异'"
+  input_fragment: "n=2 per group, concludes 'no difference' between laser and control"
+  expected_failure: "区分真实无差异与功效不足；低 n 不得宣称无差异"
+  assert_regex: "power|功效|无差异"
+- case_id: SQ-10
+  category: robustness
+  description: "离群值对均值/中位数结论影响未检查"
+  input_fragment: "mean Epit driven by single extreme value, no robust check"
+  expected_failure: "需稳健统计对比（条件中位数/去离群）；报告敏感区间"
+  assert_regex: "robust|稳健|中位数"
+
+# ---- 反例回归（H 包 N1-N3 + 补充）----
+regression_cases:
+- case_id: RG-N1
+  input: "Greczynski XPS 定标失败反例（校准未验证即比较）"
+  expected_action: "quantification/calibration 检查触发；禁止跨标定比较"
+  assert_regex: "calibration|定标"
+- case_id: RG-N2
+  input: "Ioannidis 统计过度解读（p 值误用/多重检验）"
+  expected_action: "overinterpretation 触发；要求效应量与检验透明度"
+  assert_regex: "overinterpretation|效应量"
+- case_id: RG-N3
+  input: "Coelho 316L 高通量点蚀描述符离群敏感性"
+  expected_action: "robustness 触发；输出稳健统计对比区间"
+  assert_regex: "robust|稳健"
+- case_id: RG-DOE
+  input: "Dastgerdi 304L DOE：中心点/区组/重复试验用于误差与曲率"
+  expected_action: "DOE 记录需含中心点、区组与重复定义；功效声明需预注册"
+  assert_regex: "center point|中心点|区组"

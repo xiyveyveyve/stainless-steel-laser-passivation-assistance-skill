@@ -1,0 +1,66 @@
+# Stage-6 integrated scenario contract. These are behavior expectations for
+# the final Skill, not claims about any single paper.
+stage6_cases:
+  - case_id: S6-01
+    scenario: incomplete_laser_parameters
+    request: "比较两篇激光钝化论文，但一篇未报告光斑和搭接率"
+    expected_mode: auditable_path
+    expected_comparability: needs_user_review
+    required_flags: [laser_parameters_missing, explicit_not_reported_or_blocked]
+    forbidden_claims: [dose_comparable, same_heat_input]
+    output_layers: [reported_observation, derived_value, author_interpretation, agent_inference]
+    must_preserve_conflict: false
+  - case_id: S6-02
+    scenario: corrosion_only_improvement
+    request: "只有极化曲线显示耐蚀性改善，没有膜层化学证据"
+    expected_mode: auditable_path
+    expected_comparability: partially_comparable
+    required_flags: [corrosion_support_only, film_mechanism_unproven]
+    forbidden_claims: [specific_passive_film_mechanism]
+    output_layers: [reported_observation, author_interpretation, agent_inference]
+    must_preserve_conflict: false
+  - case_id: S6-03
+    scenario: xps_without_performance
+    request: "XPS 显示 Cr/Fe 化学态变化，但没有电化学或长期性能验证"
+    expected_mode: auditable_path
+    expected_comparability: partially_comparable
+    required_flags: [xps_chemical_change_only, performance_not_verified]
+    forbidden_claims: [corrosion_resistance_improved, long_term_stable]
+    output_layers: [reported_observation, author_interpretation, agent_inference]
+    must_preserve_conflict: false
+  - case_id: S6-04
+    scenario: laser_vs_acid_passivation
+    request: "比较激光处理与硝酸/柠檬酸钝化，但电解液和测试协议不一致"
+    expected_mode: auditable_path
+    expected_comparability: not_comparable
+    required_flags: [protocol_mismatch, comparator_boundary]
+    forbidden_claims: [unqualified_rank_order, direct_equivalence]
+    output_layers: [reported_observation, derived_value, author_interpretation, agent_inference]
+    must_preserve_conflict: false
+  - case_id: S6-05
+    scenario: xps_electrochem_conflict
+    request: "XPS 指向 Cr 富集，但 EIS/极化结果变差"
+    expected_mode: auditable_path
+    expected_comparability: needs_user_review
+    required_flags: [preserve_conflict, alternative_explanations, no_cherry_picking]
+    forbidden_claims: [resolve_conflict_by_preference, unique_mechanism]
+    output_layers: [reported_observation, author_interpretation, agent_inference]
+    must_preserve_conflict: true
+  - case_id: S6-06
+    scenario: multi_grade_multi_process
+    request: "跨 304L、316L、430 比较不同激光波长和扫描策略"
+    expected_mode: auditable_path
+    expected_comparability: partially_comparable
+    required_flags: [grade_boundary, process_boundary, condition_stratification]
+    forbidden_claims: [global_best_process, cross_grade_unqualified_ranking]
+    output_layers: [reported_observation, derived_value, author_interpretation, agent_inference]
+    must_preserve_conflict: false
+  - case_id: S6-07
+    scenario: long_term_aging_or_degradation
+    request: "判断激光钝化膜是否长期稳定，资料只有短期浸泡和单个时点 XPS"
+    expected_mode: auditable_path
+    expected_comparability: needs_user_review
+    required_flags: [duration_insufficient, long_term_claim_blocked, aging_deferred]
+    forbidden_claims: [service_life_established, long_term_stable]
+    output_layers: [reported_observation, author_interpretation, agent_inference]
+    must_preserve_conflict: false

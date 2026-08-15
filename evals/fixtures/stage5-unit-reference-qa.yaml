@@ -1,0 +1,111 @@
+# D-S5-01-unit-reference-qa.yaml
+# ============================================================
+# Electrochemical units, reference-electrode, and evidence-layer QA fixtures.
+# Cases exercise protocol metadata, conversions, and evidence status handling.
+# Fixture status: maintained
+# 时间：2026-08-14
+# ============================================================
+
+unit_reference_qa_cases:
+# --- 合法（pass）---
+- case_id: UQ-00
+  category: valid
+  description: "完整电化学记录（参比+面积+iR+单位）"
+  input: {Ecorr: "-0.35 V vs SCE", reference_electrode: "SCE", working_area_cm2: 1.0, iR_compensation: "reported, Ru value given", electrolyte: "3.5 wt% NaCl (0.6 M)", temperature_C: 25, scan_rate: "0.1667 mV/s (ASTM G59)", error_type: "SD, n=5"}
+  expected: "pass（参比/面积/iR/单位/速率齐全）"
+  assert_regex: "pass"
+# --- 缺陷（fail）---
+- case_id: UQ-01
+  category: reference_electrode
+  description: "电位无参比电极说明"
+  input_fragment: "Ecorr = -0.35 V (no reference electrode stated)"
+  expected_failure: "电位不可比；需 SCE/SHE/Ag-AgCl 声明"
+  assert_regex: "reference electrode|参比"
+- case_id: UQ-02
+  category: reference_conversion
+  description: "SCE 与 SHE 数值未换算直接比较"
+  input_fragment: "E(SCE) = -0.35 V compared directly with E(SHE) = -0.35 V"
+  expected_failure: "需 E_SHE = E_SCE + 0.241 V 换算；未换算禁止比较"
+  assert_regex: "0.241|SHE|SCE|换算"
+- case_id: UQ-03
+  category: iR_compensation
+  description: "高电流密度体系 iR 补偿未说明"
+  input_fragment: "icorr high, ohmic drop not compensated or reported"
+  expected_failure: "iR 补偿/欧姆降需说明；缺失则 Ecorr/icorr 不可比"
+  assert_regex: "iR|ohmic|补偿"
+- case_id: UQ-04
+  category: concentration
+  description: "浓度单位混用直接比较（wt% vs M）"
+  input_fragment: "3.5 wt% NaCl and 0.6 M NaCl treated as same concentration"
+  expected_failure: "需摩尔浓度换算；3.5 wt% ≈ 0.6 M 需声明并统一单位"
+  assert_regex: "wt%|M|mol|浓度"
+- case_id: UQ-05
+  category: current_density
+  description: "电流密度单位混用（uA/cm2 vs A/m2）"
+  input_fragment: "icorr 0.02 uA/cm2 vs 0.2 A/m2 compared without conversion"
+  expected_failure: "需单位归一（1 A/m2 = 0.1 uA/cm2）；混用禁止"
+  assert_regex: "uA|A/m|单位"
+- case_id: UQ-06
+  category: area
+  description: "工作面积未说明"
+  input_fragment: "polarization run, working area not reported"
+  expected_failure: "working_area_cm2 缺失标 not_reported；电流密度不可算"
+  assert_regex: "area|面积"
+- case_id: UQ-07
+  category: temperature
+  description: "温度单位混用（C vs K）"
+  input_fragment: "25 C and 298 K treated as different temperatures"
+  expected_failure: "T(K) = T(C)+273.15；单位声明后统一"
+  assert_regex: "temperature|273"
+- case_id: UQ-08
+  category: scan_rate
+  description: "扫描速率单位混用（mV/s vs V/s）"
+  input_fragment: "1 mV/s and 0.001 V/s reported as different rates"
+  expected_failure: "1 mV/s = 0.001 V/s；单位归一"
+  assert_regex: "mV/s|V/s"
+- case_id: UQ-09
+  category: eis
+  description: "EIS 频率范围/扰动幅值缺失"
+  input_fragment: "EIS spectrum reported without frequency range or amplitude"
+  expected_failure: "EIS 需频率范围、幅值、稳定性检查；缺失标 not_reported"
+  assert_regex: "frequency|amplitude|频率"
+- case_id: UQ-10
+  category: sign_convention
+  description: "电位符号约定未声明（腐蚀 vs 电化学符号体系）"
+  input_fragment: "potential sign convention not stated (corrosion vs electrochemical)"
+  expected_failure: "符号约定必须声明；禁止未声明比较"
+  assert_regex: "sign|符号|convention"
+
+evidence_layer_qa_cases:
+# --- 合法（pass）---
+- case_id: EL-00
+  category: valid
+  description: "四层证据正确分离"
+  input: {reported_observation: "Ecorr -0.35 V vs SCE (p.5, Table 2)", derived_value: "icorr from Stern-Geary with B=26 mV (formula+inputs)", author_interpretation: "authors attribute improvement to Cr enrichment", agent_inference: "consistent with passive-film stabilization but needs XPS"}
+  expected: "pass（分层正确）"
+  assert_regex: "pass"
+# --- 缺陷（fail）---
+- case_id: EL-01
+  category: layer_confusion
+  description: "author_interpretation 被当作 reported_observation"
+  input_fragment: "authors' mechanism claim recorded as measured observation"
+  expected_failure: "分层错误；作者解释只能作为作者观点"
+  assert_regex: "author_interpretation|分层"
+- case_id: EL-02
+  category: layer_confusion
+  description: "agent_inference 写进原始数据列"
+  input_fragment: "agent inference inserted into reported_data column"
+  expected_failure: "推断不得写入原始结果列；需边界标注"
+  assert_regex: "agent_inference|推断"
+- case_id: EL-03
+  category: calculated
+  description: "calculated 值无公式与输入"
+  input_fragment: "normalized corrosion rate 0.1 mm/yr, no formula or inputs"
+  expected_failure: "derived_value/calculated 必须记录公式与输入；否则 blocked"
+  assert_regex: "formula|公式|blocked"
+- case_id: EL-04
+  category: missing
+  description: "not_reported 字段被默认值填充"
+  input_fragment: "missing replicate count filled with 'n=3 (typical)'"
+  expected_failure: "缺失保留 not_reported；禁止经验默认值"
+  assert_regex: "not_reported|默认"

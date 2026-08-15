@@ -1,0 +1,104 @@
+# D-S3-01-laser-unit-check-fixtures.yaml
+# ============================================================
+# Laser unit-conversion and calculation QA fixtures.
+# Valid calculations must pass; incorrect units, formulas, or conversions must fail.
+# Fixture status: maintained
+# 时间：2026-08-14
+# ============================================================
+
+# ---- 可复算计算例（Calculation 1-4 真实值；必须通过）----
+valid_calculations:
+- case_id: LU-01
+  description: "Calculation 1: E_pulse (Fox open example)"
+  inputs: {P_avg_W: 0.0267, loss_fraction: 0.10, f_Hz: 250}
+  formula: "E_pulse = P_avg * (1 - loss) / f"
+  expected_J: 9.612e-05
+  tolerance: 0.5%
+- case_id: LU-02
+  description: "Calculation 1: single-pulse fluence (Fox)"
+  inputs: {E_pulse_J: 9.612e-05, spot_diameter_m: 7.9e-05, shape: "circular"}
+  formula: "F_pulse = E_pulse / (pi D^2 / 4)"
+  expected_J_cm2: 1.961
+  tolerance: 0.5%
+- case_id: LU-03
+  description: "Calculation 1: accumulated fluence (Fox, Delta_x=Delta_y=70 um)"
+  inputs: {E_pulse_J: 9.612e-05, dx_m: 7.0e-05, dy_m: 7.0e-05}
+  formula: "F_acc = E_pulse / (dx * dy)"
+  expected_J_cm2: 1.961
+  tolerance: 0.5%
+- case_id: LU-04
+  description: "Calculation 1: pulses per point n_acc"
+  inputs: {spot_diameter_m: 7.9e-05, dx_m: 7.0e-05, dy_m: 7.0e-05}
+  formula: "n_acc = A_spot / (dx*dy)"
+  expected: 1.000
+  tolerance: 0.5%
+- case_id: LU-05
+  description: "Calculation 2: E_pulse for 10 W / 100 kHz"
+  inputs: {P_avg_W: 10, f_Hz: 100000}
+  formula: "E_pulse = P/f"
+  expected_J: 1.00e-04
+  tolerance: 0.5%
+- case_id: LU-06
+  description: "Calculation 2: pulse step Delta_x = v/f"
+  inputs: {v_m_s: 0.500, f_Hz: 100000}
+  formula: "dx = v/f"
+  expected_m: 5.00e-06
+  tolerance: 0.5%
+- case_id: LU-07
+  description: "Calculation 2: accumulated fluence 40 J/cm2"
+  inputs: {E_pulse_J: 1.00e-04, dx_m: 5.0e-06, dy_m: 5.0e-05}
+  formula: "F_acc = E/(dx*dy)"
+  expected_J_cm2: 40.0
+  tolerance: 0.5%
+- case_id: LU-08
+  description: "Calculation 3: top-hat uniform fluence"
+  inputs: {E_pulse_J: 1.00e-03, spot_diameter_m: 1.0e-04, shape: "top-hat"}
+  formula: "F = E / (pi D^2/4)"
+  expected_J_cm2: 12.73
+  tolerance: 0.5%
+- case_id: LU-09
+  description: "Calculation 3: Gaussian peak fluence (2x difference)"
+  inputs: {E_pulse_J: 1.00e-03, gaussian_1e2_radius_m: 5.0e-05}
+  formula: "F0 = 2*E / (pi w^2)"
+  expected_J_cm2: 25.46
+  tolerance: 0.5%
+- case_id: LU-10
+  description: "Calculation 4: NIST combined/expanded uncertainty"
+  inputs: {typeB_pct: [0.06, 0.05, 0.03, 0.02, 0.02, 0.03], k: 2}
+  formula: "u_c = sqrt(sum u_i^2); U = k*u_c"
+  expected: {u_c_pct: 0.0933, U_pct: 0.1866}
+  tolerance: 1%
+
+# ---- 错误单位/公式样本（必须失败）----
+invalid_calculations:
+- case_id: LU-11
+  description: "fluence 单位混淆：J/m2 当 J/cm2 直接比较"
+  inputs: {value_a: "1.961 J/cm2", value_b: "19610 J/m2"}
+  error: "单位未归一即比较；需先换算"
+  assert_regex: "unit|换算|J/cm"
+- case_id: LU-12
+  description: "peak power 用平均功率计算"
+  inputs: {P_avg_W: 10, tau_s: 10e-09}
+  formula: "P_peak = P_avg (错误：应为 E_pulse/tau)"
+  error: "P_peak 需 E_pulse/tau；CW 或平均功率不可入峰值公式"
+  assert_regex: "peak_power|tau"
+- case_id: LU-13
+  description: "Gaussian 峰值 fluence 与平顶平均 fluence 混用为同一值"
+  inputs: {F_gaussian_peak: 25.46, F_tophat: 12.73}
+  error: "定义窗口效应 2x；禁止未归一化直接合并"
+  assert_regex: "Gaussian|top-hat|定义"
+- case_id: LU-14
+  description: "overlap 用平均搭接冒充局部搭接图"
+  inputs: {OL_avg_pct: 96.82}
+  error: "OL_avg 是平均搭接，不是局部 overlap 图；推断空间分布需模型"
+  assert_regex: "OL_avg|局部|average"
+- case_id: LU-15
+  description: "累积剂量用单脉冲 fluence 替代（F_acc vs F_pulse）"
+  inputs: {F_pulse: 12.73, F_acc_expected: 40.0}
+  error: "F_acc 与 F_pulse 必须分字段；用单脉冲值替代累积剂量即错"
+  assert_regex: "accumulated|F_acc"
+- case_id: LU-16
+  description: "功率密度用标称平均功率而非实测 delivered power"
+  inputs: {nominal_W: 100, measured_W: 82}
+  error: "必须区分 nominal/source-output/scanning-head/workpiece-plane 四级；用标称即错"
+  assert_regex: "nominal|delivered|实测"

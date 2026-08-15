@@ -1,0 +1,23 @@
+record_id: XPS-DEMO-001
+sample:
+  material_grade: 316L
+  treatment: laser_passivation_candidate
+reported:
+  energy_calibration: {status: reported, detail: "calibration reference stated in method"}
+  charge_correction: {status: reported, detail: "charge correction stated; reference and uncertainty retained"}
+  analyzer: {pass_energy_eV: 20, step_eV: 0.1}
+  sputter: {used: false}
+  peaks:
+    - {element: Cr, binding_energy_eV: 576.5, assignment_status: reported, anchor: "p. 5, Fig. 4"}
+    - {element: Fe, binding_energy_eV: 710.8, assignment_status: author_interpretation, anchor: "p. 5, Fig. 4"}
+missing_or_blocked:
+  - {field: replicate_count, status: not_reported}
+claims:
+  - claim_id: XPS-C1
+    type: composition_shift_observed
+    evidence_level: direct
+    status: partially_supported
+    text: "Cr/Fe peak components were reported with the stated fitting context."
+evidence:
+  - source_id: doi:10.3390/met13030516
+    anchors: ["p. 5, Fig. 4"]

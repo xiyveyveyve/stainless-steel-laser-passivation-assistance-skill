@@ -1,0 +1,28 @@
+record_id: example-invalid-001
+request:
+  text: "invalid fixture"
+  origin: synthetic
+  primary_skill: stainless-steel-laser-passivation
+scope:
+  material_systems: []
+  laser_processes: []
+  environments: []
+  comparators: []
+sources:
+  - source_id: source:known
+    anchors: []
+evidence:
+  - claim_id: C-01
+    text: "claim"
+    evidence_type: reported_observation
+    status: supported
+    source_ids: [source:unknown]
+    missing_or_blocked: []
+comparability:
+  status: comparable
+  reasons: []
+decision:
+  mode: auditable_path
+  primary_skill: stainless-steel-laser-passivation
+  collaborators: []
+  user_review_required: false

@@ -1,0 +1,132 @@
+# D-S3-01-laser-param-extract-qa.yaml
+# ============================================================
+# Laser parameter and unit extraction QA fixtures.
+# Cases exercise the packaged process fields and comparability rules.
+# Fixture status: maintained
+# 时间：2026-08-14
+# ============================================================
+
+# ---- A. 参数抽取正确性（合法样本必须通过；缺陷样本必须显式失败）----
+extract_qa_cases:
+# --- 合法抽取（pass 样本）---
+- case_id: LQ-00
+  category: valid
+  description: "完整参数记录（D-C09 316L 1064 nm ns 光纤激光：38/57 μm 计算光斑、脉冲能量/fluence 集、重复率、脉冲/线搭接）"
+  input: {laser_mode: "ns pulsed", wavelength_nm: 1064, pulse_duration_s: "~100 ns (FWHM)", repetition_rate_Hz: 20000, pulse_energy_J: "reported range", spot_definition: "M2-calculated", spot_diameter_m: "38e-6 / 57e-6", scan_speed_m_s: "reported", hatch_m: "reported", atmosphere: "air/argon"}
+  expected: "pass（字段齐全；spot_status=reported_calculated 而非 measured_profiler）"
+  assert_regex: "pass"
+# --- 缺陷抽取（fail 样本，对应 matrix §1 common failure）---
+- case_id: LQ-01
+  category: pulse_duration
+  description: "把脉冲上升时间/门控宽度当作脉冲宽度"
+  input_fragment: "pulse width = 10 ns (rise time of the modulated signal)"
+  expected_failure: "pulse_duration 定义未声明；需 FWHM 或原文定义"
+  assert_regex: "pulse_duration|FWHM|定义"
+- case_id: LQ-02
+  category: wavelength
+  description: "混淆基频与谐波波长（如 1064 nm 报成 532 nm 处理结果）"
+  input_fragment: "wavelength 532 nm (2nd harmonic) reported as if fundamental 1064 nm"
+  expected_failure: "wavelength 定义检查失败；保留基频与谐波区分"
+  assert_regex: "wavelength|harmonic|谐波"
+- case_id: LQ-03
+  category: repetition_rate
+  description: "把扫描频率当脉冲重复频率"
+  input_fragment: "f = 1000 lines/s (scan frequency) recorded as repetition_rate_Hz"
+  expected_failure: "repetition_rate 混淆；要求脉冲频率（pulse frequency）"
+  assert_regex: "repetition_rate|脉冲频率"
+- case_id: LQ-04
+  category: power
+  description: "用名义功率无占空比/损耗说明替代实际功率"
+  input_fragment: "P = 100 W (nominal laser set point, no duty cycle or loss note)"
+  expected_failure: "average_power 需 delivered/measured 说明；nominal 仅可标注不可当实测"
+  assert_regex: "average_power|nominal|duty"
+- case_id: LQ-05
+  category: spot_definition
+  description: "4-sigma 与 FWHM 光斑直径混用为同一值"
+  input_fragment: "spot 50 um, later compared to a 1/e2 50 um spot from another paper"
+  expected_failure: "spot_definition 必须声明（1/e2 / FWHM / 4-sigma / top-hat）；禁止默认等同"
+  assert_regex: "spot_definition|1/e2|FWHM"
+- case_id: LQ-06
+  category: spot_definition
+  description: "用焦距或喷嘴直径当光斑尺寸"
+  input_fragment: "spot = 150 um (nozzle diameter used as spot)"
+  expected_failure: "spot_diameter 需光束剖面测量/计算；焦距/喷嘴不可替代"
+  assert_regex: "spot_diameter|nozzle|profile"
+- case_id: LQ-07
+  category: beam_shape
+  description: "圆形面积公式套椭圆/平顶/环形光束"
+  input_fragment: "elliptical Gaussian beam treated as circular area A=pi D2/4"
+  expected_failure: "beam_shape 未考虑；椭圆需双轴、top-hat 需物理边缘"
+  assert_regex: "beam_shape|elliptical|top-hat"
+- case_id: LQ-08
+  category: power
+  description: "峰值功率与平均功率互换"
+  input_fragment: "peak_power_W 用 CW 平均功率填入"
+  expected_failure: "peak_power 仅限脉冲源且 = E_pulse/tau；与 average_power 分离"
+  assert_regex: "peak_power|average_power"
+- case_id: LQ-09
+  category: fluence
+  description: "报告'能量密度'但无面积定义"
+  input_fragment: "energy density = 5 J/cm2 (no spot area or definition)"
+  expected_failure: "fluence 必须含 spot 面积与定义；区分单脉冲/累积"
+  assert_regex: "fluence|area|面积"
+- case_id: LQ-10
+  category: scan
+  description: "进给速度与脉冲间距混淆"
+  input_fragment: "feed speed 200 mm/s recorded as pulse step"
+  expected_failure: "pulse_step = v/f 须由速度与重复率计算；不能用进给速度替代"
+  assert_regex: "pulse_step|scan_speed|v/f"
+- case_id: LQ-11
+  category: overlap
+  description: "无光斑直径就报搭接率"
+  input_fragment: "overlap 60% (no spot diameter or definition given)"
+  expected_failure: "overlap 需 Delta-x、D 与光斑定义；缺失则 blocked"
+  assert_regex: "overlap|spot|blocked"
+- case_id: LQ-12
+  category: overlap
+  description: "一维脉冲搭接公式忽略 hatch 方向（把脉冲搭接当线搭接）"
+  input_fragment: "pulse_overlap 90% computed with 1-D formula, hatch ignored"
+  expected_failure: "pulse_overlap 与 line_overlap 分离；方向与光斑定义必须声明"
+  assert_regex: "pulse_overlap|line_overlap|hatch"
+- case_id: LQ-13
+  category: overlap
+  description: "圆形搭接公式套 top-hat 光束且无说明"
+  input_fragment: "top-hat beam, circular overlap formula used without note"
+  expected_failure: "top-hat 需物理边缘或声明模型；禁止无说明套用圆形公式"
+  assert_regex: "top-hat|overlap|formula"
+- case_id: LQ-14
+  category: fluence
+  description: "累积剂量用单脉冲 fluence 替代"
+  input_fragment: "accumulated dose reported as single-pulse F_pulse = 1.96 J/cm2"
+  expected_failure: "F_acc 需 Delta_x、Delta_y 与脉冲能量；单脉冲 fluence 不可替代"
+  assert_regex: "accumulated|F_acc|累积"
+- case_id: LQ-15
+  category: beam_quality
+  description: "M2 由单张焦平面图像推断"
+  input_fragment: "M2 = 1.3 estimated from one focal-plane image"
+  expected_failure: "M2 需多点 caustic 拟合（ISO/NPL 方法）；单图不可"
+  assert_regex: "M2|caustic|ISO"
+- case_id: LQ-16
+  category: absorptance
+  description: "忽略氧化/熔化后吸收率变化，用恒定吸收率外推"
+  input_fragment: "absorptance fixed at 0.35 for all surface states (no state matching)"
+  expected_failure: "absorptance 依赖 material x wavelength x surface_state x atmosphere；禁止常量外推"
+  assert_regex: "absorptance|surface_state|状态"
+- case_id: LQ-17
+  category: uncertainty
+  description: "只报重复性（Type A）当作总不确定度"
+  input_fragment: "uncertainty = repeatability 0.5% only, no Type B or k factor"
+  expected_failure: "uncertainty 需 Type A/B 合成与扩展因子；重复性≠总不确定度"
+  assert_regex: "uncertainty|Type|k factor"
+- case_id: LQ-18
+  category: comparability
+  description: "跨论文直接比较时漏报条件（mode/wavelength/spot/scan/hatch/focal plane/atmosphere）"
+  input_fragment: "two 304 ns-laser papers compared without spot definition or focal plane"
+  expected_failure: "matrix §3 可比性规则：缺任一关键字段则比较 limited 而非 same_process"
+  assert_regex: "limited|same_process|可比"
+- case_id: LQ-19
+  category: mode
+  description: "所有脉冲激光一律只报'平均功率'"
+  input_fragment: "only 'average power 20 W' reported for fs laser, no peak or fluence"
+  expected_failure: "laser_mode 与峰值/fluence 信息缺失；禁止统一用平均功率表征"
+  assert_regex: "laser_mode|peak_power|fluence"

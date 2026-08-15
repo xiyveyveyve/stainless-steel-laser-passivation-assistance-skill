@@ -1,0 +1,18 @@
+record_id: LPR-BAD-001
+material:
+  grade: 304L
+process:
+  class: laser_marking
+  modality: pulsed
+reported:
+  overlap:
+    value: 0.5
+    unit: fraction
+    definition: overlap claimed by the author
+missing_or_blocked: []
+comparability:
+  status: comparable
+  reasons: []
+evidence:
+  - source_id: doi:10.1000/example-a
+    anchors: ["p. 1"]

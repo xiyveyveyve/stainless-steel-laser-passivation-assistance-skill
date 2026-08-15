@@ -1,0 +1,23 @@
+# Blank recording template. It is intentionally unexecuted and must fail the
+# checker until a fresh agent run fills every case and every assertion.
+# Each completed case must carry this neutral review structure:
+# independent_review:
+#   verdict: pass|fail|needs_review
+#   reviewer: "name-or-agent-id"
+#   reviewer_kind: human|independent_agent
+#   reviewed_at: "ISO-8601 timestamp"
+#   notes: "review trace"
+schema_version: "1.0"
+suite_id: "S6-model-behavior"
+artifact_kind: template
+is_example: true
+run_id: "replace-with-unique-run-id"
+skill_path: "replace-with-installed-skill-path"
+execution:
+  status: unexecuted
+  executor: ""
+  started_at: ""
+  completed_at: ""
+  command: ""
+  raw_output_capture: false
+cases: []

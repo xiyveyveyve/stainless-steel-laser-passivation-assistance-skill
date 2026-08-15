@@ -1,0 +1,19 @@
+record_id: EC-DEMO-001
+material: {grade: 316L, condition: annealed}
+electrolyte:
+  composition: {value: NaCl, status: reported}
+  concentration: {value: 3.5, unit: wt%, status: reported}
+  pH: {value: 7.0, status: reported}
+  temperature_C: {value: 25, status: reported}
+test:
+  method: PDP
+  reference_electrode: {value: SCE, status: reported}
+  working_area_cm2: {value: 1.0, status: reported}
+  repeats: {value: 3, status: reported}
+reported:
+  scan_rate: {value: 1, unit: mV/s}
+  potential_range: {value: "-0.5 to 1.2", unit: V_vs_SCE}
+missing_or_blocked: []
+evidence:
+  - source_id: doi:10.3390/met13030516
+    anchors: ["p. 12, Fig. 7"]

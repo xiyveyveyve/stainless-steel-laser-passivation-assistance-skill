@@ -1,0 +1,339 @@
+# Example only. Deliberately contains routing, execution, and reason failures.
+schema_version: "1.0"
+suite_id: "S1-routing-behavior"
+artifact_kind: example
+is_example: true
+run_id: "routing-fail-example-2026-08-14T15:00:00Z"
+execution:
+  status: executed
+  executor: "example-router"
+  started_at: "2026-08-14T14:00:00Z"
+  completed_at: "2026-08-14T14:02:00Z"
+  command: "example-router-run --suite S1-routing-behavior"
+  raw_output_capture: true
+cases:
+- case_id: S1-P01
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: [materials-submission]
+  raw_reason: Example-only routing reason recorded for S1-P01; this case is intentionally malformed only where noted.
+- case_id: S1-P02
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: ""
+- case_id: S1-P03
+  executed: false
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P03; this case is intentionally malformed only where noted.
+- case_id: S1-P04
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P04; this case is intentionally malformed only where noted.
+- case_id: S1-P05
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P05; this case is intentionally malformed only where noted.
+- case_id: S1-P06
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P06; this case is intentionally malformed only where noted.
+- case_id: S1-P07
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P07; this case is intentionally malformed only where noted.
+- case_id: S1-P08
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P08; this case is intentionally malformed only where noted.
+- case_id: S1-P09
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P09; this case is intentionally malformed only where noted.
+- case_id: S1-P10
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P10; this case is intentionally malformed only where noted.
+- case_id: S1-P11
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P11; this case is intentionally malformed only where noted.
+- case_id: S1-P12
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P12; this case is intentionally malformed only where noted.
+- case_id: S1-P13
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P13; this case is intentionally malformed only where noted.
+- case_id: S1-P14
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P14; this case is intentionally malformed only where noted.
+- case_id: S1-P15
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P15; this case is intentionally malformed only where noted.
+- case_id: S1-P16
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P16; this case is intentionally malformed only where noted.
+- case_id: S1-P17
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P17; this case is intentionally malformed only where noted.
+- case_id: S1-P18
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P18; this case is intentionally malformed only where noted.
+- case_id: S1-P19
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P19; this case is intentionally malformed only where noted.
+- case_id: S1-P20
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-P20; this case is intentionally malformed only where noted.
+- case_id: S1-N01
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N01; this case is intentionally malformed only where noted.
+- case_id: S1-N02
+  executed: true
+  selected_primary_skill: not-a-real-skill
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N02; this case is intentionally malformed only where noted.
+- case_id: S1-N03
+  executed: true
+  selected_primary_skill: jadense-scholar-search
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N03; this case is intentionally malformed only where noted.
+- case_id: S1-N04
+  executed: true
+  selected_primary_skill: materials-literature-pipeline
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N04; this case is intentionally malformed only where noted.
+- case_id: S1-N05
+  executed: true
+  selected_primary_skill: materials-reader
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N05; this case is intentionally malformed only where noted.
+- case_id: S1-N06
+  executed: true
+  selected_primary_skill: deepseek-ocr-pdf
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N06; this case is intentionally malformed only where noted.
+- case_id: S1-N07
+  executed: true
+  selected_primary_skill: paper-cn-reader
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N07; this case is intentionally malformed only where noted.
+- case_id: S1-N08
+  executed: true
+  selected_primary_skill: mineru
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N08; this case is intentionally malformed only where noted.
+- case_id: S1-N09
+  executed: true
+  selected_primary_skill: materials-data
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N09; this case is intentionally malformed only where noted.
+- case_id: S1-N10
+  executed: true
+  selected_primary_skill: materials-data
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N10; this case is intentionally malformed only where noted.
+- case_id: S1-N11
+  executed: true
+  selected_primary_skill: materials-data
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N11; this case is intentionally malformed only where noted.
+- case_id: S1-N12
+  executed: true
+  selected_primary_skill: materials-doe
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N12; this case is intentionally malformed only where noted.
+- case_id: S1-N13
+  executed: true
+  selected_primary_skill: materials-doe
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N13; this case is intentionally malformed only where noted.
+- case_id: S1-N14
+  executed: true
+  selected_primary_skill: materials-doe
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N14; this case is intentionally malformed only where noted.
+- case_id: S1-N15
+  executed: true
+  selected_primary_skill: materials-figure
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N15; this case is intentionally malformed only where noted.
+- case_id: S1-N16
+  executed: true
+  selected_primary_skill: materials-figure
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N16; this case is intentionally malformed only where noted.
+- case_id: S1-N17
+  executed: true
+  selected_primary_skill: materials-figure
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N17; this case is intentionally malformed only where noted.
+- case_id: S1-N18
+  executed: true
+  selected_primary_skill: materials-polishing
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N18; this case is intentionally malformed only where noted.
+- case_id: S1-N19
+  executed: true
+  selected_primary_skill: materials-polishing
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N19; this case is intentionally malformed only where noted.
+- case_id: S1-N20
+  executed: true
+  selected_primary_skill: materials-polishing
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N20; this case is intentionally malformed only where noted.
+- case_id: S1-N21
+  executed: true
+  selected_primary_skill: materials-writing
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N21; this case is intentionally malformed only where noted.
+- case_id: S1-N22
+  executed: true
+  selected_primary_skill: materials-reviewer
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N22; this case is intentionally malformed only where noted.
+- case_id: S1-N23
+  executed: true
+  selected_primary_skill: materials-reviewer
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N23; this case is intentionally malformed only where noted.
+- case_id: S1-N24
+  executed: true
+  selected_primary_skill: materials-reviewer
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N24; this case is intentionally malformed only where noted.
+- case_id: S1-N25
+  executed: true
+  selected_primary_skill: materials-submission
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N25; this case is intentionally malformed only where noted.
+- case_id: S1-N26
+  executed: true
+  selected_primary_skill: materials-submission
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N26; this case is intentionally malformed only where noted.
+- case_id: S1-N27
+  executed: true
+  selected_primary_skill: materials-submission
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N27; this case is intentionally malformed only where noted.
+- case_id: S1-N28
+  executed: true
+  selected_primary_skill: zotero:Zotero
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N28; this case is intentionally malformed only where noted.
+- case_id: S1-N29
+  executed: true
+  selected_primary_skill: zotero:Zotero
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N29; this case is intentionally malformed only where noted.
+- case_id: S1-N30
+  executed: true
+  selected_primary_skill: materials-literature-pipeline
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-N30; this case is intentionally malformed only where noted.
+- case_id: S1-B01
+  executed: true
+  selected_primary_skill: materials-citation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B01; this case is intentionally malformed only where noted.
+- case_id: S1-B02
+  executed: true
+  selected_primary_skill: materials-reader
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B02; this case is intentionally malformed only where noted.
+- case_id: S1-B03
+  executed: true
+  selected_primary_skill: dr-cook-literature-downloader
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B03; this case is intentionally malformed only where noted.
+- case_id: S1-B04
+  executed: true
+  selected_primary_skill: materials-literature-pipeline
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B04; this case is intentionally malformed only where noted.
+- case_id: S1-B05
+  executed: true
+  selected_primary_skill: deepseek-ocr-pdf
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B05; this case is intentionally malformed only where noted.
+- case_id: S1-B06
+  executed: true
+  selected_primary_skill: materials-data
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B06; this case is intentionally malformed only where noted.
+- case_id: S1-B07
+  executed: true
+  selected_primary_skill: materials-doe
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B07; this case is intentionally malformed only where noted.
+- case_id: S1-B08
+  executed: true
+  selected_primary_skill: materials-figure
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B08; this case is intentionally malformed only where noted.
+- case_id: S1-B09
+  executed: true
+  selected_primary_skill: materials-polishing
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B09; this case is intentionally malformed only where noted.
+- case_id: S1-B10
+  executed: true
+  selected_primary_skill: materials-reviewer
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B10; this case is intentionally malformed only where noted.
+- case_id: S1-B11
+  executed: true
+  selected_primary_skill: materials-writing
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B11; this case is intentionally malformed only where noted.
+- case_id: S1-B12
+  executed: true
+  selected_primary_skill: materials-submission
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B12; this case is intentionally malformed only where noted.
+- case_id: S1-B13
+  executed: true
+  selected_primary_skill: zotero:Zotero
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B13; this case is intentionally malformed only where noted.
+- case_id: S1-B14
+  executed: true
+  selected_primary_skill: paper-cn-reader
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B14; this case is intentionally malformed only where noted.
+- case_id: S1-B15
+  executed: true
+  selected_primary_skill: stainless-steel-laser-passivation
+  selected_collaborators: []
+  raw_reason: Example-only routing reason recorded for S1-B15; this case is intentionally malformed only where noted.

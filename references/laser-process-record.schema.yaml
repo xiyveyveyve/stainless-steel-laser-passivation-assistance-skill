@@ -1,0 +1,35 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "stainless-steel-laser-passivation/laser-process-record"
+title: Laser Process Record
+type: object
+additionalProperties: false
+required: [record_id, material, process, reported, missing_or_blocked, comparability, evidence]
+properties:
+  record_id: {type: string, minLength: 1}
+  material:
+    type: object
+    required: [grade]
+    properties:
+      grade: {type: string, minLength: 1}
+      condition: {type: string}
+      roughness: {type: string}
+  process:
+    type: object
+    required: [class, modality]
+    properties:
+      class:
+        type: string
+        enum: [laser_passivation_candidate, laser_oxidation, laser_remelting, laser_polishing, laser_cleaning, laser_marking, laser_texturing, laser_ablation, laser_shock_peening, other_surface_modification, unknown]
+      modality: {type: string, enum: [CW, pulsed, unknown]}
+      power_plane: {type: string, enum: [source, scan_head, workpiece, unknown]}
+  reported: {type: object}
+  missing_or_blocked: {type: array}
+  comparability:
+    type: object
+    required: [status, reasons]
+    properties:
+      status: {type: string, enum: [comparable, partially_comparable, not_comparable, needs_user_review]}
+      reasons: {type: array}
+  evidence:
+    type: array
+    minItems: 1

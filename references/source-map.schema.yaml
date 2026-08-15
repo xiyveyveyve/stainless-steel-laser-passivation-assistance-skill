@@ -1,0 +1,38 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "stainless-steel-laser-passivation/source-map-schema"
+title: Stainless Steel Laser Passivation Source Map CSV Row
+type: object
+additionalProperties: false
+required: [source_id, title, material_system, local_path, sha256, extraction_status, anchors]
+properties:
+  source_id: {type: string, minLength: 1}
+  candidate_id: {type: string}
+  obsidian_card: {type: string}
+  zotero_key: {type: string}
+  attachment_key: {type: string}
+  attachment_storage_mode: {type: string}
+  canonical_uri: {type: string}
+  migration_batch: {type: string}
+  migration_status: {type: string, enum: [verified, unmatched_in_zotero, metadata_only_or_blocked]}
+  last_verified_at: {type: string}
+  title: {type: string, minLength: 1}
+  year: {type: string}
+  doi_or_identifier: {type: string}
+  material_system: {type: string}
+  evidence_role: {type: string}
+  local_path: {type: string, minLength: 1}
+  pdf_exists: {type: string, enum: ["true", "false"]}
+  sha256:
+    type: string
+    description: "64-hex SHA-256 when a local artifact exists; empty is allowed only for metadata_only/blocked rows and must remain explicit."
+  pages: {type: string}
+  extraction_status:
+    type: string
+    enum: [complete, partial, metadata_only, blocked, not_applicable]
+  alternate_local_paths: {type: string}
+  alternate_sha256s: {type: string}
+  dedup_note: {type: string}
+  anchors:
+    type: string
+    minLength: 1
+    description: "Semicolon-delimited anchor list in the CSV serialization."

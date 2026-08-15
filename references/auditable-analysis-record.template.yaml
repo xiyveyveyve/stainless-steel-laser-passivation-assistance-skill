@@ -1,0 +1,41 @@
+record_id: "AR-YYYYMMDD-unique"
+request:
+  text: ""
+  origin: real_session
+  primary_skill: stainless-steel-laser-passivation
+scope:
+  material_systems: []
+  treatments: []
+  protocols: []
+  exclusions: []
+sources:
+  - source_id: "doi:10.xxxx/example"
+    title: ""
+    local_path: ""
+    sha256: ""
+    anchors:
+      - "p. ?, Fig. ?, Table ?"
+    applicability: ""
+evidence:
+  - claim_id: "C-001"
+    text: ""
+    evidence_type: reported_observation
+    status: needs_user_review
+    source_ids: ["doi:10.xxxx/example"]
+    missing_or_blocked: []
+    conflicts: []
+comparability:
+  status: needs_user_review
+  reasons: []
+  dimensions:
+    steel_grade: unknown
+    electrolyte: unknown
+    reference_electrode: unknown
+    area_and_geometry: unknown
+    laser_dose_definition: unknown
+decision:
+  mode: auditable_path
+  primary_skill: stainless-steel-laser-passivation
+  collaborators: []
+  user_review_required: true
+  next_actions: []

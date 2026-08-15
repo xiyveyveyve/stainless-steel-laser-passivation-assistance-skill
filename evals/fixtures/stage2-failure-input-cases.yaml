@@ -1,0 +1,141 @@
+# D-S2-01-failure-input-cases.yaml
+# ============================================================
+# Failure and boundary input fixtures for structure, records, evidence, and routing.
+# Each case defines an expected nonzero exit or an explicit failure marker.
+# Fixture status: maintained
+# 时间：2026-08-14
+# ============================================================
+
+# ---- A. frontmatter / 结构失败（SKILL.md 与 schema 文件）----
+failure_inputs:
+- case_id: FF-01
+  category: frontmatter
+  description: "SKILL.md frontmatter 缺少必填 name 字段"
+  expected_failure: "结构校验非零退出；报 'missing required field: name'"
+  assert_regex: "missing required field"
+- case_id: FF-02
+  category: frontmatter
+  description: "frontmatter YAML 语法错误（引号未闭合）"
+  expected_failure: "YAML 解析失败非零退出"
+  assert_regex: "parse|syntax|unexpected"
+- case_id: FF-03
+  category: frontmatter
+  description: "description 字段为空或缺失"
+  expected_failure: "元数据校验失败；触发描述不可用"
+  assert_regex: "description"
+- case_id: FF-04
+  category: structure
+  description: "SKILL.md Reference navigation 指向不存在的 references/ 文件"
+  expected_failure: "链接检查非零退出；列出缺失引用"
+  assert_regex: "references/.*not found|missing reference"
+
+# ---- B. analysis-record 数据失败（必填字段/枚举/单位/来源）----
+- case_id: AR-01
+  category: analysis_record
+  description: "analysis-record.yaml 缺少 source_id"
+  expected_failure: "必填字段校验失败；报 missing source_id"
+  assert_regex: "missing.*source_id|source_id.*required"
+- case_id: AR-02
+  category: analysis_record
+  description: "结论行缺少页码/表/图锚点（evidence_anchor 为空）"
+  expected_failure: "证据回链校验失败；结论不可回链"
+  assert_regex: "anchor|回链"
+- case_id: AR-03
+  category: analysis_record
+  description: "证据状态使用自造词（如 confirmed/verified/proven）而非 7 种枚举"
+  expected_failure: "枚举校验失败；提示使用统一口径"
+  assert_regex: "enum|evidence_state|not in"
+- case_id: AR-04
+  category: analysis_record
+  description: "结论状态不在 supported/partially_supported/uncertain/contradicted/needs_user_review"
+  expected_failure: "枚举校验失败"
+  assert_regex: "enum|conclusion_status"
+- case_id: AR-05
+  category: analysis_record
+  description: "数值缺单位（如 icorr: 0.02 无 μA/cm2）"
+  expected_failure: "单位校验失败；数值不可用"
+  assert_regex: "unit|单位"
+- case_id: AR-06
+  category: analysis_record
+  description: "电位值未注明参比电极（Ecorr = -0.3 V，无 SCE/SHE 说明）"
+  expected_failure: "电位可比性检查失败；不可跨文献比较"
+  assert_regex: "reference electrode|参比"
+- case_id: AR-07
+  category: analysis_record
+  description: "卡内 sha256 与本地 PDF 实际哈希不一致"
+  expected_failure: "来源校验失败；非零退出"
+  assert_regex: "sha256.*mismatch"
+- case_id: AR-08
+  category: analysis_record
+  description: "local_path 指向不存在的文件"
+  expected_failure: "来源校验失败；路径不可访问"
+  assert_regex: "not found|no such file"
+
+# ---- C. 科学证据失败（领域规则：禁用推断/边界/单位/分层）----
+- case_id: SC-01
+  category: science_evidence
+  description: "仅凭腐蚀改善（PDP/EIS 数据）推断'形成了稳定 Cr 富集钝化膜'"
+  expected_failure: "禁用推断规则触发；要求补充膜层/XPS 证据，结论降级为 partially_supported"
+  assert_regex: "mechanism|钝化膜|XPS|partially_supported"
+- case_id: SC-02
+  category: science_evidence
+  description: "把 304L 的激光钝化结果直接外推到 316L"
+  expected_failure: "跨钢种外推禁止；要求标注 boundary 与牌号限制"
+  assert_regex: "304L|316L|boundary|牌号"
+- case_id: SC-03
+  category: science_evidence
+  description: "3.5% NaCl PDP 与 0.5 M H2SO4 EIS 结果直接横向比较"
+  expected_failure: "协议不可比；禁止排序，标注条件差异"
+  assert_regex: "protocol|电解液|可比"
+- case_id: SC-04
+  category: science_evidence
+  description: "报告 overlap 但未给光斑定义（1/e2 vs FWHM 混淆）"
+  expected_failure: "参数不可比；禁止换算默认值"
+  assert_regex: "spot|overlap|光斑"
+- case_id: SC-05
+  category: science_evidence
+  description: "fluence 单位混用（J/cm2 与 J/mm2 未换算即比较）"
+  expected_failure: "单位错误检测；数值 blocked"
+  assert_regex: "J/cm|J/mm|unit"
+- case_id: SC-06
+  category: science_evidence
+  description: "figure_only 曲线读数当 reported_data 定量值"
+  expected_failure: "证据降级；figure_only 不承担定量验证"
+  assert_regex: "figure_only|定量"
+- case_id: SC-07
+  category: science_evidence
+  description: "author_interpretation 被标记为 reported_observation"
+  expected_failure: "证据分层校验失败；区分作者解释与原文观察"
+  assert_regex: "author_interpretation|分层"
+- case_id: SC-08
+  category: science_evidence
+  description: "not_reported 字段被默认值/经验值填充"
+  expected_failure: "缺失处理失败；保留 not_reported，禁止补写"
+  assert_regex: "not_reported|默认值"
+- case_id: SC-09
+  category: science_evidence
+  description: "同一课题组衍生论文被当作独立复现"
+  expected_failure: "独立性误判；要求 same_team/derivative 标记"
+  assert_regex: "same_team|independent|复现"
+
+# ---- D. 路由失败（应委托通用技能却由本 Skill 承接）----
+- case_id: RT-01
+  category: routing
+  description: "文献检索请求（'找316L激光钝化文献'）由本 Skill 直接执行"
+  expected_failure: "路由检查失败；应委托 materials-citation"
+  assert_regex: "citation|检索"
+- case_id: RT-02
+  category: routing
+  description: "绘图请求（'画极化曲线对比图'）由本 Skill 承接"
+  expected_failure: "应委托 materials-figure"
+  assert_regex: "figure|绘图"
+- case_id: RT-03
+  category: routing
+  description: "写作/润色请求由本 Skill 承接"
+  expected_failure: "应委托 materials-writing / materials-polishing"
+  assert_regex: "writing|polishing"
+- case_id: RT-04
+  category: routing
+  description: "PDF 精读/字段抽取请求由本 Skill 承接"
+  expected_failure: "应委托 materials-reader（本 Skill 只提供领域规则）"
+  assert_regex: "reader|精读"

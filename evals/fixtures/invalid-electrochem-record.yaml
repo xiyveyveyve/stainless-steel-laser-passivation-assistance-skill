@@ -1,0 +1,17 @@
+record_id: EC-BAD-001
+material: {grade: 316L}
+electrolyte:
+  composition: {value: NaCl, status: reported}
+  concentration: {value: 3.5, unit: wt%, status: reported}
+  pH: {status: not_reported}
+  temperature_C: {status: not_reported}
+test:
+  method: EIS
+  reference_electrode: {status: not_reported}
+  working_area_cm2: {status: not_reported}
+  repeats: {status: not_reported}
+reported: {}
+missing_or_blocked: []
+evidence:
+  - source_id: doi:10.3390/met13030516
+    anchors: ["Fig. 7"]

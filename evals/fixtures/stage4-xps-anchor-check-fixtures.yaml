@@ -1,0 +1,94 @@
+# D-S4-01-xps-anchor-check-fixtures.yaml
+# ============================================================
+# XPS page, table, and figure anchor validation fixtures.
+# Cases check value-to-anchor binding and anchor format.
+# Fixture status: maintained
+# 时间：2026-08-14
+# ============================================================
+
+# 锚点格式正则（合并时纳入脚本）：
+anchor_regex: '(?i)(p{1,2}\.?|pp\.?|page|table|tab\.?|fig\.?|figure|section)\s*[A-Za-z0-9,.-]+'
+
+# ---- 合法锚点（pass）----
+valid_anchors:
+- case_id: XA-01
+  anchor: "pp.6,9, Table 1"
+  source_id: "doi:10.3389/fmats.2019.00232"
+  bound_value: "Fe0 706.9 eV"
+  note: "化学态表锚点；页码+表齐全"
+- case_id: XA-02
+  anchor: "p.12, Fig.7"
+  source_id: "doi:10.3390/met13030516"
+  bound_value: "Ecorr comparison"
+  note: "图锚点"
+- case_id: XA-03
+  anchor: "pp.5-6, section 3.1"
+  source_id: "doi:10.1016/j.matdes.2022.110919"
+  bound_value: "spot measurement method"
+  note: "章节范围锚点"
+- case_id: XA-04
+  anchor: "Table 4"
+  source_id: "doi:10.1016/j.corsci.2019.108160"
+  bound_value: "DOE condition list"
+  note: "仅表格锚点（工作流允许）"
+
+# ---- 非法/缺陷锚点（fail）----
+invalid_anchors:
+- case_id: XA-05
+  anchor: ""
+  source_id: "doi:10.xxxx/xxxxx"
+  error: "无锚点；结论不可回链"
+  assert_regex: "anchor|锚点"
+- case_id: XA-06
+  anchor: "pp.6,9, Table 1"
+  source_id: ""                      # 无来源
+  error: "数值绑定但无 source_id"
+  assert_regex: "source_id"
+- case_id: XA-07
+  anchor: "page 6-9 table"            # 非标准格式
+  source_id: "doi:10.xxxx/xxxxx"
+  error: "锚点格式不规范；无法解析页码/表图"
+  assert_regex: "format|格式"
+- case_id: XA-08
+  anchor: "p.150, Table 99"           # 页数超 PDF 范围（需与页数校验联动）
+  source_id: "doi:10.xxxx/xxxxx"
+  error: "锚点超出文档页数；需页数校验"
+  assert_regex: "page_count|页数"
+- case_id: XA-09
+  anchor: "p.3, Fig.2"
+  source_id: "doi:10.xxxx/xxxxx"
+  bound_value: "Cr/Fe = 2.1"
+  note: "数值来自正文表格但锚点指向无关图"   # 绑定错位
+  error: "数值与锚点不匹配；需人工核对"
+  assert_regex: "mismatch|核对"
+
+# ---- 反例回归测试最小集（failure-cases §反例，机器可读）----
+regression_cases:
+- case_id: RG-01
+  input: "只有一条 Fe 2p 图片，拟合 R2=0.999"
+  expected_action: "figure_only；不输出 Fe(II)/Fe(III) 比例"
+  assert_regex: "figure_only"
+- case_id: RG-02
+  input: "2 keV Ar+ 后 Fe0 增加"
+  expected_action: "sputter_affected；要求未溅射对照"
+  assert_regex: "sputter_affected"
+- case_id: RG-03
+  input: "C1s=285.0 eV，未报告接地"
+  expected_action: "charge_reference_uncertain"
+  assert_regex: "charge_reference_uncertain"
+- case_id: RG-04
+  input: "背景改动导致 Cr/Fe 从 0.8 到 1.6"
+  expected_action: "background_sensitive；输出区间并阻断单值结论"
+  assert_regex: "background_sensitive"
+- case_id: RG-05
+  input: "chi2 更低但 SO 分裂/面积比自由"
+  expected_action: "overfit_risk；优先物理约束模型"
+  assert_regex: "overfit_risk"
+- case_id: RG-06
+  input: "sputter 60 s = 6 nm 而未给速率标定"
+  expected_action: "depth_scale_blocked"
+  assert_regex: "depth_scale_blocked"
+- case_id: RG-07
+  input: "Frontiers 2019 Cr7 hydroxide 两层归属"
+  expected_action: "同时输出替代分配和 mechanism_not_unique"
+  assert_regex: "mechanism_not_unique"

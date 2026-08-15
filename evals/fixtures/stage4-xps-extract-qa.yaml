@@ -1,0 +1,125 @@
+# D-S4-01-xps-extract-qa.yaml
+# ============================================================
+# XPS extraction QA fixtures.
+# Cases exercise packaged acquisition, calibration, fitting, and failure rules.
+# Fixture status: maintained
+# 时间：2026-08-14
+# ============================================================
+
+extract_qa_cases:
+# --- 合法抽取（pass）---
+- case_id: XQ-00
+  category: valid
+  description: "带锚点的化学态记录（Frontiers 2019 被动膜表）"
+  input: {source_id: "doi:10.3389/fmats.2019.00232", anchor: "pp.6,9, Table 1", species: {Fe0: "706.9 eV", Cr0: "574.1 eV", MoVI: "232.2/235.3 eV"}, model_note: "7 组分多重态拟合；两层分配为模型"}
+  expected: "pass（锚点+模型声明齐全；两层分配标注 author_interpretation）"
+  assert_regex: "pass"
+# --- 缺陷抽取（fail；对应 failure_policy 与 XF 案例）---
+- case_id: XQ-01
+  category: figure_only
+  description: "只有一条 Fe 2p 图片，拟合 R2=0.999"
+  input_fragment: "Fe 2p figure only, fit R2 = 0.999, no raw spectrum or residual"
+  expected_failure: "figure_only；不得输出 Fe(II)/Fe(III) 比例"
+  assert_regex: "figure_only|原始谱|残差"
+- case_id: XQ-02
+  category: sputter
+  description: "2 keV Ar+ 溅射后 Fe0 增加，无未溅射对照"
+  input_fragment: "Fe0 increased after 2 keV Ar+ sputtering (no pre-sputter control)"
+  expected_failure: "sputter_affected；要求未溅射对照，禁止直接机理声明"
+  assert_regex: "sputter_affected|对照"
+- case_id: XQ-03
+  category: charge_reference
+  description: "C1s=285.0 eV 固定，未报告接地/差分荷电检查"
+  input_fragment: "C1s fixed at 285.0 eV, no grounding or differential charging check"
+  expected_failure: "charge_reference_uncertain；要求 HOPG/金属参照或替代方法"
+  assert_regex: "charge_reference_uncertain|HOPG"
+- case_id: XQ-04
+  category: background
+  description: "背景模型改动导致 Cr/Fe 从 0.8 到 1.6"
+  input_fragment: "Cr/Fe ratio 0.8 to 1.6 depending on Shirley background endpoints"
+  expected_failure: "background_sensitive；输出区间，阻断单值结论"
+  assert_regex: "background_sensitive|区间"
+- case_id: XQ-05
+  category: overfit
+  description: "chi2 更低但自旋轨道分裂/面积比自由"
+  input_fragment: "lower chi2 with unconstrained spin-orbit splitting and area ratio"
+  expected_failure: "overfit_risk；优先物理约束模型并比较替代模型"
+  assert_regex: "overfit_risk|约束"
+- case_id: XQ-06
+  category: depth_scale
+  description: "sputter 60 s = 6 nm 而无速率标定"
+  input_fragment: "sputter time 60 s = 6 nm, no rate calibration"
+  expected_failure: "depth_scale_blocked；禁止 时间x默认nm/min"
+  assert_regex: "depth_scale_blocked|速率"
+- case_id: XQ-07
+  category: layer_assignment
+  description: "Cr7 hydroxide 两层归属（内/外层 50% 分配）"
+  input_fragment: "Cr7 hydroxide assigned 50% inner / 50% outer, no basis"
+  expected_failure: "mechanism_not_unique；同时输出替代分配与区间"
+  assert_regex: "mechanism_not_unique|替代分配"
+- case_id: XQ-08
+  category: acquisition
+  description: "高分辨谱缺 pass energy 与 step"
+  input_fragment: "high-resolution spectrum reported without pass energy or step size"
+  expected_failure: "pass_energy_eV/step_eV 缺失标 not_reported"
+  assert_regex: "pass_energy|not_reported"
+- case_id: XQ-09
+  category: assignment
+  description: "仅凭单一 BE 命名 Fe(II)/Fe(III) 或 Cr(VI)"
+  input_fragment: "single binding energy used to assign Fe(II) valence"
+  expected_failure: "single_line_assignment；需多重态/参考谱/多能级"
+  assert_regex: "single_line_assignment|多重态"
+- case_id: XQ-10
+  category: fit_quality
+  description: "只报 chi2/R2 而无残差、参数表或模型比较"
+  input_fragment: "goodness-of-fit R2 only, no residuals or parameter table"
+  expected_failure: "model_not_unique；χ2 不足以证明模型唯一"
+  assert_regex: "model_not_unique|残差"
+- case_id: XQ-11
+  category: quantification
+  description: "软件默认 RSF/传输函数直接跨仪器比较面积"
+  input_fragment: "peak areas compared across instruments with default software RSF"
+  expected_failure: "quantification_not_calibrated；需 RSF/传输函数/探测器线性声明"
+  assert_regex: "quantification_not_calibrated|RSF"
+- case_id: XQ-12
+  category: spin_orbit
+  description: "Mo 3d 重叠严重但双峰未约束"
+  input_fragment: "Mo 3d doublet fitted without splitting/area-ratio constraints"
+  expected_failure: "SO_constraint_failure；必须约束双峰与参考谱"
+  assert_regex: "SO_constraint|约束"
+- case_id: XQ-13
+  category: arxps
+  description: "ARXPS 报告厚度但无角度与 IMFP/EAL 模型"
+  input_fragment: "ARXPS thickness 3 nm reported without takeoff angles or IMFP model"
+  expected_failure: "厚度为模型派生值；缺角度/模型则 blocked"
+  assert_regex: "ARXPS|IMFP|模型派生"
+- case_id: XQ-14
+  category: generalization
+  description: "把'无需 Cr(VI)'推广为所有钝化膜的排除规则"
+  input_fragment: "no Cr(VI) in this spectrum generalized to all passive films"
+  expected_failure: "仅限该谱/模型；禁止跨样品/跨条件推广"
+  assert_regex: "boundary|该谱|推广"
+- case_id: XQ-15
+  category: raw_export
+  description: "只有图片/应用说明，缺原始导出（VAMAS/参数表/RSF）"
+  input_fragment: "image and application note only, no VAMAS export or parameter table"
+  expected_failure: "figure_only；可用于术语/流程，不可用于数值回归"
+  assert_regex: "figure_only|VAMAS"
+- case_id: XQ-16
+  category: fwhm
+  description: "FWHM 无化学理由地逐峰自由漂移"
+  input_fragment: "FWHM varies freely per component without chemical justification"
+  expected_failure: "overfit_risk；同一能级/样品应受限或共享"
+  assert_regex: "overfit_risk|FWHM"
+- case_id: XQ-17
+  category: background_endpoints
+  description: "背景端点穿过峰或窗口太窄"
+  input_fragment: "Shirley endpoints crossing the peak; narrow window"
+  expected_failure: "background_sensitive；报告端点/窗口与敏感性区间"
+  assert_regex: "background_sensitive|端点"
+- case_id: XQ-18
+  category: anchor_missing
+  description: "化学态数值无页码/表图锚点"
+  input_fragment: "Cr/Fe ratio 2.1 reported with no page/table/figure anchor"
+  expected_failure: "锚点缺失；结论不可回链"
+  assert_regex: "anchor|锚点|页码"

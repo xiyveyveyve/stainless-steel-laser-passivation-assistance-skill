@@ -1,0 +1,21 @@
+# Intentionally failing example: a run with no captured output cannot pass.
+schema_version: "1.0"
+suite_id: "S6-model-behavior"
+artifact_kind: example
+is_example: true
+run_id: "example-fail-missing-output"
+skill_path: "<skill-root>"
+execution:
+  status: executed
+  executor: "example-review-agent"
+  started_at: "2026-08-14T13:00:00Z"
+  completed_at: "2026-08-14T13:01:00Z"
+  command: "fresh-agent-run --suite S6-model-behavior"
+  raw_output_capture: false
+cases:
+  - scenario_id: S6B-01
+    loaded_references: [references/laser-process-metrology.md]
+    output: {format: markdown, raw_text: ""}
+    assertions:
+      - {assertion_id: S6B-01-I01, result: pass, observation: "", evidence: ""}
+    independent_review: {verdict: needs_review, reviewer: "luna-example-reviewer", reviewer_kind: independent_agent, reviewed_at: "2026-08-14T13:02:00Z", notes: "输出未捕获，不能判定。"}

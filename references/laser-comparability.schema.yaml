@@ -1,0 +1,62 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "stainless-steel-laser-passivation/laser-comparability"
+title: Laser Process Comparability Case
+description: >
+  expected_status follows the comparability priority in
+  references/laser-process-metrology.md: confirmed critical conflicts are
+  not_comparable; otherwise unresolved critical fields or source anchors are
+  needs_user_review; comparable requires complete matching critical fields and
+  verified anchors; partially_comparable is reserved for verified, conditionable
+  comparisons with only documented noncritical differences.
+type: object
+additionalProperties: false
+required: [comparison_id, left, right, conditions, expected_status, reasons]
+properties:
+  comparison_id: {type: string, minLength: 1}
+  left:
+    type: object
+    required: [material_grade, process_class]
+  right:
+    type: object
+    required: [material_grade, process_class]
+  conditions:
+    type: object
+    required: [grade_match, process_class_match, dose_definitions_match, required_fields_complete, unresolved_anchors]
+    description: >
+      Distinguish critical from noncritical missing information. A false
+      required_fields_complete does not by itself imply partial comparability.
+      Unresolved critical definitions or anchors require needs_user_review unless
+      a critical conflict is already confirmed independently.
+    properties:
+      grade_match:
+        type: boolean
+        description: "Whether the compared material/heat-treatment boundary matches; false is a confirmed critical conflict only when the values are known."
+      process_class_match:
+        type: boolean
+        description: "Whether the process classes match; a confirmed mismatch is critical."
+      dose_definitions_match:
+        type: boolean
+        description: "Whether spot, overlap, power plane, and pulse/line/accumulated dose definitions match; unknown definitions require review."
+      required_fields_complete:
+        type: boolean
+        description: "Whether all fields required for this comparison are present; classify which missing fields are critical before assigning a status."
+      unresolved_anchors:
+        type: boolean
+        description: "True when a source/page/table/figure anchor is missing or cannot be resolved; this requires needs_user_review unless a critical conflict is independently confirmed."
+      missing_noncritical:
+        type: array
+        items: {type: string}
+        description: "Known omissions that cannot change the requested comparison; these may support partially_comparable only with a recorded rationale."
+      missing_critical:
+        type: array
+        items: {type: string}
+        description: "Missing critical fields; assign needs_user_review rather than partially_comparable."
+      ambiguous_critical_definitions:
+        type: array
+        items: {type: string}
+        description: "Critical fields whose definition is unclear; assign needs_user_review."
+  expected_status:
+    type: string
+    enum: [comparable, partially_comparable, not_comparable, needs_user_review]
+    description: "Use the priority and critical/noncritical rules defined above."
+  reasons: {type: array, minItems: 1}

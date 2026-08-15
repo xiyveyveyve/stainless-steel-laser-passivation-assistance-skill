@@ -1,0 +1,30 @@
+record_id: example-valid-001
+request:
+  text: "比较 304L 不锈钢激光处理与酸钝化的膜层和耐蚀性证据"
+  origin: real_session
+  primary_skill: stainless-steel-laser-passivation
+scope:
+  material_systems: [304L]
+  laser_processes: [nanosecond_laser_surface_treatment]
+  environments: [3.5_wt_percent_NaCl]
+  comparators: [nitric_acid_passivation]
+sources:
+  - source_id: doi:10.1000/example-a
+    anchors: ["p. 4", "Fig. 3"]
+  - source_id: candidate:example-b
+    anchors: ["Table 2"]
+evidence:
+  - claim_id: C-01
+    text: "作者报告处理后极化曲线的腐蚀电位变化"
+    evidence_type: reported_observation
+    status: partially_supported
+    source_ids: [doi:10.1000/example-a]
+    missing_or_blocked: ["重复数未报告"]
+comparability:
+  status: partially_comparable
+  reasons: ["材料和电解液相同，但扫描协议不同"]
+decision:
+  mode: auditable_path
+  primary_skill: stainless-steel-laser-passivation
+  collaborators: [materials-reader, materials-data]
+  user_review_required: true

@@ -1,0 +1,77 @@
+version: 1
+skill: stainless-steel-laser-passivation
+
+# Only these small, stable interfaces are loaded for every auditable request.
+always_load:
+  - path: references/analysis-record-schema.yaml
+    purpose: validate the persistent analysis record
+  - path: references/source-map.schema.yaml
+    purpose: validate source-map CSV rows
+  - path: references/evidence-index.schema.yaml
+    purpose: validate evidence-index JSONL entries
+
+# Domain references are loaded only when their topic is requested. Planned
+# entries are explicit so a missing reference cannot be mistaken for a loaded
+# one during the early build stages.
+on_demand:
+  - id: laser_process_metrology
+    trigger: laser parameters, dose, beam overlap, scan geometry, thermal history
+    path: references/laser-process-metrology.md
+    schema: references/laser-process-record.schema.yaml
+    comparability_schema: references/laser-comparability.schema.yaml
+    source_manifest: references/laser-process-source-manifest.csv
+    source_anchors: references/laser-process-source-anchors.csv
+    status: present
+  - id: passive_film_formation
+    trigger: passive film, film growth, defects, stability, mechanism boundary
+    path: references/passive-film-formation.md
+    source_anchors: references/s4-film-chemistry-source-anchors.csv
+    status: present
+  - id: surface_chemistry_xps
+    trigger: XPS, oxidation state, peak fitting, sputtering, depth and calibration
+    path: references/surface-chemistry-xps.md
+    schema: references/xps-record.schema.yaml
+    source_manifest: references/xps-source-manifest.csv
+    source_anchors: references/s4-film-chemistry-source-anchors.csv
+    status: present
+  - id: corrosion_electrochemistry
+    trigger: OCP, PDP, pitting, EIS, Mott-Schottky, corrosion comparison
+    path: references/corrosion-performance-evidence.md
+    schema: references/electrochem-record.schema.yaml
+    source_anchors: references/s5-performance-source-anchors.csv
+    status: present
+  - id: aging_stability
+    trigger: immersion, salt spray, long-term exposure, degradation or recovery
+    path: references/aging-stability.md
+    source_anchors: references/s5-performance-source-anchors.csv
+    status: present
+  - id: measurement_quality
+    trigger: repeats, uncertainty, statistics, reference electrode, fit quality
+    path: references/measurement-quality.md
+    source_anchors: references/s5-performance-source-anchors.csv
+    status: present
+  - id: conventional_comparators
+    trigger: nitric, citric, electropolishing, mechanical-passivation comparison
+    path: references/passive-film-formation.md
+    source_anchors: references/s4-film-chemistry-source-anchors.csv
+    covered_by: references/passive-film-formation.md#传统钝化对照
+    status: present
+
+# For multi-topic requests, load the union of the listed paths. These rules are
+# additive and do not expand always_load.
+cross_topic_rules:
+  - id: aging_with_xps_endpoint
+    when: aging/stability evidence is requested together with an XPS endpoint, including a single-time-point XPS check
+    required_paths:
+      - references/aging-stability.md
+      - references/surface-chemistry-xps.md
+      - references/xps-record.schema.yaml
+    add_if_requested:
+      film_mechanism:
+        - references/passive-film-formation.md
+      electrochemistry:
+        - references/corrosion-performance-evidence.md
+
+outputs:
+  fast_path: references/fast-path-output-template.md
+  auditable_path: references/auditable-analysis-record.template.yaml
