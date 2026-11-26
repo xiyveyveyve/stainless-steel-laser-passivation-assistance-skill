@@ -35,7 +35,7 @@ on_demand:
     source_anchors: references/s4-film-chemistry-source-anchors.csv
     status: present
   - id: corrosion_electrochemistry
-    trigger: OCP, PDP, pitting, EIS, Mott-Schottky, corrosion comparison
+    trigger: OCP, PDP, passivation potential, pitting potential, EIS, Mott-Schottky, Mott Schottky, 钝化电位, 点蚀电位, 电化学阻抗, 莫特-肖特基, corrosion comparison
     path: references/corrosion-performance-evidence.md
     schema: references/electrochem-record.schema.yaml
     source_anchors: references/s5-performance-source-anchors.csv
@@ -55,6 +55,39 @@ on_demand:
     path: references/passive-film-formation.md
     source_anchors: references/s4-film-chemistry-source-anchors.csv
     covered_by: references/passive-film-formation.md#传统钝化对照
+    status: present
+
+  - id: literature_retrieval_playbook
+    trigger: literature search, retrieval, query construction, false positive, mismatch, grep trap, encoding, coverage check, 检索, 误捞, 排除词
+    path: references/literature-retrieval-playbook.md
+    status: present
+  - id: experimental_design_checklist
+    trigger: experimental design, minimum design requirements, control group, dose window, as-treated state, repeats, 实验设计, 对照, 剂量窗口
+    path: references/experimental-design-checklist.md
+    status: present
+  - id: data_audit_checklist
+    trigger: data audit, unit check, self-consistency, recompute, statistical validity, ingest check, 数据审查, 单位核验, 复算
+    path: references/data-audit-checklist.md
+    status: present
+  - id: paper_internal_contradiction_patterns
+    trigger: internal contradiction, self-inconsistency, statement conflict, label swap, tautology, 矛盾, 不自洽, 互相冲突
+    path: references/paper-internal-contradiction-patterns.md
+    status: present
+  - id: fullpool_read_record_index
+    trigger: full-pool read record, deep-read index, has_target_data, mismatch_type, 精读索引, 全池记录
+    path: references/fullpool-read-record-index.md
+    status: present
+  - id: negative_thresholds
+    trigger: negative result, counterexample, dose window limit, laser degraded corrosion, 负面, 反例, 劣化
+    path: references/laser-passivation-negative-thresholds.md
+    status: present
+  - id: laser_plus_electrochem
+    trigger: laser and electrochemistry same paper, laser plus DL-EPR, laser plus Epit, 激光加电化学
+    path: references/laser-plus-electrochem-evidence.md
+    status: present
+  - id: laser_plus_electrochem_p4_addendum
+    trigger: L7 batch, laser and XPS addendum, measured Mott-Schottky, 补漏批次
+    path: references/laser-plus-electrochem-p4-addendum.md
     status: present
 
 # For multi-topic requests, load the union of the listed paths. These rules are

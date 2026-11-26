@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import sys
 from pathlib import Path
 
@@ -30,7 +31,10 @@ EVIDENCE_STATUS = {
 ORIGINS = {"real_session", "historical_task", "synthetic"}
 
 
-def validate(path: Path) -> list[str]:
+STATE_RUNTIME = Path("D:/杂物间/不锈钢激光钝化skill相关数据/runtime/artifact-state-v1")
+
+
+def validate(path: Path, require_state: bool = False) -> list[str]:
     errors: list[str] = []
     try:
         data = yaml.safe_load(path.read_text(encoding="utf-8"))
@@ -134,19 +138,40 @@ def validate(path: Path) -> list[str]:
         if not isinstance(comparability.get("reasons"), list):
             errors.append("comparability.reasons must be a list")
 
+    if require_state and "artifact_state" not in data:
+        errors.append("artifact_state required; legacy lifecycle has not been migrated")
+    if "record_version" in data or "artifact_state" in data:
+        try:
+            import jsonschema
+            from referencing import Registry, Resource
+            module_spec = importlib.util.spec_from_file_location("artifact_state_runtime", STATE_RUNTIME / "artifact_state.py")
+            state_runtime = importlib.util.module_from_spec(module_spec)
+            module_spec.loader.exec_module(state_runtime)
+            schema_path = Path(__file__).resolve().parents[1] / "references/analysis-record-schema.yaml"
+            schema = yaml.safe_load(schema_path.read_text(encoding="utf-8"))
+            registry = Registry().with_resource(state_runtime.SCHEMA_ID, Resource.from_contents(state_runtime.schema()))
+            validator = jsonschema.Draft202012Validator(schema, registry=registry, format_checker=jsonschema.FormatChecker())
+            errors.extend(f"schema: {error.message}" for error in validator.iter_errors(data))
+            if isinstance(data.get("artifact_state"), dict):
+                errors.extend(state_runtime.validation_errors(data["artifact_state"], payload=data))
+        except Exception as exc:
+            errors.append(f"state/schema validation could not complete: {exc}")
     return errors
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("record", type=Path)
+    parser.add_argument("--require-state", action="store_true", help="reject unmigrated legacy lifecycle for an auditable handoff")
     args = parser.parse_args()
-    errors = validate(args.record)
+    errors = validate(args.record, require_state=args.require_state)
     if errors:
         for error in errors:
             print(f"ERROR: {error}", file=sys.stderr)
         return 1
-    print(f"VALID: {args.record}")
+    data = yaml.safe_load(args.record.read_text(encoding="utf-8"))
+    scope = "v1.1 schema/state consistency only, not scientific approval" if "artifact_state" in data else "legacy structure only; lifecycle not validated"
+    print(f"VALID: {args.record}; {scope}")
     return 0
 
 

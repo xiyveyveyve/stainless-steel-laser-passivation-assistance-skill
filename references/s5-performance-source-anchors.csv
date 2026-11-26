@@ -1,2 +1,21 @@
-source_id,role,reference_section,anchor
-example:electrochem-001,electrochemical validation,corrosion-performance-evidence,Example pp. 5-9; replace with a validated page/table anchor.
+﻿source_id,role,reference_section,anchor
+P1-10-11-EIS-NONLINEAR-2023,EIS 线性/平稳性批判,corrosion-electrochemistry §4,arXiv:2304.08126
+P1-10-11-EIS-DRIFT-2023,EIS 漂移校正,corrosion-electrochemistry §4,10.1016/j.electacta.2023.141959
+P1-10-11-CPE-EQUIV-2021,CPE 非唯一性,corrosion-electrochemistry §4,PMC7997031
+P1-10-11-ECM-BAYES-2024,ECM 贝叶斯模型选择,corrosion-electrochemistry §4,arXiv:2407.20297 / npj 10.1038/s41529-024-00537-8
+P1-10-11-LPR-IR-2014,iR 补偿/欧姆降,corrosion-electrochemistry §4 / measurement-quality §4,10.1155/2014/525678
+P1-10-11-SCANRATE-AL-2021,扫描速率效应,corrosion-electrochemistry §1,10.20964/2021.11.05
+B-ELECTROCHEM-654SMO-C276-2024,PDP/EIS/M-S 正例,corrosion-electrochemistry §3,10.3390/ma17081827
+B-ELECTROCHEM-316L-SENS-2023,敏化 316L 点蚀正例,corrosion-electrochemistry §3,10.3390/ma16165714
+B-ELECTROCHEM-MART-EIS-PDM-2020,PDM 双模型拟合,corrosion-electrochemistry §4,10.3390/cmd1010006
+B-ELECTROCHEM-EEC-AM-316L-2020,AM vs 锻造 EEC 歧义,corrosion-electrochemistry §4,10.1016/j.corsci.2020.108480
+P1-10-11-MOTT-CRITICAL-RAVISHANKAR-2022,M-S 批判,corrosion-electrochemistry §4,10.1039/D1SC06401K
+P1-90-ZHANG-2020,激光标记短期/长期反转,aging-stability §3,304 激光标记点蚀
+P1-90-CONRADI-2019,激光织构长期润湿演化,aging-stability §3,3个月/1年 PDP+润湿
+P1-90-CRIEPI-2012,304L 标记长期 SCC 风险,aging-stability §3,氯环境长期
+P1-90-CHIANG-2026,LSP 涂层方向相反,aging-stability §3,10.3390/met16020136
+H-MEAS-ISO5725-1,重复性/再现性,measurement-quality §1,ISO 5725-1:2023 预览
+H-MEAS-MULTICOMP-BIORXIV-2025,Bonferroni vs Tukey,measurement-quality §1,10.1101/2025.05.01.651705
+H-MEAS-MULTICOMP-CMD-2026,双因素 ANOVA+Tukey,measurement-quality §1,10.3390/cmd7020040
+H-MEAS-ISO16700,SEM 放大率校准,measurement-quality §3,ISO 16700:2016 预览
+JCGM 100:2008,GUM 不确定度,measurement-quality §1,GUM:2008 official PDF

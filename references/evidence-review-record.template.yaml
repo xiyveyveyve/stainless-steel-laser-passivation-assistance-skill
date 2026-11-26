@@ -1,0 +1,21 @@
+schema_version: "evidence-review/1.0"
+claim_id: ""
+source_id: ""
+canonical_source_id: ""
+evidence_input_sha256: ""
+source_pdf_sha256: ""
+original_anchor: ""
+old_evidence_type: ""
+new_evidence_type: ""
+old_confidence: ""
+new_confidence: ""
+decision: pending
+reason: ""
+applicability:
+  material: ""
+  process: ""
+  test_protocol: ""
+  limitations: []
+reviewer: null
+review_date: null
+write_back_authorized: false

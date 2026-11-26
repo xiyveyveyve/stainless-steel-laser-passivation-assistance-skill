@@ -1,2 +1,2 @@
 source_id,title,source_type,material_or_scope,pages,local_path,sha256,extraction_status,evidence_role,public_access,notes
-example:film-chemistry-001,Example unavailable film-chemistry record,metadata_candidate,304L passive film,8,not_downloaded,,blocked,metadata_only,blocked,Template row; no local full text is included.
+candidate:Lawrence-2016-304L-laser-oxide,Laser 304L oxide layer figure-only candidate,laser_surface_treatment_candidate,304L laser oxide layer,12,not_downloaded,,source_unavailable,figure_only_laser_context,blocked,No local full text; figure-only context must not be used for quantitative XPS claims

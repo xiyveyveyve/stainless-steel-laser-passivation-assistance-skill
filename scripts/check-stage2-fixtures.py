@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the structural contract of the stage-2 fixture bundle."""
+"""Validate the structural contract of the DeepSeek stage-2 fixture bundle."""
 
 from __future__ import annotations
 

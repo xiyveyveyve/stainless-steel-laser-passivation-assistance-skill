@@ -29,8 +29,9 @@ valid:
     description: "valid description for testing"
   source_link_ok:
     source_id: "doi:10.3390/met13030516"
-    local_path: '<evidence-root>/example-source.pdf'
+    local_path: ''
     sha256: "24e91e8deb8139a49cb73f3e2341795acad0c825b59123a18a835a20383b1c15"
+    zotero_key: "V68PPCWT"
 
 # ---- 非法样本：验证脚本必须失败 ----
 invalid:

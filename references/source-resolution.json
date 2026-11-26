@@ -1,0 +1,2954 @@
+{
+ "schema_version": "1.0",
+ "input_hashes": {
+  "source-map.csv": "f0b8395bb3872d09eb9708245065ec03b4da2bf4beed39b4e8c1ecaf9b170d68",
+  "evidence-index.jsonl": "ff9d520c5af0eb52bff6320e9b9c470af8834454051252711578b8db49f42d33"
+ },
+ "records": [
+  {
+   "source_id": "doi:10.3390/met11010135",
+   "canonical_source_id": "doi:10.3390/met11010135",
+   "attachment_sha256": "e107295c5a85cfb9ee409aa69384cf589c75e9c4cdbcbed8823ecb3d281864f6",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ece178067fccc1e1313f46c8ee2d0635f4ef3ce743f82be56f2baa1ac1ea434c"
+  },
+  {
+   "source_id": "doi:10.1149/1945-7111/ac4bf7",
+   "canonical_source_id": "doi:10.1149/1945-7111/ac4bf7",
+   "attachment_sha256": "241f64bef91dad639f4e34a80c184b0a0fb05562ae32bd7f09945c622e44aff6",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "0546e772471b03527e2c2695d3238f185203cfc2db896f58b8d4bd456c9a0a3d"
+  },
+  {
+   "source_id": "candidate:P1-01-420-PASSIVE-GROWTH-2002",
+   "canonical_source_id": "candidate:P1-01-420-PASSIVE-GROWTH-2002",
+   "attachment_sha256": "e285a57a56c8f82d3557c55f814c9b963fb13bb3b8c25ea29255c9c5ff903596",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "4431f92686007751769b94a10218c6817c5ab2c21393268def646e875092dee9"
+  },
+  {
+   "source_id": "doi:10.3390/ma13112557",
+   "canonical_source_id": "doi:10.3390/ma13112557",
+   "attachment_sha256": "1133f2f9ffd240a02898f80fe7e3cf64953b1eaf245dd82b37e9d4561c3d9a8a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "bdfc9c4f2f35010e9f054fb937bb45c4ec7e2c5e8b3e644b85b6cee86f2bb5ed"
+  },
+  {
+   "source_id": "doi:10.1016/j.dib.2015.08.016; PMCID PMC4588451",
+   "canonical_source_id": "doi:10.1016/j.dib.2015.08.016; pmcid pmc4588451",
+   "attachment_sha256": "035c9a904aa99c0f83a9edd1f3f0610ec4765b019cc820450b211bc0c0fcf5b0",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "658c855792b910306cf620f95d5a7c870ff27f1b6bf22189cceed0816477724d"
+  },
+  {
+   "source_id": "doi:10.3390/su14148935",
+   "canonical_source_id": "doi:10.3390/su14148935",
+   "attachment_sha256": "67dfea32a2428f2e43705070c6503da75a8ec9cc80e352263af0630f33b55107",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "aba5ad4263a6a6bfa1d6e9e25751ffc49c66baabd22deb23c4124d1fdd506452"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-022-00301-w",
+   "canonical_source_id": "doi:10.1038/s41529-022-00301-w",
+   "attachment_sha256": "36decb2de4071488de2a62e9c34a51963f7d95d32a1bc956dbf311f32a58677f",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "d31437a69cee97503e73fbb68e7457c99cfd0abca31d734a368dc038d23f5415"
+  },
+  {
+   "source_id": "doi:10.1007/s12209-020-00242-y",
+   "canonical_source_id": "doi:10.1007/s12209-020-00242-y",
+   "attachment_sha256": "07a32e3b77d4537c4c3390bdf25a117ac5b195b7ad072d43bb6b2ec993651c31",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "fb4f34eb2795daa5b12c4edd83d7b51c835240953943331214d58cf2830e83a4"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-019-0071-8",
+   "canonical_source_id": "doi:10.1038/s41529-019-0071-8",
+   "attachment_sha256": "a42950469e87e06d8a64865829424e45f3798a4978dc47a6f4e284743179fb42",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "799627f8173a0e478b3fb768fdbe5c092447ac8307532c6779b9bb9bb56b04eb"
+  },
+  {
+   "source_id": "doi:10.3390/metals16010082",
+   "canonical_source_id": "doi:10.3390/met16010082",
+   "attachment_sha256": "3aec775c3a172468a85e9c351811370bf512e03d098a1498035e104e4c37f300",
+   "identity_status": "pdf_identity_checked",
+   "basis": "prior first-page/official-publisher verification, current PDF SHA256 rechecked",
+   "source_row_sha256": "376e9a5f8ae4fa0e4095695b94b512cbf7a8dbb86295ca926129c881e114ff92",
+   "identity_record": "D:\\杂物间\\xiyve的obsidian\\工具构建记录\\科研辅助Skill系统\\文献数据\\90_整理审计\\DOI身份与版本核查_2026-08-31.md",
+   "identity_record_sha256": "540b385f6b2e9bd5966f91c52bb847dc2edf6176187203b7f22b0ed1e8dc66f5",
+   "zotero_key": "B2VWSIDM",
+   "current_pdf": "C:\\Users\\xiyve\\Zotero\\storage\\SDU58QF4\\Kim和Shin - 2026 - Study on Electrochemical Behavior at a Room and High Temperature at 700 °C Corrosion of Austenite, F.pdf",
+   "warning": "legacy source_id retained; use canonical DOI for citation identity"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-026-00750-7",
+   "canonical_source_id": "doi:10.1038/s41529-026-00750-7",
+   "attachment_sha256": "0fdfc0c57cdc8c15dfeb4132c6b8adc0047a76cfa55e716e6e1afb3cd95595af",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "04edcbc697a76f3ee1ccd902a03f77649ee9b597e2fbdc4b12a86b9dae1268d2"
+  },
+  {
+   "source_id": "doi:10.3390/ma17153817; PMCID PMC11313588",
+   "canonical_source_id": "doi:10.3390/ma17153817; pmcid pmc11313588",
+   "attachment_sha256": "d1c3dc8510725930cab46c1a6eed31fb1d5e8fefb64abf160233dc9d43b08596",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "4dd18875cf981012b23934c3ea9834b6195e8cd010243a6309991a9f7716e42a"
+  },
+  {
+   "source_id": "doi:10.20964/2017.01.75",
+   "canonical_source_id": "doi:10.20964/2017.01.75",
+   "attachment_sha256": "34fd42d4a2bc5be58bf7aa590a62bf74857c3df09e7b015d0ab6561bd774933a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "e4118debfb4bb8ba7b436ba13f8c1df9df4cea4408761dea33c3e6abf529bd7e"
+  },
+  {
+   "source_id": "doi:10.1016/j.triboint.2018.01.036",
+   "canonical_source_id": "doi:10.1016/j.triboint.2018.01.036",
+   "attachment_sha256": "5de77650e58d973f1bad622305ab6db640c68e0d593687c7a2ac06253b1aaa4e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "31b20c3f7d053209e87419f0c3b378f00ce7479447b1e595d4dd72318e4c6cb4"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-023-00418-6",
+   "canonical_source_id": "doi:10.1038/s41529-023-00418-6",
+   "attachment_sha256": "22b32785c97f769186f1b51f2afa34e84b5445cb3cc324875a4cc1860f8d44f2",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "755d8690614906020c102a106897336cad9c28bb729676ba8c8b083f883fea30"
+  },
+  {
+   "source_id": "candidate:P1-01-PASSIVATION-NASA-2011",
+   "canonical_source_id": "candidate:P1-01-PASSIVATION-NASA-2011",
+   "attachment_sha256": "e7ef9bf62fc40f0c76e7ea3e7cbcae2dfb6c0db84bbcd56316bb88db7c97b91e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "eaee621119113b1289761a675f76efa196352474223577076dcf27b4cb1ad195"
+  },
+  {
+   "source_id": "doi:10.1016/j.electacta.2019.135159",
+   "canonical_source_id": "doi:10.1016/j.electacta.2019.135159",
+   "attachment_sha256": "08b4f53c458b78b158fd3b1cfcf14263a22332c05dd6886e363f5cdb663a91ab",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "be0ce4e862f52cf8888d1c1c7229fc23022ce3235b5e1d0e91e064eaeecf1781"
+  },
+  {
+   "source_id": "doi:10.1149/2.0321911jes",
+   "canonical_source_id": "doi:10.1149/2.0321911jes",
+   "attachment_sha256": "c79c847f0843acd9bc084c49b547c3faebb33e14b8bfa862ec62eff0299f1fe2",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "54f123a290484441fc5bb354d469c3e4f0d4e6c8632806147c632b345586c0d2"
+  },
+  {
+   "source_id": "doi:10.3390/met12061033",
+   "canonical_source_id": "doi:10.3390/met12061033",
+   "attachment_sha256": "2a03a8828aaf1e12f6862c1f72d30400e978cd2ef19c22c312b3de3a56f36b7d",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "30ada9329857b69699b5fda263c824d27e9b978de1db61c1df0da90011fa24b1"
+  },
+  {
+   "source_id": "doi:10.3390/met13050835",
+   "canonical_source_id": "doi:10.3390/met13050835",
+   "attachment_sha256": "2ad6678458e85b57665ba73d3525c4ef228ff2584cfb255ce77a68a5306223a8",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "68909a23e7070304355b52155d739e9d87b78679e36d5d9adc4c43a932765685"
+  },
+  {
+   "source_id": "doi:10.3390/ma13153402",
+   "canonical_source_id": "doi:10.3390/ma13153402",
+   "attachment_sha256": "b6bc66dfc98ece995e599391f3a08c2e33f260fadd6d847cd63ab5084e06df54",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b47267827d1325ef6de5ed3426f2b9c37a86d675c213ea5890883370c96d2308"
+  },
+  {
+   "source_id": "doi:10.3390/met13040776",
+   "canonical_source_id": "doi:10.3390/met13040776",
+   "attachment_sha256": "5911ce535cd8073a15b8344b09b73321c1ff7812b7fad059d35047022c52aa30",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "77e467c52bbc86c6a5bfce5a90f94fd439aefc9e0ccea0f34b612ebf67488af9"
+  },
+  {
+   "source_id": "doi:10.3390/ma7075268",
+   "canonical_source_id": "doi:10.3390/ma7075268",
+   "attachment_sha256": "130a8b43638d41728f3a024a79d312cd9fb44eb921094fecad51452fc4526c76",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "0f70ebbe8c378a148cb93933d6b2eabd75680fe05d16a7f01db5d22fa24160f4"
+  },
+  {
+   "source_id": "doi:10.3323/jcorr.59.212",
+   "canonical_source_id": "doi:10.3323/jcorr.59.212",
+   "attachment_sha256": "a9c74bc8d2005c24035ce6c19b0f3d15ea82a0470dbe8b60754283a48c9a6f42",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f5cd753bdf73e5d7cc1669a40381daeebaf2241b8ef65b3ca5aab4c4cb2f30ac"
+  },
+  {
+   "source_id": "doi:10.2472/jsms.60.862",
+   "canonical_source_id": "doi:10.2472/jsms.60.862",
+   "attachment_sha256": "ac45af7dbbc727eefcfee5105e8a3101a86e05c41d159fec283e5e80911df844",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "7a14cb8f0183ed5052d50743e8423062bbb3e063044ed529de2a24efe2cb5516"
+  },
+  {
+   "source_id": "doi:10.1007/s42247-021-00194-6",
+   "canonical_source_id": "doi:10.1007/s42247-021-00194-6",
+   "attachment_sha256": "aca0520bebdfda2cb4abfaf63b5e7f77e3fa52838c5122b9b6eb5f6c97f9b068",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "e887ae4a212e6b703f8ba051080f7fc02d12ba86571534c73991fde81e853513"
+  },
+  {
+   "source_id": "doi:10.3323/jcorr.57.375",
+   "canonical_source_id": "doi:10.3323/jcorr.57.375",
+   "attachment_sha256": "32e3df0eba442a606241c3d3fa40ce6ae8cdd42e9b145e1e7bf594de0513021e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "bac546517445798ecb7a9756fca9c8d0c09b1f5aa3c087bcbc7d11d1ab165543"
+  },
+  {
+   "source_id": "doi:10.3989/revmetalm.2003.v39.iExtra.1101",
+   "canonical_source_id": "doi:10.3989/revmetalm.2003.v39.iextra.1101",
+   "attachment_sha256": "48be9b765b4097ff415be30868f2ee0a81de8b141275db29abbcd8a5dab1f7db",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "8df3dd9caaa871a142e6f3107c9f4548c5cd92d8ce4313d0b4246c39822cb910"
+  },
+  {
+   "source_id": "candidate:P1-01-SENS-304-304L-DOERR-2016",
+   "canonical_source_id": "candidate:P1-01-SENS-304-304L-DOERR-2016",
+   "attachment_sha256": "fa867cc00c9c4ece96310314a093dbf80ff3463ea648ec2062352cddf8a6ec96",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "01ef8f43e067ba486bfdd126675e9015ae4937d33da17fba1d9706aab894abac"
+  },
+  {
+   "source_id": "candidate:P1-01-SENS-304-304L-EPR-GEAP12697",
+   "canonical_source_id": "candidate:P1-01-SENS-304-304L-EPR-GEAP12697",
+   "attachment_sha256": "08d7fb291c74821c94547e845868fd4c715460a13cc7c84090292c636e024a10",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "4b446558016ed6a1af0fe1be810f98e8cade9510f60c08cf131d6f2ce18156cf"
+  },
+  {
+   "source_id": "doi:10.3390/ma15238543",
+   "canonical_source_id": "doi:10.3390/ma15238543",
+   "attachment_sha256": "7681c5125841c5863b9872ff7febed1192ad1973c2ff7c71a9f7b6c054139714",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "e66194f53da6ebcde09ba5855f2852a78cf80d33affd6c37e999a05285cc1b6e"
+  },
+  {
+   "source_id": "doi:10.2355/isijinternational.52.1879",
+   "canonical_source_id": "doi:10.2355/isijinternational.52.1879",
+   "attachment_sha256": "808827736ddbe310e137306464cda1939e54f247a5973a589b378ab425cea90f",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "39861944352b6fe5e79898ef297d9216cfa37ba6b38f6b0218311cddd718a3cd"
+  },
+  {
+   "source_id": "doi:10.20964/2018.07.74",
+   "canonical_source_id": "doi:10.20964/2018.07.74",
+   "attachment_sha256": "497fa5c6849671c7fc3e3370116e44cf5eb8908f2644cbd38f6e33514b686fc4",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b03f3ec79b8b57e16e412b55ffcf02ffeab0c55fb31e140fca4f5ab55504fd3d"
+  },
+  {
+   "source_id": "doi:10.1186/s10033-019-0336-8",
+   "canonical_source_id": "doi:10.1186/s10033-019-0336-8",
+   "attachment_sha256": "bdc67cc897c616e7c82dc968f335add87bdb473d9a7283a168a338fadcb72128",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "162f0b9df134f3749f3669b765a97372f6bb4908312cb754254133702029d721"
+  },
+  {
+   "source_id": "candidate:P1-01-STANDARD-A967-2005",
+   "canonical_source_id": "candidate:P1-01-STANDARD-A967-2005",
+   "attachment_sha256": "719f6376a5af2fbcb08538f222af6938cc6efff80c6c30b687f9facb5e963956",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "15d1afab25b57488111e2b7c8f8ad54ac6461612b719ff517352e560ea6efa56"
+  },
+  {
+   "source_id": "candidate:P1-01-STANDARD-PASSIVATION-GUIDE",
+   "canonical_source_id": "candidate:P1-01-STANDARD-PASSIVATION-GUIDE",
+   "attachment_sha256": "261b85f1c5a80be2a11725390fa4786b2b0d7fb7b155187e3d905a377e878f3a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "1665be7dce135f769aaa20620cf57473511639a988b1cee2fe613ecf32c8db90"
+  },
+  {
+   "source_id": "candidate:P1-01-STANDARD-WORLDSTAINLESS-2025",
+   "canonical_source_id": "candidate:P1-01-STANDARD-WORLDSTAINLESS-2025",
+   "attachment_sha256": "8019c8d480bc2c3d426abca02572ef0c7a264e616f325e30e5544711dc7b2e4b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "40dc998f40d0a76e8f9ec855acbd4ed7e03c491a628faf9e4cda6a6def5b4b16"
+  },
+  {
+   "source_id": "doi:10.1016/j.procir.2020.09.157",
+   "canonical_source_id": "doi:10.1016/j.procir.2020.09.157",
+   "attachment_sha256": "053beae02e41d9663bd822bfd29de3cb27d059b8d54c570582387c7fc6e22d6d",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "27c37f6772603d18d50ed5b44dd20203bdd4d21bb03beda0c08986cf9f5cf263"
+  },
+  {
+   "source_id": "doi:10.3390/met9010086",
+   "canonical_source_id": "doi:10.3390/met9010086",
+   "attachment_sha256": "b47a852bf918dc4cef8730c38fc9b6b9a70d00cb2657a7b9687e7f4e209155b5",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "52fb2df6f8f78b5b942ef60e6036c7dfa0ed2252490902847c4bf21b85a79ef4"
+  },
+  {
+   "source_id": "doi:10.3390/ma12172802",
+   "canonical_source_id": "doi:10.3390/ma12172802",
+   "attachment_sha256": "82c4d7ebd9fb4d7c1eee690773207630efea54fb0d89b2a05993a5673c7231d8",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "68ca0984e12bcd827180fdbbd02f395b53ef23bfe1f9b602a5c6820cf9229ed0"
+  },
+  {
+   "source_id": "doi:10.3390/jmmp2040084",
+   "canonical_source_id": "doi:10.3390/jmmp2040084",
+   "attachment_sha256": "41085ed435f5a8f335896f0ba91f1b4fb8652681abb4b5c9192fde0a59f1ae09",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "df757f007016c9949cd7a1ac713c34bf823efef8f4d868f9d39f2663c8acb7a9"
+  },
+  {
+   "source_id": "doi:10.1038/s41377-020-0242-y",
+   "canonical_source_id": "doi:10.1038/s41377-020-0242-y",
+   "attachment_sha256": "312d6a0f6173368c7fbcfc4c48fa16e850b1d632fffb550e8f4ff9c561f2672c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "677366412750fa2fd300e4e75e17cd8098f0b168ebf563a652c7bc0f24ad2665"
+  },
+  {
+   "source_id": "doi:10.1103/PhysRevApplied.10.044061",
+   "canonical_source_id": "doi:10.1103/physrevapplied.10.044061",
+   "attachment_sha256": "93adbd7b1760a7958da0eb7cd468ab85a9760560c551c253cd10337281a46646",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "0de3ac625d59c9719b6fe28ed85e231da2e37b58ef6160a8d754de76332d1dfd"
+  },
+  {
+   "source_id": "doi:10.1016/j.measurement.2023.112524",
+   "canonical_source_id": "doi:10.1016/j.measurement.2023.112524",
+   "attachment_sha256": "c5a8e39c3b00ca4435f2d17c3b93bda9aafbe6fb10c0e09f8257c9b3078f3cbf",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "81827b2d96f848b5a8ea21bf1b0247e7e5b3bc4e639fe49b2fa91920b4b4a9eb"
+  },
+  {
+   "source_id": "doi:10.3390/met12040556",
+   "canonical_source_id": "doi:10.3390/met12040556",
+   "attachment_sha256": "e2ee3f721def9bbbff9bfb6bf991ed3c9735d6f93eb0cb6023fe1fba62204fcd",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "2e6abb2fe2e99806787c7fab168b4223f25413f62f9535ada62627215bcbf934"
+  },
+  {
+   "source_id": "doi:10.1063/5.0047514",
+   "canonical_source_id": "doi:10.1063/5.0047514",
+   "attachment_sha256": "a9709d9938c016391d97701c07b65435669faf4e4757e42969908a1055c07085",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "4a153a01325a904e17065a2107cfe803d97e280b10ad0da93329890571eaaeae"
+  },
+  {
+   "source_id": "candidate:P1-02-ATM-LOUVIS-2012",
+   "canonical_source_id": "candidate:P1-02-ATM-LOUVIS-2012",
+   "attachment_sha256": "a651e1964f6c3ecff50666fc04907b816f7162f659beb88be7ba214c3299443c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f38968e21f3bcef9e802a4c6cd04c8f0497d593828b4256f8383d8fe698fb349"
+  },
+  {
+   "source_id": "candidate:P1-02-BEAM-NBS-1978",
+   "canonical_source_id": "candidate:P1-02-BEAM-NBS-1978",
+   "attachment_sha256": "17b88965d46be3a612888de5a14455802c91c25602d118bb27cc6112d05b68cb",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f23f0c6a7b5ee2934341083446b720411cfea8a4f200c48a8fc6a26ec3b5e0d3"
+  },
+  {
+   "source_id": "doi:10.1088/1742-6596/85/1/012014",
+   "canonical_source_id": "doi:10.1088/1742-6596/85/1/012014",
+   "attachment_sha256": "3ae533770a1c87fc17368ca9e2cf76f363e9f0a7d062df5b63f7e23c0199ce64",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "526c3b3ccd82793db29d8229cb1b10f1bfd7f8559c5539fba76f427ab8971208"
+  },
+  {
+   "source_id": "doi:10.1007/s00170-026-18522-7",
+   "canonical_source_id": "doi:10.1007/s00170-026-18522-7",
+   "attachment_sha256": "1e1211a112c6281f59dc893a9d1b492cae2198b5dea348df7ab3f599c0a3a0eb",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "581f28b8ab7c5c7429e676e1a563a1ab72d353e6ef55766c646f1fede4bab9e9"
+  },
+  {
+   "source_id": "doi:10.1007/s00339-018-2040-4",
+   "canonical_source_id": "doi:10.1007/s00339-018-2040-4",
+   "attachment_sha256": "69e795d758902adc62a4079808542136b6411878e6e9e6e2d7a81775946371fc",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "3d00232a9913d6c45e817f36e105366272b2faafa43e4c5b2ecdddf039c4edb6"
+  },
+  {
+   "source_id": "doi:10.1063/5.0046287",
+   "canonical_source_id": "doi:10.1063/5.0046287",
+   "attachment_sha256": "5dcbe054cd22f9b305bd8dd9c1830b420361bb77675facc4626812e17627bec4",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "6683ff2d621833c16bff0c36e9853b516acd9ec01b88c5e327d3834b9269bf78"
+  },
+  {
+   "source_id": "doi:10.1007/s40516-026-00357-5",
+   "canonical_source_id": "doi:10.1007/s40516-026-00357-5",
+   "attachment_sha256": "c35e08d33c7c82b62b04094ca02013686a2f75c927b616d041a9d40f1ee32893",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "26d104a1a6cbabd74bb850ed1aaf41ffc3d45d1272e65a317caa6539e0b6d492"
+  },
+  {
+   "source_id": "doi:10.6028/NIST.AMS.100-67",
+   "canonical_source_id": "doi:10.6028/nist.ams.100-67",
+   "attachment_sha256": "529225eb781d29859c310eb5dab22bc6195da252f9a02ee9e9dbe946616f8302",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b64ac8397495e259fbdbaf39f7406e4381aa4c74e22f67b15fda40eacea8e99c"
+  },
+  {
+   "source_id": "candidate:P1-02-METROLOGY-NIST-SP250-87",
+   "canonical_source_id": "candidate:P1-02-METROLOGY-NIST-SP250-87",
+   "attachment_sha256": "6daa7f37f61c7794414b7d5da94dd12be7898cf853721e7b783dbbeffe4bcb23",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "0cd95fd85039aafee84a6a21fc0ad987dfe05e609feb800fbda524a66ff825dc"
+  },
+  {
+   "source_id": "doi:10.2184/lsj.26.723",
+   "canonical_source_id": "doi:10.2184/lsj.26.723",
+   "attachment_sha256": "c30f2a60d9be5b9532ca390d62437c28a354b63a938779dbf961fd3ae99e61c5",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ec2c1f9455f547c3c69122d3247bb7c902251753cd5b94a24865f9429b5451bc"
+  },
+  {
+   "source_id": "doi:10.1002/adem.202201021",
+   "canonical_source_id": "doi:10.1002/adem.202201021",
+   "attachment_sha256": "41e88efce3dbd204bc33605abd42957a4841f8f3419175ca500b7f8ebe356744",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "312a6915eda66750e418cd5ce6dc1a5ac4e410918a48918ac3300d501da16ace"
+  },
+  {
+   "source_id": "doi:10.3390/nano12020232",
+   "canonical_source_id": "doi:10.3390/nano12020232",
+   "attachment_sha256": "58ad64977250deea70c8c8bd99c4f46d83f7c69d124f484efcf229853f8470f5",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "387dd99f3d5cf82776ae51c823426caccb03a8380e01231059ac8075721a68c2"
+  },
+  {
+   "source_id": "doi:10.3390/ma13040969",
+   "canonical_source_id": "doi:10.3390/ma13040969",
+   "attachment_sha256": "93d06302f1d34de72514dc7d1e2a02a7d9d23ede012172c5beba686fec0c8b6d",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b33519ba425e65f98481a5ac475bc55b0d2afd9faa4c04cfaed12ba9ffdff84b"
+  },
+  {
+   "source_id": "doi:10.3390/molecules31030480",
+   "canonical_source_id": "doi:10.3390/molecules31030480",
+   "attachment_sha256": "9fd23303ebcbecd314cda816dfcc26c7c2569e9fe887b32e8dde7faa27870091",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "790bdd58b6872dfa982a72d2bfdf3d93b241cb5d8ceb2081624f8eacf51755c0"
+  },
+  {
+   "source_id": "doi:10.3390/coatings14040467",
+   "canonical_source_id": "doi:10.3390/coatings14040467",
+   "attachment_sha256": "0ee99bd9308038d0c703c2011a976208e652110b740ed95d076ac33bbe2c95fc",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "34da97d235269e2a97a71034b0aff488c64f3be295613216475ad003d6636844"
+  },
+  {
+   "source_id": "doi:10.3390/cryst14040353",
+   "canonical_source_id": "doi:10.3390/cryst14040353",
+   "attachment_sha256": "22c6ea8633a64d0354534b22b6b086bd313d960998cf62b7afb5581987249cac",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b29980e29e9d0010925dab2489fabd61e619bdeaa302b0ba53bce5a0024aedb1"
+  },
+  {
+   "source_id": "doi:10.3390/mi11020221",
+   "canonical_source_id": "doi:10.3390/mi11020221",
+   "attachment_sha256": "abeb903f6fb374e29283516df4a2d4723a431f1aa8b92d63a5dae857b089a043",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b4a90eaecbba1ffb8cfc0d9beb9f4d676714a844bca195d96424e3ddcdddc9f6"
+  },
+  {
+   "source_id": "doi:10.3390/mi14061241",
+   "canonical_source_id": "doi:10.3390/mi14061241",
+   "attachment_sha256": "4406465b3af756cd2f559a59ce2e44fbde040e98b7bb3f05ca3e8b272cd67374",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "7db82a0b96368b26d1ccdd9f3acb753c8ded425f247ee356f3b72ca793d193ce"
+  },
+  {
+   "source_id": "candidate:P1-02-SUPP-GUPTA-2013",
+   "canonical_source_id": "candidate:P1-02-SUPP-GUPTA-2013",
+   "attachment_sha256": "19df4628284da673256274db4ab4a78aa9ab8de6425f2879337139bddde2535b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "72e4fad9a3cb2142a101a8fa5b3c26e2f8d712a4ee1d683b8998c2d5edeb0b28"
+  },
+  {
+   "source_id": "doi:10.11902/1005.4537.2024.398",
+   "canonical_source_id": "doi:10.11902/1005.4537.2024.398",
+   "attachment_sha256": "d9664a762281b9b8f622f981f20a842d4acb5b641c56a9069c2b67d28b144b97",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "498152a54283905740674f3264d4ffba41f7d63b647b1cf1cc3d3a3af1f6624c"
+  },
+  {
+   "source_id": "doi:10.16490/j.cnki.issn.1001-3660.2021.07.007",
+   "canonical_source_id": "doi:10.16490/j.cnki.issn.1001-3660.2021.07.007",
+   "attachment_sha256": "b886030da56d5adacec6fe7808d079e1ed2e5a92a2067b7789bcfe25e08f46a4",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ab03c68cc8da1444867c3829a4a2ab67f953a143cb41d757f100cf9fa38c54bd"
+  },
+  {
+   "source_id": "doi:10.4028/www.scientific.net/KEM.856.135",
+   "canonical_source_id": "doi:10.4028/www.scientific.net/kem.856.135",
+   "attachment_sha256": "fbf9a752c2c87c6545fc984a1dae4b39ad61793ca428856389ee04b4a5bf50d4",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "6b823417833809b495c08bfefc6ed78a9d69eee76dbd244f896a3f64077dcc6c"
+  },
+  {
+   "source_id": "doi:10.1007/s11661-026-08247-3",
+   "canonical_source_id": "doi:10.1007/s11661-026-08247-3",
+   "attachment_sha256": "714d50a14e7195e91611accd5c58174b228c9f1fe3893650c5a15e3c4dda6c21",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "8e6f5f329457551eb53635e514a7791312fa2c0eb059c1391c51fa82e1da0665"
+  },
+  {
+   "source_id": "doi:10.20964/2018.12.30",
+   "canonical_source_id": "doi:10.20964/2018.12.30",
+   "attachment_sha256": "daf29818c38f591f5b30c297deb5e9a8ba151eb9b87e9abc913997af51995095",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "720c5fd7cd54ea15ead7ae01e4ccc2d52607d085e9d76e80785ac4d78bcfb9d6"
+  },
+  {
+   "source_id": "doi:10.1016/j.solmat.2023.112380",
+   "canonical_source_id": "doi:10.1016/j.solmat.2023.112380",
+   "attachment_sha256": "1618e2739dd660947ed20b0d8ac75ef93c4ad7cf41b8492e759c638287affc46",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f385d9a9b44a6f5c2bcc86f43a7a4cfba90fe144f43f3c60e29a65e2db0c0363"
+  },
+  {
+   "source_id": "doi:10.1016/j.est.2023.110053",
+   "canonical_source_id": "doi:10.1016/j.est.2023.110053",
+   "attachment_sha256": "f1fbf88e43186e24a72b6fcfbb23f260ba1b4e60610843e50c04a21d7f611acc",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f1a86645aaa863c2b9930988b5e351b75b20b237b6554114df8b6b70ef5b309c"
+  },
+  {
+   "source_id": "doi:10.1016/j.optlastec.2025.112692",
+   "canonical_source_id": "doi:10.1016/j.optlastec.2025.112692",
+   "attachment_sha256": "f73d71850cfbf9320ca3ac43adec50b195db54f15f1bacc78d9528ea0206b9cb",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "579514abdf58be251259481f3865f0ad9b36a950a11fd6bbed200bddea4c91da"
+  },
+  {
+   "source_id": "doi:10.3390/coatings9090592",
+   "canonical_source_id": "doi:10.3390/coatings9090592",
+   "attachment_sha256": "5af4dae5cc6c22a41ce0eae4677202d1d6404ab27371fdeb355646d5b5cbb796",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ddd1493812dda0b3607cc6adfc345b3acab9c998bde3642a9a71d5812475fd5f"
+  },
+  {
+   "source_id": "doi:10.3390/ma11112240",
+   "canonical_source_id": "doi:10.3390/ma11112240",
+   "attachment_sha256": "3e0f00bc9d2fd636cf020fbef5152e80dc1509c426a54cebac1aea4174b28f8f",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f876d333da20ceda7322073ea88400cbd1dff052738a4f19db53f52bf51e44cb"
+  },
+  {
+   "source_id": "doi:10.3390/met13030516",
+   "canonical_source_id": "doi:10.3390/met13030516",
+   "attachment_sha256": "24e91e8deb8139a49cb73f3e2341795acad0c825b59123a18a835a20383b1c15",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "877198512b7caddd95f7f3d4cc05b037e742f63b5a0f8bad3e80ef1795ae91ea"
+  },
+  {
+   "source_id": "doi:10.3390/met12071215",
+   "canonical_source_id": "doi:10.3390/met12071215",
+   "attachment_sha256": "93aa0a81efd40415f88be015c4f445f89e68691d5b6477c10ec8638a661ec283",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "08efd5866587318a475489b0b2d0530124df64e4c16fc1cb0088c2e801f688fa"
+  },
+  {
+   "source_id": "doi:10.3390/met16020136",
+   "canonical_source_id": "doi:10.3390/met16020136",
+   "attachment_sha256": "bb4f05159e3ec28dd1179abe587bdd7e5cf711e83038d5f4a14059b875a9c079",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "9b53a4f738901aaef1368db3fd7404052012651389f407fc97c51853b958c5ec"
+  },
+  {
+   "source_id": "doi:10.11902/1005.4537.2025.353",
+   "canonical_source_id": "doi:10.11902/1005.4537.2025.353",
+   "attachment_sha256": "2343f818af485ea5a8c46ca8f563e76f11f379ee581d8c35c1dae31a999b7a35",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "6f5ee14058ee48a8d0cc182a94e48da23feb2b951664c19d84b22361803a39e0"
+  },
+  {
+   "source_id": "doi:10.3390/lubricants11010007",
+   "canonical_source_id": "doi:10.3390/lubricants11010007",
+   "attachment_sha256": "e77c4d0f4e3312bf3a84959ddaadeca4f25ff097d312402b5b88fda4fbd7ddd1",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "0f8ecfa34664fc52044cc7525b58f259847f915c595b31ce4fa279a2607eaf72"
+  },
+  {
+   "source_id": "candidate:P1-04-MARKING-THESIS-304-2020",
+   "canonical_source_id": "candidate:P1-04-MARKING-THESIS-304-2020",
+   "attachment_sha256": "73d8a6a98c8474ca580c4e1e04fc45834c74f81084c68964d9d383fd02c80b2e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b5223374ae0ca43e549aa405d138a88341e68190f649797d92a75a8477802e66"
+  },
+  {
+   "source_id": "doi:10.3390/ma10060595",
+   "canonical_source_id": "doi:10.3390/ma10060595",
+   "attachment_sha256": "56dd9d0b3473e1fbfda91e3e6197d22f632bdd4919654da17af7ed5f47877cac",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "e6d32240d2172ceff7d657103562e6992aa4d6af3eb2cd40869cefbaaa68e94b"
+  },
+  {
+   "source_id": "candidate:P1-04-SCC-CRIEPI-2012",
+   "canonical_source_id": "candidate:P1-04-SCC-CRIEPI-2012",
+   "attachment_sha256": "355eaa0ba1c25c4de2d2311d1491d27ba5e7c7ed2314784b4c68b49c5f35bb4b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "4ed34ba0994e0ba5a3d3e0cf511cbc76f0e2f1deb68fb627007a91f56331aeb1"
+  },
+  {
+   "source_id": "doi:10.1038/s41377-025-01952-5",
+   "canonical_source_id": "doi:10.1038/s41377-025-01952-5",
+   "attachment_sha256": "ad9a9ade72d2c8d646cd0a89563a6a4308059d60006a83d7ecd42a5feed939da",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "7132dd0ece87144fc4daa65b3b5c4b39538b30e8fff67f3166645dcaca1ac8b6"
+  },
+  {
+   "source_id": "doi:10.1002/maco.201910892",
+   "canonical_source_id": "doi:10.1002/maco.201910892",
+   "attachment_sha256": "59b1f2b8dc081545b136955afe3ba41575b30f58e65dbb668ab97c8b7b7cafd0",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ed52f61aa863151e381c128510c4f1be325e350b8cf138d0c27118e25f671a82"
+  },
+  {
+   "source_id": "doi:10.3323/jcorr1991.48.155",
+   "canonical_source_id": "doi:10.3323/jcorr1991.48.155",
+   "attachment_sha256": "f8102bdbf725452b345b837a824aa1fc3cd6a8be8798bf36d315ddf5c6693312",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "2d5ed4fcf73b95156ca19ef4772a09dcc9fc5265c255b11b30714903e081ff2c"
+  },
+  {
+   "source_id": "doi:10.1515/adms-2015-0004",
+   "canonical_source_id": "doi:10.1515/adms-2015-0004",
+   "attachment_sha256": "d82b702a3af3aec09ab7071a3598d0f7d18a9acddc0628b65cb1f4ffe13a6339",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "4ae65fcb2a775673959c13e670d3d3a6693d076a92ae804b6b8fff6385bbb05c"
+  },
+  {
+   "source_id": "doi:10.1016/s0010-938x(00)00052-4",
+   "canonical_source_id": "doi:10.1016/s0010-938x(00)00052-4",
+   "attachment_sha256": "905336e27e00c10ea3950bf4a699119a0ffa3a8c3b1d04ddced3ca7fda247dd3",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "004cc52003b52738e2b0bd57f9de0d520cda955fadfebf0076d41735c62c465b"
+  },
+  {
+   "source_id": "doi:10.5772/57275",
+   "canonical_source_id": "doi:10.5772/57275",
+   "attachment_sha256": "81b68b546dff6e40daa7764b2cece1893b41904d2e56c51a5d6d045a386cfdc0",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "3b25b37bc1e80bc76454d40e142f72a63a16b6a3e67a67f30b578d086c5e265d"
+  },
+  {
+   "source_id": "doi:10.1016/j.corsci.2014.06.010",
+   "canonical_source_id": "doi:10.1016/j.corsci.2014.06.010",
+   "attachment_sha256": "5c10e78e0bcf812dc9a3ea5c86a4d8f7bbf18e12eecde0c9cb924a16fef9f74b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "7c1700fb570d71e3e15422ae8b4697fcdba6752f106bdba17b93c115967a9b59"
+  },
+  {
+   "source_id": "doi:10.1179/bcj.2001.36.3.184",
+   "canonical_source_id": "doi:10.1179/bcj.2001.36.3.184",
+   "attachment_sha256": "8e1826551844ef105c4653c0c9e858e658ef76d3ba598b8a6594df265a072156",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f0f97e1d1e1127d6cb6eeaf807ff0c3e7060a592b0f7604960546a6aaecb24e7"
+  },
+  {
+   "source_id": "doi:10.1016/j.jnucmat.2024.155010",
+   "canonical_source_id": "doi:10.1016/j.jnucmat.2024.155010",
+   "attachment_sha256": "8343d52a2e93bed78a396cef8e82a574804be0a8dae21d449f7534437664290b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "83cb1a85ddaf3ffac165e1a7f7f7269afbc3eb316fe50d00d3e902e240bfa598"
+  },
+  {
+   "source_id": "doi:10.4172/2169-0022.1000412",
+   "canonical_source_id": "doi:10.4172/2169-0022.1000412",
+   "attachment_sha256": "37a3bdc9fb95d1a680d704ba049aebd4ae375333304bf80dd436d20acfae7065",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "4e80988bcb07022134c8e1b0c8d76e0629289236c330996d2da0313b1c83a191"
+  },
+  {
+   "source_id": "doi:10.1016/j.mtsust.2019.01.001",
+   "canonical_source_id": "doi:10.1016/j.mtsust.2019.01.001",
+   "attachment_sha256": "a591b4136d10de9a28bb61c155e3b4da4a81aa7fdc595c51606b13a8fff15638",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "2757c4f6f33db8418f50162147546bb8eadd46c52cc1b5fcf950c703428580b8"
+  },
+  {
+   "source_id": "doi:10.1016/j.matdes.2015.08.113",
+   "canonical_source_id": "doi:10.1016/j.matdes.2015.08.113",
+   "attachment_sha256": "92f3e3a823bcfb3d39a97a8f4c0bc48ca14439972e5973d1877aefdb7afcbaec",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "5dae568bd985ff72a3725299bedcbe5dc3477650f2dbf27b976f16d613575024"
+  },
+  {
+   "source_id": "doi:10.2172/2001684",
+   "canonical_source_id": "doi:10.2172/2001684",
+   "attachment_sha256": "57498c0c9bc9a31224ce7a594d8eb3542616a150e6efe8e07cf33ab3bece963c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ff05a7f8439c074e330f0f871339860d30c834a0bd667b5dfadcbdc83bc2f629"
+  },
+  {
+   "source_id": "doi:10.2172/881451",
+   "canonical_source_id": "doi:10.2172/881451",
+   "attachment_sha256": "9e079aba5634a2ef2662bbfbfdcc8a2725aad645ac6f9aec8049e0646935d7fe",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "504ebb2743742740a3feb3ba4467ba91d4549efba6fb3e1d40bd4a030e57eafc"
+  },
+  {
+   "source_id": "doi:10.5772/32893",
+   "canonical_source_id": "doi:10.5772/32893",
+   "attachment_sha256": "93b4b5fa4573434f6e875bb5222dc82f538294c4db53a44e2232ef5e3a35b2b0",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "346754a79946296de46e1c31b158cbd0c8c10dcc5a4dcaa19b43354256629f23"
+  },
+  {
+   "source_id": "candidate:P1-10-11-CPE-EQUIV-2021",
+   "canonical_source_id": "candidate:P1-10-11-CPE-EQUIV-2021",
+   "attachment_sha256": "8e7d0c8fec20eab970c6af7889d11ab0ddb321f2baa99a557f8ef04d006762b8",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "c33c2a5280d6b985331885f1f46b60910a12c26668b8bf5623e97d2e79c6ffab"
+  },
+  {
+   "source_id": "candidate:P1-10-11-ECM-BAYES-2024",
+   "canonical_source_id": "candidate:P1-10-11-ECM-BAYES-2024",
+   "attachment_sha256": "3d1aafd8ee4e005b8d628ccf97fac0db9f30cb0dc76d80aaaf64aa6dc19a15aa",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "db6983474754aad51977b1ea3b6535a59494bf7ee473c696ab4149ab02ee04b3"
+  },
+  {
+   "source_id": "doi:10.1016/j.electacta.2023.141959",
+   "canonical_source_id": "doi:10.1016/j.electacta.2023.141959",
+   "attachment_sha256": "d038cd23f0efdf915bff2b4240327d0ca9698e460cb54cc215494993800a9e2a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "8031d51b3514b22c6cb242a71ed0909af2e04eeeeca9539031e87edcfc378673"
+  },
+  {
+   "source_id": "candidate:P1-10-11-EIS-NONLINEAR-2023",
+   "canonical_source_id": "candidate:P1-10-11-EIS-NONLINEAR-2023",
+   "attachment_sha256": "00f6de657fc2f021bb6bc88abae24c035ed3427383d61cb235e037f916de8d2d",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "338aaeed37abc3f2261582d4f01c779b25bf18a32e8f561d6823f39c629e6833"
+  },
+  {
+   "source_id": "doi:10.5796/electrochemistry.82.647",
+   "canonical_source_id": "doi:10.5796/electrochemistry.82.647",
+   "attachment_sha256": "80982bb031ea9e7c1a0ce99ff3c9e5a50772d6808d859808ffcae42ee8256dd4",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "d21d1456bcc01f9f84cabba63e7bce3fdb8d7e9d00a306b8b659c211481f0466"
+  },
+  {
+   "source_id": "candidate:P1-10-11-GAMRY-APPNOTE",
+   "canonical_source_id": "candidate:P1-10-11-GAMRY-APPNOTE",
+   "attachment_sha256": "069781926f4e28b9cf050e33d1063af526127a005a58ea13c41cb8a97b1a01ed",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "85f12dab657e1f37f7f39019f61560f3c95be071517ffc0984f3703653c7db15"
+  },
+  {
+   "source_id": "doi:10.3389/fmats.2020.566336",
+   "canonical_source_id": "doi:10.3389/fmats.2020.566336",
+   "attachment_sha256": "27c51f9df1a8148ef844f82056bf4ad7e226d29d6c001caacc714abb3233bcc5",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "507d649406b8cdc68e54af87a0a8e3c6e5ab049426f0b14db817dd57e9b8b003"
+  },
+  {
+   "source_id": "doi:10.2172/894779",
+   "canonical_source_id": "doi:10.2172/894779",
+   "attachment_sha256": "ae05c73de6e50e038d4c2625ab6d60f937e317415b69d7e2caa339ff79e15d29",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "1d1e3f5b56e6f5be8b97cde76ae512d39a4cee24cd8a0d1d918be38b113fdbac"
+  },
+  {
+   "source_id": "doi:10.3323/jcorr1974.24.6_297",
+   "canonical_source_id": "doi:10.3323/jcorr1974.24.6_297",
+   "attachment_sha256": "02189678c89eb4e24f42bf782e49ef1e6f1bf8d03b2c8d9a176c6dfb8696c6b2",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "548d279872de264b9f2a06a5d294cd3a97cc91b4b2aba53325c72c23a0333bc8"
+  },
+  {
+   "source_id": "doi:10.1155/2014/525678",
+   "canonical_source_id": "doi:10.1155/2014/525678",
+   "attachment_sha256": "715d579def6d93aeeb2f3d8e80c5017ba9b76c5c8322571ad244b9862673e280",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b5198ec13f6a924facc5642132c92cd9c38b27b4968c99370655d4cb3922d46b"
+  },
+  {
+   "source_id": "candidate:P1-10-11-LPR-LOW-CORR-OSTI-1978",
+   "canonical_source_id": "candidate:P1-10-11-LPR-LOW-CORR-OSTI-1978",
+   "attachment_sha256": "aed814ce28d28485593a6ad67047f4d0b5c7433cae4fb79bedd337647f27d934",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "24f0ae67c06917f271943d52c7432f8845e934d1a9d3f78501371b091f121b4c"
+  },
+  {
+   "source_id": "candidate:P1-10-11-LPR-LOW-CORR-SKB-2013",
+   "canonical_source_id": "candidate:P1-10-11-LPR-LOW-CORR-SKB-2013",
+   "attachment_sha256": "ae80c9d72393998d71f08954624489e6736275d13467401fa8c7298f4a94508c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "5d76274c3d653884e7bfb094a5e798c43e3aa384ae85d020978a3d0097ad5027"
+  },
+  {
+   "source_id": "candidate:P1-10-11-LPR-NICR-2010",
+   "canonical_source_id": "candidate:P1-10-11-LPR-NICR-2010",
+   "attachment_sha256": "851bee9d2471dc37067e1cad988cb13f16ea1702019f60c8a5356852f9dae06f",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "16fc19fe3125a8cdc212be59d2590e128f49b1601f97217c74e977d172b92bce"
+  },
+  {
+   "source_id": "doi:10.1007/BF02483292",
+   "canonical_source_id": "doi:10.1007/bf02483292",
+   "attachment_sha256": "e79e7010acf7287e1fa2bb90b30d0df5de26f753f4628155d58758c1bc1d0ff7",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "9266e54bccfc328357dceefeabbcb54518a98c1f965003c7e3e15a7ef46d1fb9"
+  },
+  {
+   "source_id": "doi:10.3390/met11081888",
+   "canonical_source_id": "doi:10.3390/ma14164509",
+   "attachment_sha256": "f0ab60ea2c5cc0cf9f36c8e967762b00a62d8f55c92d5db9e5fe4b71576582f8",
+   "identity_status": "pdf_identity_checked",
+   "basis": "prior first-page/official-publisher verification, current PDF SHA256 rechecked",
+   "source_row_sha256": "2df52713f948c8fc8617d3b15ab98487ca388d0f661798e8d9cb325459e0ab1b",
+   "identity_record": "D:\\杂物间\\xiyve的obsidian\\工具构建记录\\科研辅助Skill系统\\文献数据\\90_整理审计\\DOI身份与版本核查_2026-08-31.md",
+   "identity_record_sha256": "540b385f6b2e9bd5966f91c52bb847dc2edf6176187203b7f22b0ed1e8dc66f5",
+   "zotero_key": "GIDA2NC8",
+   "current_pdf": "C:\\Users\\xiyve\\Zotero\\storage\\HEAKKZK4\\Guzmán-Nogales 等 - 2021 - Corrosion Resistance Measurement of 316L Stainless Steel Manufactured by Selective Laser Melting.pdf",
+   "warning": "legacy source_id retained; use canonical DOI for citation identity"
+  },
+  {
+   "source_id": "doi:10.2355/isijinternational.47.875",
+   "canonical_source_id": "doi:10.2355/isijinternational.47.875",
+   "attachment_sha256": "ee038f157743d6a5e290abf28be115dc287f857ba324d285a1b045af1ea6d28e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "7636ff977b1c01d8b40c5344efcf1665f910dc2fb1fb066a0599ec27f7b4f7b8"
+  },
+  {
+   "source_id": "doi:10.3151/jact.11.135",
+   "canonical_source_id": "doi:10.3151/jact.11.135",
+   "attachment_sha256": "0fd7ac2d3644697c516a4ea01f52da24a0c03b151872e9d2102bee8b5e463f0d",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "79f9b940fd0e2beebe13522dd938cabda7dab842cad847d1a569ca62e56177d2"
+  },
+  {
+   "source_id": "doi:10.3151/jact.7.31",
+   "canonical_source_id": "doi:10.3151/jact.7.31",
+   "attachment_sha256": "0452a1d552ebb30563164505a0b9420b9298239627cbac9b9de556fbdf60352d",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "1a53b16ba1b75595e84826e04dade6489b367513ce433401fc4355cfc5b6a366"
+  },
+  {
+   "source_id": "doi:10.5185/amlett.2020.061528",
+   "canonical_source_id": "doi:10.5185/amlett.2020.061528",
+   "attachment_sha256": "1d639134d67c57be19ce9c56734d1847f4880324dfb495953cb5abde936d2b21",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "888fb3159d2dcc0958920c2b7b4f18a0ecf633d705c4e7fbcb32d6cce32e202a"
+  },
+  {
+   "source_id": "doi:10.1016/j.arabjc.2012.02.015",
+   "canonical_source_id": "doi:10.1016/j.arabjc.2012.02.015",
+   "attachment_sha256": "9a4ac2db590d30fa5ed81ca0b867d4bf497572218bbae25795f3e6a09d1bc3bf",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "136f41d3e32ee2d583c687428e978ae65094da8e5e66f9ec75096bfb9acd5636"
+  },
+  {
+   "source_id": "doi:10.1039/D1SC06401K",
+   "canonical_source_id": "doi:10.1039/d1sc06401k",
+   "attachment_sha256": "89befbffc01d6697ad323240d27953de76567d93d1ec2e7cf9c99fd1bb791de1",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "a552238a1cf7669624a5a5ea8a09453e7159ed438a7cefb739ee68565ed8bc44"
+  },
+  {
+   "source_id": "doi:10.1016/j.corsci.2025.112694",
+   "canonical_source_id": "doi:10.1016/j.corsci.2025.112694",
+   "attachment_sha256": "ad68ee646b2f9482c3d86c28e177702c30cf6385148e228c22672e8941af4a63",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "e8bac6e77d119f529d47323226f472528042c92b8d4559b89add9b0cab3f6b37"
+  },
+  {
+   "source_id": "doi:10.1016/j.corsci.2021.109271",
+   "canonical_source_id": "doi:10.1016/j.corsci.2021.109271",
+   "attachment_sha256": "fa46b7d9e2a526b9edd62b65cff91b473e843b657462119a293e42b1cc54ca63",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "46eca7d6cffa7f308f8e8e253eb02890ff21f92df2bdf6d656628129afc1e165"
+  },
+  {
+   "source_id": "doi:10.1016/j.mtla.2019.100321",
+   "canonical_source_id": "doi:10.1016/j.mtla.2019.100321",
+   "attachment_sha256": "fddfb54abec66aca428f09e58a075633f3f84b0cd6fec412d89a127c6d9e53d8",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ef1a01ce6a715fdf985dbf23d3478dd929f7bd163744e4b585b46df59c477142"
+  },
+  {
+   "source_id": "doi:10.5796/electrochemistry.84.478",
+   "canonical_source_id": "doi:10.5796/electrochemistry.84.383",
+   "attachment_sha256": "85483e5f6e1a3c3da96dd9be0bf4e98609365fbe97f3756b01d6bc364d8eb78d",
+   "identity_status": "pdf_identity_checked",
+   "basis": "prior first-page/official-publisher verification, current PDF SHA256 rechecked",
+   "source_row_sha256": "9db9f747e5136e4829dbdfa8c03fb2ad32f958ab79dc3ff766ec351918c23804",
+   "identity_record": "D:\\杂物间\\xiyve的obsidian\\工具构建记录\\科研辅助Skill系统\\文献数据\\90_整理审计\\DOI身份与版本核查_2026-08-31.md",
+   "identity_record_sha256": "540b385f6b2e9bd5966f91c52bb847dc2edf6176187203b7f22b0ed1e8dc66f5",
+   "zotero_key": "3ZTXLDN4",
+   "current_pdf": "C:\\Users\\xiyve\\Zotero\\storage\\AZ2S4CR7\\Jin 等 - 2016 - Electrochemical Characterization of Solid AgAgCl Reference Electrode with Different Electrolytes fo.pdf",
+   "warning": "legacy source_id retained; use canonical DOI for citation identity"
+  },
+  {
+   "source_id": "doi:10.1016/j.electacta.2024.143780",
+   "canonical_source_id": "doi:10.1016/j.electacta.2024.143780",
+   "attachment_sha256": "27062be4fcfc7431f75a0b80a1a38736886e785e751b42fe2b64d70cd2de8567",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "15d23bc9f41c95ef393cefd6a7a4ce8f2f0e7b17d0b65ce6415a398c6191a6b2"
+  },
+  {
+   "source_id": "candidate:P1-10-11-REF-CONVERTER-SOP",
+   "canonical_source_id": "candidate:P1-10-11-REF-CONVERTER-SOP",
+   "attachment_sha256": "3e42de0656f9d9efbf0a5d01a825a0bc4087b65e7843f1205b0198e2f7fc161f",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "d117cf100ee090603f8f1296a3ee13de6aeefd167a3f988bfafc781d74963e7a"
+  },
+  {
+   "source_id": "candidate:P1-10-11-REF-REVIEW-2012",
+   "canonical_source_id": "candidate:P1-10-11-REF-REVIEW-2012",
+   "attachment_sha256": "7e7f2cb2b79fe97aefbaab05c80f7d7a960818cd43b58b7aab880931e389ce74",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "e8d8d85801a9d0567431c8c3d0f18aefc9f3cf1234b329aa0e77018ccec6fe8d"
+  },
+  {
+   "source_id": "doi:10.1155/2010/756950",
+   "canonical_source_id": "doi:10.1155/2010/756950",
+   "attachment_sha256": "88d3f3c0fe5323d1e8b98193587397dbb90aee2b4ac79b7d616fc78628978479",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "bf2d5d2b89ec7b08f1cddb0364474c8db938988f22f39a1ec99e1aa37514ff1d"
+  },
+  {
+   "source_id": "doi:10.3323/jcorr1974.29.10_521",
+   "canonical_source_id": "doi:10.3323/jcorr1974.29.10_521",
+   "attachment_sha256": "05964c3219dcca6bdcc28558364a474b4a32df5321916893c28caef4d165a23e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "65201416efdd7b1c4dcc429f523ef8143473a8ab684a311d842a650459d6f583"
+  },
+  {
+   "source_id": "doi:10.20964/2021.11.05",
+   "canonical_source_id": "doi:10.20964/2021.11.05",
+   "attachment_sha256": "b4f845b8bc81c26f12178cc86e7e7d00414513c8ad81eb22e7b0eae62630c635",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "714992c8ef28d330c7ee789765996b091fb09a6fbd584fc3288798fdf9c8ad9b"
+  },
+  {
+   "source_id": "doi:10.3151/jact.7.41",
+   "canonical_source_id": "doi:10.3151/jact.7.41",
+   "attachment_sha256": "5527f4a8e245d39ec7f9fe270916ba8e759861c9f17279bf511ecddacbfde5ec",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "8feebbaded3db6422f3a2b7d46edf0a3f1c7c62751c79c62f8f31bf660770697"
+  },
+  {
+   "source_id": "doi:10.1002/celc.202100093",
+   "canonical_source_id": "doi:10.1002/celc.202100093",
+   "attachment_sha256": "a736c7a981e12fff49d777d2b391265a571db9284b2246aae849ffe92122e7d8",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "bf728699fa26c45e23d1ddd8614eeddfd3faa1eebc6c52181631b75e8c33a68a"
+  },
+  {
+   "source_id": "candidate:P1-10-11-ZHIT-SOP",
+   "canonical_source_id": "candidate:P1-10-11-ZHIT-SOP",
+   "attachment_sha256": "5552208c506fbef46ef9ba8616d39c370b1accaf13ef722491a05bf47d7e7216",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "0a93121de55db7e7cdf857f53a5c81916dcdf0b48e16ed01c00f720620921e57"
+  },
+  {
+   "source_id": "doi:10.2174/1876503300902010114",
+   "canonical_source_id": "doi:10.2174/1876503300902010114",
+   "attachment_sha256": "444d910953bf921cd126c7b9fada3ef48c761995406b8ee4645778412079ecdb",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "48f15b45ade6bf2f61443b57f75bd09bce67eb3a739ccad17afa6764596e6daa"
+  },
+  {
+   "source_id": "doi:10.2320/matertrans.43.3088",
+   "canonical_source_id": "doi:10.2320/matertrans.43.3088",
+   "attachment_sha256": "f13cba8ecfcce74481a85abc33b170253049def410133bb3e1d1e71a1efb3735",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "5d6b32a76c74f2962b9c514febf20fcc0d23f2683e721ad2e50d930bc41024dc"
+  },
+  {
+   "source_id": "doi:10.1016/j.corsci.2015.06.019",
+   "canonical_source_id": "doi:10.1016/j.corsci.2015.06.019",
+   "attachment_sha256": "44d07de6a60e36a4d3c46cad2eed1495beb7a25959148efac81e5ef1efe2d29c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "6004d8f53f16359a7de49140bfe9bba9ccf993033ac4fdfca7822ea533b0bdde"
+  },
+  {
+   "source_id": "doi:10.1002/sia.1299",
+   "canonical_source_id": "doi:10.1002/sia.1299",
+   "attachment_sha256": "59eaab291d8154acda68244c9f06e662cf7b6bc16f5f48869fb9fbbc4f0b505a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "6cb1e4e49b4343b620058924aef868b03a8fb8c634b4cc960fb05721ad24c8ad"
+  },
+  {
+   "source_id": "doi:10.1016/j.vacuum.2010.01.057",
+   "canonical_source_id": "doi:10.1016/j.vacuum.2010.01.057",
+   "attachment_sha256": "ee1783f3378d3e24c27100a6019d4426c1d1174f73fb24565b681926901c3521",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f9d8817b36f2f50d2e44368855addf7e87daf3132b7770853585d32a511310e6"
+  },
+  {
+   "source_id": "doi:10.1002/sia.1268",
+   "canonical_source_id": "doi:10.1002/sia.1268",
+   "attachment_sha256": "2fcc5961b6705009a89694281ab0b8c8cfd989d8dec60f25158faf141d01c0c2",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "e7f94bd690425ceb7fd438e2ccaf69f5f44d502370fe7aec9c8af88f04c25cce"
+  },
+  {
+   "source_id": "doi:10.1002/(SICI)1096-9918(199912)27:12<1069::AID-SIA677>3.0.CO;2-A",
+   "canonical_source_id": "doi:10.1002/(sici)1096-9918(199912)27:12<1069::aid-sia677>3.0.co;2-a",
+   "attachment_sha256": "03bc6964f9a2a5552015b296608e912fd68133fe6c977e723b530a20806dd884",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "68400420929c24b206669ce52399e0865058d3c7631016c9c19523e2770d3f98"
+  },
+  {
+   "source_id": "doi:10.1016/j.apsusc.2022.153681",
+   "canonical_source_id": "doi:10.1016/j.apsusc.2022.153681",
+   "attachment_sha256": "9d0129d15a96eacc2324fba6f58c529244bb9676cbd8c242e137eee1b3cc0658",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "dad9e5ee078c605ca758475fd34e8782da17bb1f5b368ef2cd22d8c60da241c9"
+  },
+  {
+   "source_id": "doi:10.1038/s41467-018-04942-x",
+   "canonical_source_id": "doi:10.1038/s41467-018-04942-x",
+   "attachment_sha256": "88cd6094b4aef8a74617dfd72e986119d569925285f01e3d4830dbc275a4a840",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "68e01cfc8a52c20957e73ead0355b4a957b7bf5a64f2cc99d8be424fb83ba5e3"
+  },
+  {
+   "source_id": "doi:10.1016/j.apsusc.2017.01.105",
+   "canonical_source_id": "doi:10.1016/j.apsusc.2017.01.105",
+   "attachment_sha256": "cb5e89835b5f12a66864a9b4ab24a81a7c8644e69ad3a5420099c21b25a10dda",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "410587132449e9c6da318036dd22abeb3a65a9dd656fb9eb494eb32c4e828796"
+  },
+  {
+   "source_id": "doi:10.1016/j.corsci.2008.06.019",
+   "canonical_source_id": "doi:10.1016/j.corsci.2008.06.019",
+   "attachment_sha256": "3fde89bcc58d2bb950dee2a3197f084fb42a6d7f57a8a8cd12aa6cc09d45b92c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "51f17f75290ed8338d4832b9857a30ec90c69eb8412ebcb55dd368a3fb038a37"
+  },
+  {
+   "source_id": "doi:10.3389/fmats.2019.00232",
+   "canonical_source_id": "doi:10.3389/fmats.2019.00232",
+   "attachment_sha256": "be79b99d11f9d0ff73034671f5855f5a36c7df859cf70e4cd2379f0880ac33f2",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "7667c8188b235fe216cba1a0c5711a8709a2016f705acd52be9c5c3e1ca86d92"
+  },
+  {
+   "source_id": "doi:10.1116/6.0000377",
+   "canonical_source_id": "doi:10.1116/6.0000377",
+   "attachment_sha256": "5a1e22e1e409429c51494b4914af5b6742e9e2664dbb6d7a81fc0a89d4d3ebaa",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "6e0a43b8bf495ac2d4e621388d88f2c66b01ae82905d1f5d7787178fb153f542"
+  },
+  {
+   "source_id": "doi:10.1116/6.0003439",
+   "canonical_source_id": "doi:10.1116/6.0003439",
+   "attachment_sha256": "36ac26e94e0ce80c4fa9f19477353567e5aad9d980620c4652542f2f89cfc6fe",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "01033673613146915c077a2dac1ff2a3c72c56be3bc2cf4a1cd1af2968bd6611"
+  },
+  {
+   "source_id": "doi:10.3390/met8080653",
+   "canonical_source_id": "doi:10.3390/met8080653",
+   "attachment_sha256": "ae843cd994be84e3c1b840b9c38d19cf86045bab075810a7dc506e80ad6c021f",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "38162eb8d3da55316b296567e482ac36f7145795aac16a4a7a484f7a0aad4499"
+  },
+  {
+   "source_id": "doi:10.3390/met16050544",
+   "canonical_source_id": "doi:10.3390/met16050544",
+   "attachment_sha256": "2dff8097f41a425e4a6b87e9194dd9b49b8be00bbf57c275cd979acfaf40eaff",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "e5c93821a3a89eb5718cf3851e1bf85a9707409a47d0af9ba22e60266f536db6"
+  },
+  {
+   "source_id": "doi:10.1016/j.apsusc.2019.03.211",
+   "canonical_source_id": "doi:10.1016/j.apsusc.2019.03.211",
+   "attachment_sha256": "d72d6317cd370fbd91c08af19d7ef5f6bbca42b8bb5a76f0dc8e5b40ec6c279e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "3f5b654368974d31dece4d89389f965af6b1568268682cdff4adaa5d886e45f2"
+  },
+  {
+   "source_id": "doi:10.1116/1.5141395",
+   "canonical_source_id": "doi:10.1116/1.5141395",
+   "attachment_sha256": "241b123d29cb9292a0739ba92e0708bfaef3f5a8b3fc17fbdbc8e4881da0b867",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "84b4894c8224b9d3d3bf47d0c8eaaca4a6b8870b2949f6fd98e4a81d29261384"
+  },
+  {
+   "source_id": "doi:10.1016/j.apsusc.2024.159876",
+   "canonical_source_id": "doi:10.1016/j.apsusc.2024.159876",
+   "attachment_sha256": "cb49bca3a06878eb039e405459e01c7a4e0e473aa46b4fb303def4fb15d91e2a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "71e01fcb355b2700c3fc65ad0a7867eb5e621110d328ed8fe98b9317aa49d710"
+  },
+  {
+   "source_id": "doi:10.3390/cryst14090766",
+   "canonical_source_id": "doi:10.3390/cryst14090766",
+   "attachment_sha256": "50c1a38c70c3b8f0dca1c7a48c5216f96d51174270a53feb3c60116505fd47f6",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "fa0284c613de4d0e38a371d67195da87b9c1f1c0465328adb62292ad328c1f4b"
+  },
+  {
+   "source_id": "doi:10.1116/6.0000661",
+   "canonical_source_id": "doi:10.1116/6.0000661",
+   "attachment_sha256": "ccbad352bc82d991bb4191a28454fe871e892267066abd2e4d0215f7a53db517",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "1a50a1730c2e0ce259ba73ef8d39689b2d3dbe650da650664d1d50c1be35bff9"
+  },
+  {
+   "source_id": "doi:10.3390/met13081370",
+   "canonical_source_id": "doi:10.3390/met13081370",
+   "attachment_sha256": "64f492084e47c33ee6d11e91104a5f48f25342630d5ae80f892c45b0177ee58f",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "429d6975ed9c8e7583168a9bcaaeada949ec8971f5154e1b7d3afb40fd02cd0e"
+  },
+  {
+   "source_id": "doi:10.1038/s41598-018-28454-2",
+   "canonical_source_id": "doi:10.1038/s41598-018-28454-2",
+   "attachment_sha256": "31eeb8522a4c23afb6e856a2dbe7b9bed6dae73735cf4e37779ef3a7ea4ca3d8",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "c1badd07814494193a6635d99192311193619d39d95253aa3dd7bb178d2130ec"
+  },
+  {
+   "source_id": "doi:10.3390/ma12132211",
+   "canonical_source_id": "doi:10.3390/ma12132211",
+   "attachment_sha256": "d93a2aae3b0395f9ca5e4ad0c25f2ce09097cc643cc1d5771ec289543e8ac8bc",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "35c1878544571c295c5956549eb4f1cc000996531d3677cc587aa59e97458223"
+  },
+  {
+   "source_id": "doi:10.1002/srin.202500332",
+   "canonical_source_id": "doi:10.1002/srin.202500332",
+   "attachment_sha256": "a27d70284b479e9678f60b583275bc72b71e95cbb2347999c0f269d7a04bcd4e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "c436081703f3bd3cafb822d72954315237f7323f5339280ec461e3fccb1d80b0"
+  },
+  {
+   "source_id": "doi:10.1038/s41598-023-28763-1",
+   "canonical_source_id": "doi:10.1038/s41598-023-28763-1",
+   "attachment_sha256": "e85d2f06a266b569d14509b8e98397768253505ba42f0040cf744348b6062c0d",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "dabb961ad34a589822f2cecf3b957d8f34a5dc5b29449fc4ecc3201833c6175d"
+  },
+  {
+   "source_id": "doi:10.1155/2020/6765274",
+   "canonical_source_id": "doi:10.1155/2020/6765274",
+   "attachment_sha256": "1a30e6773f28688de09e155f76cf73b2f4b9e49a8dc5dc5a42f875532819b27a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "85f42df2ae0348f717befd930ccff54833f2cf3ae14d5976dc57b8e0db434ad2"
+  },
+  {
+   "source_id": "doi:10.1038/s41598-023-35559-w",
+   "canonical_source_id": "doi:10.1038/s41598-023-35559-w",
+   "attachment_sha256": "16e73b9f4ee66612d6447b06504092f08f642eff1acc5dfe390c3e4fadfd5e1f",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "4beed330479108ba6269f3df4506d268d947f0fdf63ae74180d564e9204e1454"
+  },
+  {
+   "source_id": "doi:10.24425/mms.2021.137133",
+   "canonical_source_id": "doi:10.24425/mms.2021.137133",
+   "attachment_sha256": "b46a081345fd1e70e9de55f24094258912cb85dc4a69572a34c16582d9cdf2ad",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "a8eb75c2c865b488e02d351c95df1821791f9c26d1cf4f9231f8011bda9a181a"
+  },
+  {
+   "source_id": "doi:10.1038/s41598-018-25850-6",
+   "canonical_source_id": "doi:10.1038/s41598-018-25850-6",
+   "attachment_sha256": "1a54d23823f52c7e4e6525c25e145558462b572b54bb521851e519a50acf3c37",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ab6a7ac8944092aa60a863934aca3455520638222aa74f86b76d43f0d073b4ee"
+  },
+  {
+   "source_id": "doi:10.1016/j.apsusc.2016.01.019",
+   "canonical_source_id": "doi:10.1016/j.apsusc.2016.01.019",
+   "attachment_sha256": "0b5fd1a05aa0d5864ce6764cfffb03bb2049dfb8669b970bd09805353220fa0c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "80da9a33488f44519f8f0583376e339ffc9f2d7ef9469ee49d68b2421cf3c05b"
+  },
+  {
+   "source_id": "doi:10.3390/coatings13010194",
+   "canonical_source_id": "doi:10.3390/coatings13010194",
+   "attachment_sha256": "0829497d2c02e66e2867a0136e22f1433a707fdbb2307adc9bc409c7e0370d3c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ae74fadf8493c7a0301213dad1ea273a17e8a2cbf9d8407400cda3892a0e1ade"
+  },
+  {
+   "source_id": "doi:10.3390/met12101751",
+   "canonical_source_id": "doi:10.3390/met12101751",
+   "attachment_sha256": "9bbedb3aef7f2c7c843d89abbba3fc6ca67d5ac9499441f3a1d909b6f8ff5e20",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f0241f7109e0b64dcdaaa89cd01e8ef1664f3c5dc8687c4adcaa547be1797139"
+  },
+  {
+   "source_id": "doi:10.1016/j.corsci.2017.04.005",
+   "canonical_source_id": "doi:10.1016/j.corsci.2017.04.005",
+   "attachment_sha256": "92a343c8318916ce2f7ec938c1208ea6979cf700e9aeb6517019af94e7ad4f3b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ccd6fedac36e28aebd14341dedc5ca222058c0ae8712ce05e3dd668d8227f9ab"
+  },
+  {
+   "source_id": "doi:10.1016/j.corsci.2015.01.054",
+   "canonical_source_id": "doi:10.1016/j.corsci.2015.01.054",
+   "attachment_sha256": "0055e845fc4b2a4d62eb959f065aa2305c22745da93d7c1729a997411011e455",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "68046e36afde1acf8213952b29acf64c8ea9db75ea236cf30503a1b90e38a94a"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-024-00448-8",
+   "canonical_source_id": "doi:10.1038/s41529-024-00448-8",
+   "attachment_sha256": "6cf587db3a27caf3b57eed98206906cc8c1afe4aa752f317f498b7a6f89ce1c5",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "2631e3c53489740ed3900e58eaf143dac8cd38096a92b0d1dcd93e21d42a5f52"
+  },
+  {
+   "source_id": "doi:10.1016/j.corsci.2019.108160",
+   "canonical_source_id": "doi:10.1016/j.corsci.2019.108160",
+   "attachment_sha256": "fe7dfcd8836399312afe082f8eb88dea73f5a3fa7608c95c9b96c5f7e4c5869d",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "390145d838bd6381999cd6c48352598356fd0e2673dcb0662f9beeeb1e8bfb61"
+  },
+  {
+   "source_id": "doi:10.1016/j.corsci.2015.02.024",
+   "canonical_source_id": "doi:10.1016/j.corsci.2015.02.024",
+   "attachment_sha256": "444e515117b6f2c9251b5f135a0bcaa41c95ecf3c3f00fa520cd8ee192df01f9",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "18aca3210dc79e59412d9785d53565135f2cc92bdc662b1b66610880e86cb0e9"
+  },
+  {
+   "source_id": "doi:10.2172/2430292",
+   "canonical_source_id": "doi:10.2172/2430292",
+   "attachment_sha256": "b591d8cfca9c22659f8faca4882ccbfa0e5da3b8907e16baeb8cceb6ebdd0b99",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "23087d0fc790bc92679393e86bc4cf40bf860e6494d37ee85f6a931d745ed105"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-023-00403-z",
+   "canonical_source_id": "doi:10.1038/s41529-023-00403-z",
+   "attachment_sha256": "455093f54042d25afe8b326b481ff53fa332168d57e960228bee6b5ec60ac772",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b68bef89563b58dc83cc6d70d4f6e9a945c1f2b04285554b883c73a0fcc66e47"
+  },
+  {
+   "source_id": "doi:10.3390/ma18184390",
+   "canonical_source_id": "doi:10.3390/ma18184390",
+   "attachment_sha256": "0c6d91151ecff676d96353ddac055f16c1c38fc2c4262658782ed29cc91c0bdc",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "d4851f502250e54a50c7495acaf7461aef7d49433cd7f13edd0cc6f393a32351"
+  },
+  {
+   "source_id": "doi:10.3323/jcorr.71.358",
+   "canonical_source_id": "doi:10.3323/jcorr.71.358",
+   "attachment_sha256": "6caa6c06a977716a4072d52d9c20c4960b023c3858c30707bbfc568aaac28b1e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "497730ad6ebb66e054591317c56ac8133c98b19cf15e4a3164e87fa812faf96f"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-025-00563-0",
+   "canonical_source_id": "doi:10.1038/s41529-025-00563-0",
+   "attachment_sha256": "437d21085178602ff2c27eb630635e016c3260ba60c0e58ec2f607b82262d901",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "565dc15736bd7d96ddaeafd8de3eb0485f27c788221ec57a423548fa24796c2f"
+  },
+  {
+   "source_id": "doi:10.1016/j.engfailanal.2022.106955",
+   "canonical_source_id": "doi:10.1016/j.engfailanal.2022.106955",
+   "attachment_sha256": "ac42fd4be9938de8e85239594ff66797e90a0dcb12047bdaa775bb9a4f2a2c4d",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "e4ba61affc7b44ca8dca14dc6c9abd51cbf66e100fd790ce89a33d298e21b82a"
+  },
+  {
+   "source_id": "doi:10.3390/cmd3010005",
+   "canonical_source_id": "doi:10.3390/cmd3010005",
+   "attachment_sha256": "fbcc872c0094bb7e6f74e8cdf9413a1ee841735f34e0cbc1f4cf312158098367",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "67fe4fa75653735f33693de17476a0af7203a63ab13a607e8b86439b208d7881"
+  },
+  {
+   "source_id": "doi:10.3390/pr14082376",
+   "canonical_source_id": "doi:10.3390/pr14152376",
+   "attachment_sha256": "61106b78df13dc3635582d7bff840c231b10a35ba6ed19b18b16d1688e719db0",
+   "identity_status": "pdf_identity_checked",
+   "basis": "prior first-page/official-publisher verification, current PDF SHA256 rechecked",
+   "source_row_sha256": "0f27dfb9d53c141fb48cef8bfbfadda4ae86929c150caa7b6222b8c34144fec5",
+   "identity_record": "D:\\杂物间\\xiyve的obsidian\\工具构建记录\\科研辅助Skill系统\\文献数据\\90_整理审计\\DOI身份与版本核查_2026-08-31.md",
+   "identity_record_sha256": "540b385f6b2e9bd5966f91c52bb847dc2edf6176187203b7f22b0ed1e8dc66f5",
+   "zotero_key": "XCESCBRU",
+   "current_pdf": "C:\\Users\\xiyve\\Zotero\\storage\\9NNTMY7V\\Azevedo 等 - 2026 - Design of Experiments in Corrosion Research on Duplex Stainless Steels A Systematic and Bibliometri.pdf",
+   "warning": "legacy source_id retained; use canonical DOI for citation identity"
+  },
+  {
+   "source_id": "doi:10.5772/intechopen.73558",
+   "canonical_source_id": "doi:10.5772/intechopen.73558",
+   "attachment_sha256": "1a369294d16d8b0e304054e69d341f018153f87b14b189f8eb0de123a67d1dba",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "a355d11fb2cc71ad3f380ed1de246b7572b992dce729be25d7ab9bc01e119bd3"
+  },
+  {
+   "source_id": "doi:10.5772/intechopen.85392",
+   "canonical_source_id": "doi:10.5772/intechopen.85392",
+   "attachment_sha256": "c6af9b48714c6e2e8a03c3bd4ee52d1199edd993a2fe9cadd42164be710541e7",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "dbf0f363bad098eb0448ce3f88636c1062234b1e11e4b97e51ccec218b5c9208"
+  },
+  {
+   "source_id": "doi:10.3323/jcorr1974.29.11_576",
+   "canonical_source_id": "doi:10.3323/jcorr1974.29.11_576",
+   "attachment_sha256": "9a0e56988871a1ae958ca063d96ab9d8ea76058af9e1e3e7adce694d1c8495d0",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "1fa477748f7b6decfc73191b86b34a5bd1c56473a4de9d521462dff34be7e6c2"
+  },
+  {
+   "source_id": "candidate:P1-40-GUM-2008",
+   "canonical_source_id": "candidate:P1-40-GUM-2008",
+   "attachment_sha256": "41bbf068fbc0d7986c98691b2d1af6680cb3044f6a1a89b3560933ed9ef9626c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "a5aef1d26034ca8aabea465cd08079b0b6149d65baa98150dab96b708630bc9f"
+  },
+  {
+   "source_id": "doi:10.18321/ectj258",
+   "canonical_source_id": "doi:10.18321/ectj258",
+   "attachment_sha256": "f150a171a7cdc85dcd084ef6d25a37adcfbb17ad57369dd66152b355de784ee3",
+   "identity_status": "pdf_identity_checked",
+   "basis": "prior first-page/official-publisher verification, current PDF SHA256 rechecked",
+   "source_row_sha256": "1e32464ed2d4ba8630060456f72f77460f1fce2ead34eec203ac7c6e5b915669",
+   "identity_record": "D:\\杂物间\\xiyve的obsidian\\工具构建记录\\科研辅助Skill系统\\文献数据\\90_整理审计\\DOI身份与版本核查_2026-08-31.md",
+   "identity_record_sha256": "540b385f6b2e9bd5966f91c52bb847dc2edf6176187203b7f22b0ed1e8dc66f5",
+   "zotero_key": "4IVPWPFY",
+   "current_pdf": "C:\\Users\\xiyve\\Zotero\\storage\\ZC6CGNLT\\Ghayad 等 - 2008 - Enhancing Corrosion Resistance of Stainless Steel 304 Using Laser Surface Treatment.pdf",
+   "warning": "Zotero 2008 metadata mismatches the 2007 PDF; do not replace DOI"
+  },
+  {
+   "source_id": "doi:10.17559/TV-20150504150446",
+   "canonical_source_id": "doi:10.17559/tv-20150504150446",
+   "attachment_sha256": "057adeb30e0073e214a72982252128fc404b7556cbe1c0e51f30e8c48352fc90",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "196c06e335dddb09e67bfcf9422fe3382261ddd0d584cd4bdfb3c9f8981a5515"
+  },
+  {
+   "source_id": "doi:10.3390/ma13092119; PMCID PMC7254237",
+   "canonical_source_id": "doi:10.3390/ma13092119; pmcid pmc7254237",
+   "attachment_sha256": "83552b34c459ef895a7202884b3a175eb242b0ce4dbbd4aa3fd3aa43b98b5161",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "66323b744b9c3e14c660de2d19d43296c803c34dd1aab36e71575eb85cdf8ee2"
+  },
+  {
+   "source_id": "doi:10.5772/intechopen.70579",
+   "canonical_source_id": "doi:10.5772/intechopen.70579",
+   "attachment_sha256": "6ca3e3629689ab9d6f4538b5631e44dd076b60212db7e2d3940c2114b60ca5b3",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "a041adda3bdb7524789b4549ebd18b421b9a14917571449e36d1e588dfcbffa6"
+  },
+  {
+   "source_id": "candidate:P1-40-NIST-TN1297-1994",
+   "canonical_source_id": "candidate:P1-40-NIST-TN1297-1994",
+   "attachment_sha256": "24ab13bd20d97d8157f50671cff90fd93a7dbe66172b6afc55d00064b3f1c55a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "870640505a31996ce0a638babbe1d73dd5fc95388860bab88955aee26b8662dc"
+  },
+  {
+   "source_id": "doi:10.3323/jcorr.71.46",
+   "canonical_source_id": "doi:10.3323/jcorr.71.46",
+   "attachment_sha256": "770bbdffe0579e09390c2420f784958e7b631f186b59ed79c212a48ca69dee75",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "30504819eca0f251b97b126b88940c8296b5b18e4916650448ee3068f2d22ee9"
+  },
+  {
+   "source_id": "doi:10.3389/fmats.2024.1353907",
+   "canonical_source_id": "doi:10.3389/fmats.2024.1353907",
+   "attachment_sha256": "96e14d023d7731027a9898cc050426adc38fc8ba6d3ab21501f6dbfd0d8b5b0a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "68ef5947ada1d785d14d252c0203f5ee6a526902e720d0e1f71c89b60c26d84f"
+  },
+  {
+   "source_id": "doi:10.14773/cst.2021.20.2.52",
+   "canonical_source_id": "doi:10.14773/cst.2021.20.2.52",
+   "attachment_sha256": "8cc7ab409ce2c3b79d8725548a727ef1532ad020a310b1d76404817872467a2b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ce35bec3151991060e5675601458c69c37108975f533b9cbdadb7567babd0853"
+  },
+  {
+   "source_id": "doi:10.1186/s13321-017-0240-0",
+   "canonical_source_id": "doi:10.1186/s13321-017-0240-0",
+   "attachment_sha256": "2123e35456681399a538185dc9c87052191809caf3b6a239b115cc6958da178b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "14f927254918c4c261a93d2083e0379851d95638a80e6564328ec39dbdd25f76"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-022-00218-4",
+   "canonical_source_id": "doi:10.1038/s41529-022-00218-4",
+   "attachment_sha256": "761b156b792821dc261454b3c13d20aa9572945034362d1bd3e4a594faf799eb",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "319e11ec3207edef4e6e80b10a7ca3e907ee2a4f2f10bd15e12665276e3fb110"
+  },
+  {
+   "source_id": "doi:10.1002/advs.201900808",
+   "canonical_source_id": "doi:10.1002/advs.201900808",
+   "attachment_sha256": "49fa8ccf691abb22722d216fa1f2e6b4eda1f0bdfb6f0ab69d9ad820503864bf",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "6967944e1cdcc06fcc022cadb3f1b5d4c050d6fae65deb417ff121f9c75d007f"
+  },
+  {
+   "source_id": "doi:10.1186/s13321-017-0221-3",
+   "canonical_source_id": "doi:10.1186/s13321-017-0221-3",
+   "attachment_sha256": "9010285ab2aa8af46440777df3fcf6f96439114f23c0d6971b5d6195faffea49",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "deb19cf54be763dd8b26ca64e4e90f733d02eb7d8b06dac460011819a371d2d6"
+  },
+  {
+   "source_id": "doi:10.1002/(SICI)1096-9918(199907)27:7<693::AID-SIA640>3.0.CO;2-C",
+   "canonical_source_id": "doi:10.1002/(sici)1096-9918(199907)27:7<693::aid-sia640>3.0.co;2-c",
+   "attachment_sha256": "9b72a2d17927ae5bcb4bdb0842e63c21706f8981a624412e23ad62d6294932e9",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "d3899ffa1ded06d00ab8586c011dc7d79ef0a519ff5d89dabe6250a11997a15d"
+  },
+  {
+   "source_id": "doi:10.1038/s41597-020-00637-5",
+   "canonical_source_id": "doi:10.1038/s41597-020-00637-5",
+   "attachment_sha256": "dac688e538f56c9f628f241a4424f91863b911de59aa9931b8e85ef19f7edf0c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "9f6ac11d32324e62d1a32db14fb9d9315bd4e2a6931ac5818fdc8b638f43bc8a"
+  },
+  {
+   "source_id": "doi:10.1002/sia.6417",
+   "canonical_source_id": "doi:10.1002/sia.6417",
+   "attachment_sha256": "3501b857a058c4937e9765585304420a85f70e08d723fc9dfc8aa31b320e6448",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "94f81fbf998258c935f6e93faa74b1b8a79d39eb33d3fe23176fc122f8a9a5e1"
+  },
+  {
+   "source_id": "candidate:P1-90-KUCERA-304-MARKING-2014",
+   "canonical_source_id": "candidate:P1-90-KUCERA-304-MARKING-2014",
+   "attachment_sha256": "23d222bf42cc8b57bf5496f50031df1705bfb50fba0c1e6c444d427ac7382758",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "2bc370c4b903fca458217ff2c2ef5e9bf6f830ba5b5c95a966801df20a954c33"
+  },
+  {
+   "source_id": "doi:10.1016/j.jmrt.2023.11.172",
+   "canonical_source_id": "doi:10.1016/j.jmrt.2023.11.172",
+   "attachment_sha256": "f5a830f7cce47077cd8ffd0de8d40c8e5da0546d0f111c75e7bd9d8dc639e1bb",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "99d802c7e97237778f04a4bd0eceb3c1f11e900f91b4b483c497e1c2281df75a"
+  },
+  {
+   "source_id": "doi:10.3390/coatings13122058",
+   "canonical_source_id": "doi:10.3390/coatings13122058",
+   "attachment_sha256": "46a3102a21796733d984193eb4a9c01e786d9ddbb87f3551178af255c7a37c16",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "afe65ce2c5c793fa036a9ce46462b8d8180d28c6ae241d8999124586ef4baf97"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-025-00622-6",
+   "canonical_source_id": "doi:10.1038/s41529-025-00622-6",
+   "attachment_sha256": "fcef5df66a8634f2b4dee87623fade857e3e813b2d31bbbbd3f27bd18be471f6",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "5dc1dd91b74116beb47d522b221c83fe45d190758445865225ce8da597a023b6"
+  },
+  {
+   "source_id": "doi:10.3390/met15121387",
+   "canonical_source_id": "doi:10.3390/met15121387",
+   "attachment_sha256": "ea8d580e91f0f33045097ca45a6d7e35e6155054d135e77ca4441bd2f81bb5f2",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "13dd8bdb2570437767f5fb35a205f2a61d2419ec3862e77b7cbbfd85a12a4426"
+  },
+  {
+   "source_id": "doi:10.1063/5.0334196",
+   "canonical_source_id": "doi:10.1063/5.0334196",
+   "attachment_sha256": "ef4439124cb5e1c4bd8ca14b379dfbc2fa3554359cd2cbb3399d2a8319ec28ac",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "7bc04d4df7da11a7d6400b9587aadc6dcfb095117709ad21bc18cd853b9e997b"
+  },
+  {
+   "source_id": "doi:10.3390/ma16020804",
+   "canonical_source_id": "doi:10.3390/ma16020804",
+   "attachment_sha256": "096526e8dc3257deafa148a1ecbe846d2155a9274f78c060feb71e4ce518fed8",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "984d8c9b7a6e17575de85440135a77720f333700835d6992b4fa38d59bef3b7c"
+  },
+  {
+   "source_id": "doi:10.1016/j.surfin.2023.103479",
+   "canonical_source_id": "doi:10.1016/j.surfin.2023.103479",
+   "attachment_sha256": "9a007e5b2ce72607bbaeb26b965e23625f9d60cbd3cfdbf924e5b211966e8d8a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "a40d6eface944c9f68a6ab5f185d85d4ee25b67f2fde969b203795010d68f394"
+  },
+  {
+   "source_id": "doi:10.22153/kej.2024.12.002",
+   "canonical_source_id": "doi:10.22153/kej.2024.12.002",
+   "attachment_sha256": "eed291015b019b5c623eb47b49d0b2575f85eaac2bc7928461c501185044002e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "2238eb0ab60bdc7a704dbfed7dfd5a28324e52b6d1cb27b204e992d14e94f458"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-024-00468-4",
+   "canonical_source_id": "doi:10.1038/s41529-024-00468-4",
+   "attachment_sha256": "8ffcfa630349b08ec9d2c82c561026314e9ee7f9943884b23d26db62dfd6d847",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "53da9d938beba28ee346357a2859bd2dff5e61aa60deda4680204144e5d8df1b"
+  },
+  {
+   "source_id": "doi:10.1002/pssa.202400438",
+   "canonical_source_id": "doi:10.1002/pssa.202400438",
+   "attachment_sha256": "017617efcf474657bce9f5f9e9401b7d41cb970acb338de87447adde4104ea11",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "24c733130bec7d49ccd2db8967f81b2d6d50e209b1daff12d48882351cd84ad5"
+  },
+  {
+   "source_id": "doi:10.3390/mi15030374",
+   "canonical_source_id": "doi:10.3390/mi15030374",
+   "attachment_sha256": "ee84fa693105af8144407f24decfadc70c3b1676a4ad647fadee466d4831d0bd",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "c6bf0d8bd8a53aaa4aa398cdfad5925df32ef38204b82875fdb60a84b93677fe"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-023-00419-5",
+   "canonical_source_id": "doi:10.1038/s41529-023-00419-5",
+   "attachment_sha256": "9f3ee95d31439828af0b9a5e87749c4257e3bf8064e240519fb556f03dbba045",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "52cb038fae8c8aa163687a1deaccc7efe43db3d15fc79f8cf007b075f6138d3c"
+  },
+  {
+   "source_id": "doi:10.3390/app14177471",
+   "canonical_source_id": "doi:10.3390/app14177471",
+   "attachment_sha256": "c28a93197da77299005545c8c5f0b39d68aa12f4afa0c9f2ceec07e81bb7e7c1",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b6429fc8d6d19fc9b02e6269dccf5226fcb366ae848e77f38f728cd44fa9e0a1"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-025-00694-4",
+   "canonical_source_id": "doi:10.1038/s41529-025-00694-4",
+   "attachment_sha256": "07f34ebc7241c134cbf858a318f8277447565d905bfbb697b9fd65aba0e84263",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "26639c213f9602ee766b095880427d98378a1d237c454e5aff4505a859ea4a5d"
+  },
+  {
+   "source_id": "doi:10.3390/mi13071089",
+   "canonical_source_id": "doi:10.3390/mi13071089",
+   "attachment_sha256": "590f91d56b9bf40e5e8489723c4140d268c29b6b18bf2b98c858ff8335ec3861",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "293ef839096396d6c64cadb210c2b08a5bec7b6e95dfe938f91a08432c9a9943"
+  },
+  {
+   "source_id": "doi:10.1007/s10853-025-10921-7",
+   "canonical_source_id": "doi:10.1007/s10853-025-10921-7",
+   "attachment_sha256": "844d3fc0505a86f8c82c2f446967af3f4b78822dba6c00931c23817b32a1acf3",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "9de4eac98b1a3db319652af73f7655ca02db320375c395595430db5cefcb790d"
+  },
+  {
+   "source_id": "doi:10.1038/s41467-024-45120-6",
+   "canonical_source_id": "doi:10.1038/s41467-024-45120-6",
+   "attachment_sha256": "cf79212115d6c07d784bc78ff5e6b55fe08f99f690ab417d6c7bb7b394aa6282",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "1db3949d4fa164c71c245973825983e1ccba2c83957932bab884ef882ee276c3"
+  },
+  {
+   "source_id": "doi:10.3390/coatings11050592",
+   "canonical_source_id": "doi:10.3390/coatings11050592",
+   "attachment_sha256": "6dd6601c9a90b787da6ec454f0029458bd3ccb109fb1f1483a228ef4c86518e0",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "94f007b008f7f35b4c35a61780a30b867ba6122f7355ccb3b535e97433124354"
+  },
+  {
+   "source_id": "doi:10.3390/mi16121366",
+   "canonical_source_id": "doi:10.3390/mi16121366",
+   "attachment_sha256": "98bd350523635c97ea55104d903fd9b7915b1e21cb9800980495d53e4142d383",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "d358a42fa677368dc72487d1b872d4379be39d15d91bf1e72ae9608cb3ca9073"
+  },
+  {
+   "source_id": "doi:10.1186/s10033-025-01217-7",
+   "canonical_source_id": "doi:10.1186/s10033-025-01217-7",
+   "attachment_sha256": "3bc8475b3ba174c82e552a64c8195c99f02192a8c1a5b5d80680a4a303a2b598",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "5df16bb9dabd28fe810ac72f081cf69fcc4f021f4aeb24dee9564d7e68e9f430"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-021-00215-z",
+   "canonical_source_id": "doi:10.1038/s41529-021-00215-z",
+   "attachment_sha256": "e5586b58f06ddd7c54b44a6763ffc628ced63d74bfcf1e9b062fffd43bcbc411",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "4a82e4dce2bbb1f0468da9ff49971163fade59bbcfa6b6ab2336c287264c0f25"
+  },
+  {
+   "source_id": "doi:10.1149/1945-7111/ae697d",
+   "canonical_source_id": "doi:10.1149/1945-7111/ae697d",
+   "attachment_sha256": "68b865e48c4ca1c014ef6148efc75dc4a14b51b3b095fde4214811d22519ff8c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "0ac49ccc393f3ddb393bceef3dfe66a1bd88c475eda8730bd7feff89adb8645a"
+  },
+  {
+   "source_id": "doi:10.1016/j.apsadv.2024.100622",
+   "canonical_source_id": "doi:10.1016/j.apsadv.2024.100622",
+   "attachment_sha256": "2dcd786fa1286677dcb14d899f509d0da95d41a4de95cb2b82cc70be14f6f66b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "7474b83a474132b5386c27dc186f725938aa6265f7507cb31dd04b58059bfadb"
+  },
+  {
+   "source_id": "doi:10.3390/met11030516",
+   "canonical_source_id": "doi:10.3390/met11030516",
+   "attachment_sha256": "398588768994f51f70b50525ce9106f2474de9198f7a6fe01cf13fe0c3b3f7e5",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "25af2c3f680b271e03cde390f8675e4bfb4fe3c83f23d8fc4726585e8492cd5b"
+  },
+  {
+   "source_id": "doi:10.3390/coatings14050589",
+   "canonical_source_id": "doi:10.3390/coatings14050589",
+   "attachment_sha256": "122d7856a78cca4cbc58cecc265c881a2d67075e7c1738127f35762fd0733d36",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "b5e9900905eda017435a8385186f3e6c43dc3149b3e206d8e3a636e558bbe03a"
+  },
+  {
+   "source_id": "doi:10.3390/ma17246178",
+   "canonical_source_id": "doi:10.3390/ma17246178",
+   "attachment_sha256": "cb0ad8bb99a36a4a23beb47b8f31a28f9207d4520ce2f3b1c200c3e377a23890",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ae9171d69461cf2ee3917aee9ef493e79341ab13136d8723154f7bf981884fe9"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-024-00464-8",
+   "canonical_source_id": "doi:10.1038/s41529-024-00464-8",
+   "attachment_sha256": "1a5d22255d1775fd5421bd5541c1cf4c778abbbae5aef6ac4c42daedc3e708fc",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "6ea32c5c4b2a7c56e0e98439374286cb97ddbce98652d91a3dddab1047bbd148"
+  },
+  {
+   "source_id": "doi:10.3390/ma18174020",
+   "canonical_source_id": "doi:10.3390/ma18174020",
+   "attachment_sha256": "8c1e64fb0019c5f5a193b64c2287d8144a0e00d9dc54368b7b350b3971932f84",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "65253ea5a98370cad152c19d1fa564153571abad1285f3b93a497a129d6a2967"
+  },
+  {
+   "source_id": "doi:10.1007/s00170-025-15487-x",
+   "canonical_source_id": "doi:10.1007/s00170-025-15487-x",
+   "attachment_sha256": "56f506e7f9c46e73e6349481b63c94a92c09250942d27e9aa9b9555164eac8cf",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "df3b066282c43c198c5436f8ad4e3858b0baf4a050e37fc818de498c784c6e6b"
+  },
+  {
+   "source_id": "doi:10.3390/mi14040850",
+   "canonical_source_id": "doi:10.3390/mi14040850",
+   "attachment_sha256": "192d5e055ee9537c5f39d8c459104d60d67ee8b698c6ab1acf25ff0c5c8cfc67",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "7111f31a43838f3b1a29268ac8323ffa88b1a7419b4471a006ebd1573141b5ea"
+  },
+  {
+   "source_id": "doi:10.1002/adem.202502108",
+   "canonical_source_id": "doi:10.1002/adem.202502108",
+   "attachment_sha256": "a3b1f59e2d489fc82e05280fda2532e9ffc4378219915f2b0cb6e093a871f2ee",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "32df879526fa1a8b49834ffa597f0b26c162f48f1ac07d7b1eeb4e1b72494172"
+  },
+  {
+   "source_id": "doi:10.3390/cryst12050695",
+   "canonical_source_id": "doi:10.3390/cryst12050695",
+   "attachment_sha256": "91f567c7827b182c81292fa76d8efabc48538a58e631c9e17dd403b04df1a4ba",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "56a7b42ead4045812967ac62b93e3659bd6301e61aa04c92e85ad68bfce0a165"
+  },
+  {
+   "source_id": "candidate:Allen-2020-316-absorptance",
+   "canonical_source_id": "doi:10.1016/j.procir.2020.09.157",
+   "attachment_sha256": "053beae02e41d9663bd822bfd29de3cb27d059b8d54c570582387c7fc6e22d6d",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "f03c40c9b91d9ca89d61efe6622e315d98435701556c6cbda0e02b818d36eda2",
+   "same_pdf_source_ids": [
+    "doi:10.1016/j.procir.2020.09.157"
+   ]
+  },
+  {
+   "source_id": "candidate:Bertoli-2019-steelpowder",
+   "canonical_source_id": "doi:10.3390/met9010086",
+   "attachment_sha256": "b47a852bf918dc4cef8730c38fc9b6b9a70d00cb2657a7b9687e7f4e209155b5",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "bddd5fa8e4c524247e5125428e69da8ef24d9c3a52944064c273e018481836a1",
+   "same_pdf_source_ids": [
+    "doi:10.3390/met9010086"
+   ]
+  },
+  {
+   "source_id": "candidate:Cheng-2026-beam-profile",
+   "canonical_source_id": "doi:10.1007/s40516-026-00357-5",
+   "attachment_sha256": "c35e08d33c7c82b62b04094ca02013686a2f75c927b616d041a9d40f1ee32893",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "ced57aed5dade81c95a6954094c1f639cfa3aa24d9696e697fdf762904e3c716",
+   "same_pdf_source_ids": [
+    "doi:10.1007/s40516-026-00357-5"
+   ]
+  },
+  {
+   "source_id": "candidate:Coatings-2024-ns-stainless",
+   "canonical_source_id": "doi:10.3390/coatings14040467",
+   "attachment_sha256": "0ee99bd9308038d0c703c2011a976208e652110b740ed95d076ac33bbe2c95fc",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "8fc8320f24b1c421224ad2d4f632f38edc69d90bab2d87c375852a096942de44",
+   "same_pdf_source_ids": [
+    "doi:10.3390/coatings14040467"
+   ]
+  },
+  {
+   "source_id": "candidate:Crystals-2024-ultrashort-review",
+   "canonical_source_id": "doi:10.3390/cryst14040353",
+   "attachment_sha256": "22c6ea8633a64d0354534b22b6b086bd313d960998cf62b7afb5581987249cac",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "3b5fd2fc4d2065e0f2eee53f56c670571e6595ec84f893eaa9b634e9bceef7cf",
+   "same_pdf_source_ids": [
+    "doi:10.3390/cryst14040353"
+   ]
+  },
+  {
+   "source_id": "candidate:Dong-2022-oxygen-304",
+   "canonical_source_id": "doi:10.3390/met12040556",
+   "attachment_sha256": "e2ee3f721def9bbbff9bfb6bf991ed3c9735d6f93eb0cb6023fe1fba62204fcd",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "3287fd060dba101ee2e108beec602ecd9c2d2f7affb088d9a0e90f942cf78a23",
+   "same_pdf_source_ids": [
+    "doi:10.3390/met12040556"
+   ]
+  },
+  {
+   "source_id": "candidate:Faas-2018-heat-accumulation",
+   "canonical_source_id": "doi:10.1007/s00339-018-2040-4",
+   "attachment_sha256": "69e795d758902adc62a4079808542136b6411878e6e9e6e2d7a81775946371fc",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "6c68ac7760cad953c13fe2b60aa277ee4c1fb6acd66564cd1b6b09ee11340811",
+   "same_pdf_source_ids": [
+    "doi:10.1007/s00339-018-2040-4"
+   ]
+  },
+  {
+   "source_id": "candidate:Griessmann-2020-spot-uncertainty",
+   "canonical_source_id": "doi:10.1063/5.0046287",
+   "attachment_sha256": "5dcbe054cd22f9b305bd8dd9c1830b420361bb77675facc4626812e17627bec4",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "c028f63d461b29e019c19276029c9966b28fa2f55c68563e1cf5d6aceaaa368d",
+   "same_pdf_source_ids": [
+    "doi:10.1063/5.0046287"
+   ]
+  },
+  {
+   "source_id": "candidate:Gupta-US2013-laser-texturing",
+   "canonical_source_id": "candidate:Gupta-US2013-laser-texturing",
+   "attachment_sha256": "19df4628284da673256274db4ab4a78aa9ab8de6425f2879337139bddde2535b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "eb0a5a4ffa0ab8a4be4c2b60154e29102071d588a046ebec6c693ff414a302c2"
+  },
+  {
+   "source_id": "candidate:Hipp-2019-304-wavelength",
+   "canonical_source_id": "doi:10.3390/ma12172802",
+   "attachment_sha256": "82c4d7ebd9fb4d7c1eee690773207630efea54fb0d89b2a05993a5673c7231d8",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "2ca682dd144f07650f9b4fe68972b1ac1bbdb08761754d6896a3390873bfe2ba",
+   "same_pdf_source_ids": [
+    "doi:10.3390/ma12172802"
+   ]
+  },
+  {
+   "source_id": "candidate:JStage-1998-M2",
+   "canonical_source_id": "doi:10.2184/lsj.26.723",
+   "attachment_sha256": "c30f2a60d9be5b9532ca390d62437c28a354b63a938779dbf961fd3ae99e61c5",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "e157ba4645ec27d025ec3b85108d3e2cb43ae9c172bac93de14661e833f3942d",
+   "same_pdf_source_ids": [
+    "doi:10.2184/lsj.26.723"
+   ]
+  },
+  {
+   "source_id": "candidate:Kim-2021-gas-wetting",
+   "canonical_source_id": "doi:10.1063/5.0047514",
+   "attachment_sha256": "a9709d9938c016391d97701c07b65435669faf4e4757e42969908a1055c07085",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "dc87eee6eac05b1912282ca4575472d8fb898d419b9895eea43057b5731c8a7b",
+   "same_pdf_source_ids": [
+    "doi:10.1063/5.0047514"
+   ]
+  },
+  {
+   "source_id": "candidate:Kozak-2020-tophat",
+   "canonical_source_id": "doi:10.3390/mi11020221",
+   "attachment_sha256": "abeb903f6fb374e29283516df4a2d4723a431f1aa8b92d63a5dae857b089a043",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "8bfda555222ef71a04bcf9d443f7fa0ec6e4b7aa89be4c1987abdbb363b472d7",
+   "same_pdf_source_ids": [
+    "doi:10.3390/mi11020221"
+   ]
+  },
+  {
+   "source_id": "candidate:Kozak-2023-scanning-review",
+   "canonical_source_id": "doi:10.3390/mi14061241",
+   "attachment_sha256": "4406465b3af756cd2f559a59ce2e44fbde040e98b7bb3f05ca3e8b272cd67374",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "14d85ff39b1fdf829b2e4362bdb8c3cefe99bbcdc9c052de67d4702f20726bf6",
+   "same_pdf_source_ids": [
+    "doi:10.3390/mi14061241"
+   ]
+  },
+  {
+   "source_id": "candidate:Kugler-2018-absorptivity",
+   "canonical_source_id": "doi:10.3390/jmmp2040084",
+   "attachment_sha256": "41085ed435f5a8f335896f0ba91f1b4fb8652681abb4b5c9192fde0a59f1ae09",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "bedcccd252e6db69d05b5346f73f3b777f8cdc0d38a9d50da311940e1de6e5e5",
+   "same_pdf_source_ids": [
+    "doi:10.3390/jmmp2040084"
+   ]
+  },
+  {
+   "source_id": "candidate:Louvis-2012-AlSLM",
+   "canonical_source_id": "candidate:Louvis-2012-AlSLM",
+   "attachment_sha256": "a651e1964f6c3ecff50666fc04907b816f7162f659beb88be7ba214c3299443c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "13e8390577938fdbd8f38a2f15a7e938b8618386735b475b2cdd84cdc6d48825"
+  },
+  {
+   "source_id": "candidate:Nature-2020-fs-absorption",
+   "canonical_source_id": "doi:10.1038/s41377-020-0242-y",
+   "attachment_sha256": "312d6a0f6173368c7fbcfc4c48fa16e850b1d632fffb550e8f4ff9c561f2672c",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "f4f67dc0691a38d2cdcddaa206a829f39f7466d724235473134a1bcc133077dc",
+   "same_pdf_source_ids": [
+    "doi:10.1038/s41377-020-0242-y"
+   ]
+  },
+  {
+   "source_id": "candidate:NBS-TN1001-1978",
+   "canonical_source_id": "candidate:NBS-TN1001-1978",
+   "attachment_sha256": "17b88965d46be3a612888de5a14455802c91c25602d118bb27cc6112d05b68cb",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "99736bfe402687d5fa327e94ec5fe0a4680dfde5bc83a4c966d10b68cf9844f4"
+  },
+  {
+   "source_id": "candidate:NIST-AMBench2025",
+   "canonical_source_id": "doi:10.6028/nist.ams.100-67",
+   "attachment_sha256": "529225eb781d29859c310eb5dab22bc6195da252f9a02ee9e9dbe946616f8302",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "e4f5c62be29ecb6ad7bc1c32be0cf046f7075d09e72950715b26f3a8079fe14c",
+   "same_pdf_source_ids": [
+    "doi:10.6028/NIST.AMS.100-67"
+   ]
+  },
+  {
+   "source_id": "candidate:NIST-SP250-87",
+   "canonical_source_id": "candidate:NIST-SP250-87",
+   "attachment_sha256": "6daa7f37f61c7794414b7d5da94dd12be7898cf853721e7b783dbbeffe4bcb23",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "2394e6a2709988eee06ddb04ae0299c87e490a18ecaa8f9b4734d15e908a0628"
+  },
+  {
+   "source_id": "candidate:NPL-2007-M2",
+   "canonical_source_id": "doi:10.1088/1742-6596/85/1/012014",
+   "attachment_sha256": "3ae533770a1c87fc17368ca9e2cf76f363e9f0a7d062df5b63f7e23c0199ce64",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "d188075cd9f27fb101b67782e9c85b61829c734eafa71d111cd0f2acef278edc",
+   "same_pdf_source_ids": [
+    "doi:10.1088/1742-6596/85/1/012014"
+   ]
+  },
+  {
+   "source_id": "candidate:Polarization-2026-fs-stainless",
+   "canonical_source_id": "doi:10.3390/molecules31030480",
+   "attachment_sha256": "9fd23303ebcbecd314cda816dfcc26c7c2569e9fe887b32e8dde7faa27870091",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "a4f278576d4af596f25e96b6ce97b211ac578d34838ede94f2e2af34b0723133",
+   "same_pdf_source_ids": [
+    "doi:10.3390/molecules31030480"
+   ]
+  },
+  {
+   "source_id": "candidate:Simonds-2018-316-absorptance",
+   "canonical_source_id": "doi:10.1103/physrevapplied.10.044061",
+   "attachment_sha256": "93adbd7b1760a7958da0eb7cd468ab85a9760560c551c253cd10337281a46646",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "380e504f8317ee70f770483cdc576df339bd1c0ebe87e7a4e511c2cbbec9b5dd",
+   "same_pdf_source_ids": [
+    "doi:10.1103/PhysRevApplied.10.044061"
+   ]
+  },
+  {
+   "source_id": "candidate:Thomas-2026-beam-shape",
+   "canonical_source_id": "doi:10.1007/s00170-026-18522-7",
+   "attachment_sha256": "1e1211a112c6281f59dc893a9d1b492cae2198b5dea348df7ab3f599c0a3a0eb",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "c3ba30a53f53f6a445c027fde37dd2b45a723dc7e54ebf62c1a786ca8e9c5a1c",
+   "same_pdf_source_ids": [
+    "doi:10.1007/s00170-026-18522-7"
+   ]
+  },
+  {
+   "source_id": "candidate:Volpp-2023-absorption",
+   "canonical_source_id": "doi:10.1016/j.measurement.2023.112524",
+   "attachment_sha256": "c5a8e39c3b00ca4435f2d17c3b93bda9aafbe6fb10c0e09f8257c9b3078f3cbf",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "aa20b669002a45957e867613ce0e5516e328d8a84a78f1c998269bb92404b89d",
+   "same_pdf_source_ids": [
+    "doi:10.1016/j.measurement.2023.112524"
+   ]
+  },
+  {
+   "source_id": "candidate:Wang-2022-ns-stainless-overlap",
+   "canonical_source_id": "doi:10.3390/nano12020232",
+   "attachment_sha256": "58ad64977250deea70c8c8bd99c4f46d83f7c69d124f484efcf229853f8470f5",
+   "identity_status": "same_pdf_bytes_as_registered_doi",
+   "basis": "current PDF SHA256 equal across candidate/doi namespaces; registered DOI identity is not independently reverified",
+   "source_row_sha256": "f23128eca48c001a3e18cb7fa1cff637ccf121c42189dea87507037ee5b13d0b",
+   "same_pdf_source_ids": [
+    "doi:10.3390/nano12020232"
+   ]
+  },
+  {
+   "source_id": "arxiv:1809.03993",
+   "canonical_source_id": "arxiv:1809.03993",
+   "attachment_sha256": "d07ed91f1b6f1db4c02427da1de3d8fa5c267969390d00ca33008451f207138b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "64b7c03727e08dc1404595911ae25abd64c39ab3a8012825f94a7f705c341a87"
+  },
+  {
+   "source_id": "candidate:DCU-2018-316L-cylindrical-pins",
+   "canonical_source_id": "candidate:DCU-2018-316L-cylindrical-pins",
+   "attachment_sha256": "7ad568175db2829ea672167f8ff84e584e8409ac5688c5d26d2b8b4f1a119693",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "c4c643af449e7209a005fd078bbe4a142ca97beb2f95b146d794c0909f681256"
+  },
+  {
+   "source_id": "candidate:Wuppertal-2023-ODS-laserAM-metrology",
+   "canonical_source_id": "candidate:Wuppertal-2023-ODS-laserAM-metrology",
+   "attachment_sha256": "30285d5405484fcd52fb66c5c2e9c89828d0a2b7c6e903c30d387d863c6abd7c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "cb26e4c675cb1d6ace069ffa116eb2a4c1830a001bf83359cf41e883381ac682"
+  },
+  {
+   "source_id": "doi:10.1039/C8RA01774C",
+   "canonical_source_id": "doi:10.1039/c8ra01774c",
+   "attachment_sha256": "72d4e06d24f93292cc372b93b0fd4995d6786b1eaea35fab60dffdea9dd667e7",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "a407fa109680e560644cfe661aea44a724fd2e4e90b6d26c0352ab142ad06dc2"
+  },
+  {
+   "source_id": "doi:10.1007/s40516-022-00199-x",
+   "canonical_source_id": "doi:10.1007/s40516-022-00199-x",
+   "attachment_sha256": "e9dec995053712cd86613b2ec98f192c026bc10b6c3da68ace3fecf1fa7cccfd",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "624d9422308c38f8176efa4da05d9f5e190734a9e99ff65763dc3e12cd41b6dc"
+  },
+  {
+   "source_id": "doi:10.1016/j.matdes.2022.110919",
+   "canonical_source_id": "doi:10.1016/j.matdes.2022.110919",
+   "attachment_sha256": "2192da26b06f6ae17f1aa082e7310caa610d8005b7baf97c70f8d95b5feb2391",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ae57adbc8345ab9e71ffe82aee7dc26d42cacb5110994eb04b0ff0c7c1d0ac57"
+  },
+  {
+   "source_id": "doi:10.1007/s00170-024-14008-6",
+   "canonical_source_id": "doi:10.1007/s00170-024-14008-6",
+   "attachment_sha256": "cc5a0f2a6c5e4a058cf4861c19e610ab64a0c2e3460665924d8d67294bebe952",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "d1a17f7402f1cb4a17ebc7d48902e5abb4c52fecef39333ef15fc0dcc7416a18"
+  },
+  {
+   "source_id": "doi:10.1051/metal/2013061",
+   "canonical_source_id": "doi:10.1051/metal/2013061",
+   "attachment_sha256": "",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "932d0a93736eaea3749e6b229abb4cd1a976428913d8c72c7558f0a08c6cdf97"
+  },
+  {
+   "source_id": "doi:10.1016/j.jmrt.2024.03.025",
+   "canonical_source_id": "doi:10.1016/j.jmrt.2024.03.025",
+   "attachment_sha256": "7c0181d79f5a1c4e6883d0681e0e73825087dcd981b9c666338b247376e5eac9",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "3e0e522facbc00190b2148df13dc98a0837984922047872f4c3ecb1740cd7fdd"
+  },
+  {
+   "source_id": "doi:10.1038/s41529-023-00398-7",
+   "canonical_source_id": "doi:10.1038/s41529-023-00398-7",
+   "attachment_sha256": "a487bae245736b24dd8eb30aaf0fe79a6ebac4793083b0d7a2576df107b69fd6",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f4250592250e3219fd2ab91362d55b50b53d220a8821f6e3621077154eed1d8f"
+  },
+  {
+   "source_id": "doi:10.1016/j.apsusc.2020.147170",
+   "canonical_source_id": "doi:10.1016/j.apsusc.2020.147170",
+   "attachment_sha256": "ec732db38bd67d3d1111346bf4b5ab57a415b0b7e8bccf6d5f01ec393af2ba78",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "631ed6fa2fa8f56a5c01142e148e215f7719aa44b776712972eac22ae0a9c75c"
+  },
+  {
+   "source_id": "doi:10.1002/sia.7371",
+   "canonical_source_id": "doi:10.1002/sia.7371",
+   "attachment_sha256": "f68b88166e89c4372111ccd536cae9d9c24d01ee00f163f1da2319d42b4f8318",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "224fa207277f6e3b10df8bd96c549ab67aa56ed58b27e4273e4938f338d96d88"
+  },
+  {
+   "source_id": "dataset:TUWien-XPS-c0166b0b",
+   "canonical_source_id": "dataset:TUWien-XPS-c0166b0b",
+   "attachment_sha256": "3a0a52cc6b4eada38f01798bbc71f2e22fc127512f2481e60774caafbbf27ae1",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "42f299f70135a2e2838cb070c52fe89b49af2647a11e8c4a46a58f3036b5824b"
+  },
+  {
+   "source_id": "dataset:NIMS-DxMT-XPS-VAMAS",
+   "canonical_source_id": "dataset:NIMS-DxMT-XPS-VAMAS",
+   "attachment_sha256": "",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "46ced1b65180793d2ab449b5645dcd61dd4ada947ba3a7b5c47cccce6f63dd18"
+  },
+  {
+   "source_id": "doi:10.1016/j.corsci.99.66",
+   "canonical_source_id": "doi:10.1016/j.corsci.2015.06.019",
+   "attachment_sha256": "44d07de6a60e36a4d3c46cad2eed1495beb7a25959148efac81e5ef1efe2d29c",
+   "identity_status": "pdf_identity_checked",
+   "basis": "prior first-page/official-publisher verification, current PDF SHA256 rechecked",
+   "source_row_sha256": "50c4e666c7b58db1628ab6bea79582780ea325f16160a9d675817203dd736d82",
+   "identity_record": "D:\\杂物间\\xiyve的obsidian\\工具构建记录\\科研辅助Skill系统\\文献数据\\90_整理审计\\DOI身份与版本核查_2026-08-31.md",
+   "identity_record_sha256": "540b385f6b2e9bd5966f91c52bb847dc2edf6176187203b7f22b0ed1e8dc66f5",
+   "zotero_key": "ZJT2WA5U",
+   "current_pdf": "C:\\Users\\xiyve\\Zotero\\storage\\NXV4U9HP\\Steinberger 等 - 2015 - XPS study of the effects of long-term Ar+ ion and Ar cluster sputtering on the chemical degradation.pdf",
+   "warning": "legacy source_id retained; use canonical DOI for citation identity"
+  },
+  {
+   "source_id": "doi:10.1016/j.apsusc.2019.140155",
+   "canonical_source_id": "doi:10.1016/j.apsusc.2019.03.211",
+   "attachment_sha256": "d72d6317cd370fbd91c08af19d7ef5f6bbca42b8bb5a76f0dc8e5b40ec6c279e",
+   "identity_status": "pdf_identity_checked",
+   "basis": "prior first-page/official-publisher verification, current PDF SHA256 rechecked",
+   "source_row_sha256": "f9492c23c67aacb3c831a97209e0c2bfc2aaf08fc1edc74443751b4c0904eab9",
+   "identity_record": "D:\\杂物间\\xiyve的obsidian\\工具构建记录\\科研辅助Skill系统\\文献数据\\90_整理审计\\DOI身份与版本核查_2026-08-31.md",
+   "identity_record_sha256": "540b385f6b2e9bd5966f91c52bb847dc2edf6176187203b7f22b0ed1e8dc66f5",
+   "zotero_key": "H6R7JWU9",
+   "current_pdf": "C:\\Users\\xiyve\\Zotero\\storage\\FIKDMN3I\\Hofmann 等 - 2019 - Preferential sputtering effects in depth profiling of multilayers with SIMS, XPS and AES.pdf",
+   "warning": "legacy source_id retained; use canonical DOI for citation identity"
+  },
+  {
+   "source_id": "candidate:AN126-XPS-2019",
+   "canonical_source_id": "candidate:AN126-XPS-2019",
+   "attachment_sha256": "8fbf8eeced41f251abff6b497f1dc24e62a737d9d4eafebffda94ac425315d92",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "25d25f791532de5a1216ad0aca7ae4618a8b50080cf9c81dbcc0ec4d279a2b53"
+  },
+  {
+   "source_id": "standard:ISO15472",
+   "canonical_source_id": "standard:ISO15472",
+   "attachment_sha256": "",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "65e82abe05472235bf072ef0406945e271e7b084f0941a6d0f86212293b11037"
+  },
+  {
+   "source_id": "standard:ISO18118",
+   "canonical_source_id": "standard:ISO18118",
+   "attachment_sha256": "",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "dbb26bdf28bb61913d78915dc0e7453269b877c43c0c30cd8511fa025ec2cccf"
+  },
+  {
+   "source_id": "standard:ISO19318",
+   "canonical_source_id": "standard:ISO19318",
+   "attachment_sha256": "",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "d75698419e73202d41cadda12845eb84edb412dc9c54353bb6cfbe7f2acf0db4"
+  },
+  {
+   "source_id": "standard:ISO22581",
+   "canonical_source_id": "standard:ISO22581",
+   "attachment_sha256": "",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "38471e9857187d3d570a08e530fbe2c79627e6bbc17c29c4eedb388d660ba6da"
+  },
+  {
+   "source_id": "standard:ISO20579-1",
+   "canonical_source_id": "standard:ISO20579-1",
+   "attachment_sha256": "",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "ec9330696edd887a0c94745c3f86949acf523e67669878f947344a8022ceb633"
+  },
+  {
+   "source_id": "candidate:Lawrence-2016-304L-laser-oxide",
+   "canonical_source_id": "candidate:Lawrence-2016-304L-laser-oxide",
+   "attachment_sha256": "",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "35d4a1fa6363ac81790f4005793dcf15581d7a9f58ea47ee959c9ec9130df2c9"
+  },
+  {
+   "source_id": "P1-10-11-EIS-NONLINEAR-2023",
+   "canonical_source_id": "P1-10-11-EIS-NONLINEAR-2023",
+   "attachment_sha256": "00f6de657fc2f021bb6bc88abae24c035ed3427383d61cb235e037f916de8d2d",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "323333ca2d6f84686a8e1fb475abd43b11d6ead19b80c62cbb3d5a6d38d18d69"
+  },
+  {
+   "source_id": "P1-10-11-EIS-DRIFT-2023",
+   "canonical_source_id": "doi:10.1016/j.electacta.2023.141959",
+   "attachment_sha256": "d038cd23f0efdf915bff2b4240327d0ca9698e460cb54cc215494993800a9e2a",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "4698573925f38bda589d3ff6e8ecfe63b1b257984601e44ba289d7d848ba5961"
+  },
+  {
+   "source_id": "P1-10-11-CPE-EQUIV-2021",
+   "canonical_source_id": "P1-10-11-CPE-EQUIV-2021",
+   "attachment_sha256": "8e7d0c8fec20eab970c6af7889d11ab0ddb321f2baa99a557f8ef04d006762b8",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "728d7ff1baf76a4537996d8e76621a91123ac67f2de28224c074341f239a16fa"
+  },
+  {
+   "source_id": "P1-10-11-ECM-BAYES-2024",
+   "canonical_source_id": "P1-10-11-ECM-BAYES-2024",
+   "attachment_sha256": "3d1aafd8ee4e005b8d628ccf97fac0db9f30cb0dc76d80aaaf64aa6dc19a15aa",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "44bd11e85e58f8f05820fa021a87b3277d6a6919139074fea9c32bcefb9ca2a4"
+  },
+  {
+   "source_id": "P1-10-11-LPR-IR-2014",
+   "canonical_source_id": "doi:10.1155/2014/525678",
+   "attachment_sha256": "715d579def6d93aeeb2f3d8e80c5017ba9b76c5c8322571ad244b9862673e280",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "be20dffe0e8d9980c5985e683a7174e5274af1b7c1432a60ea013c13147d0453"
+  },
+  {
+   "source_id": "P1-10-11-SCANRATE-AL-2021",
+   "canonical_source_id": "doi:10.20964/2021.11.05",
+   "attachment_sha256": "b4f845b8bc81c26f12178cc86e7e7d00414513c8ad81eb22e7b0eae62630c635",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "0a34b76b9602f0aee34c389dd5519feb238807ef3316ec5527d265945d5cf6c3"
+  },
+  {
+   "source_id": "B-ELECTROCHEM-654SMO-C276-2024",
+   "canonical_source_id": "doi:10.3390/ma17081827",
+   "attachment_sha256": "02b28e46da0eda7a01c50302a2014ac845fbc2c2807da8337a3d4a5879d3ee64",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "c856db9a685b228098c4aa81e06ce0e9f6708ee9ad22ce12741658f35ba82577"
+  },
+  {
+   "source_id": "B-ELECTROCHEM-316L-SENS-2023",
+   "canonical_source_id": "doi:10.3390/ma16165714",
+   "attachment_sha256": "a9728d45a892b74c388e06f37d6364a46cd3b3c80877f6eb99d232695503bd45",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "845df3c47881fe235ef2b3015c8db2c408cc04f0697f23a5929daeb07185d090"
+  },
+  {
+   "source_id": "B-ELECTROCHEM-MART-EIS-PDM-2020",
+   "canonical_source_id": "doi:10.3390/cmd1010006",
+   "attachment_sha256": "d6fd21ae04de20a2f83518ece86b7c40d7ba81cf7b2f4e506b996ff66c22b87e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "c0a34494465b0c50bce98a69604337c949ff65ca9756f85fc02b41b6394f7b5a"
+  },
+  {
+   "source_id": "B-ELECTROCHEM-EEC-AM-316L-2020",
+   "canonical_source_id": "doi:10.1016/j.corsci.2020.108480",
+   "attachment_sha256": "b09af9fd159055d50278af1a05c21748961bb671036bff68a2e7543a6d7b4c4e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "5bcd3048db11fdaaff91ecf336b13dd574370f253e79f99dace0afd0b0b2d5ef"
+  },
+  {
+   "source_id": "P1-10-11-MOTT-CRITICAL-RAVISHANKAR-2022",
+   "canonical_source_id": "doi:10.1039/d1sc06401k",
+   "attachment_sha256": "89befbffc01d6697ad323240d27953de76567d93d1ec2e7cf9c99fd1bb791de1",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "807e765a69f3595e5f36a0fb42bb8b3168df9da267db9e32ec5c93a74ffc543a"
+  },
+  {
+   "source_id": "P1-90-ZHANG-2020",
+   "canonical_source_id": "P1-90-ZHANG-2020",
+   "attachment_sha256": "73d8a6a98c8474ca580c4e1e04fc45834c74f81084c68964d9d383fd02c80b2e",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "9b560027870535fac05ed004364d681346a0e108e905534f0194cea6371b2aa9"
+  },
+  {
+   "source_id": "P1-90-CONRADI-2019",
+   "canonical_source_id": "doi:10.3390/coatings9090592",
+   "attachment_sha256": "5af4dae5cc6c22a41ce0eae4677202d1d6404ab27371fdeb355646d5b5cbb796",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "726c08366062a5916fa36b827e2dfcd1d3218f24fc0ae3fd60c76b6a77c837d1"
+  },
+  {
+   "source_id": "P1-90-CRIEPI-2012",
+   "canonical_source_id": "P1-90-CRIEPI-2012",
+   "attachment_sha256": "355eaa0ba1c25c4de2d2311d1491d27ba5e7c7ed2314784b4c68b49c5f35bb4b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "f77609b356bfca2882ff0786bce0ab3966b7613aa07ef8717ace7a1f4968176b"
+  },
+  {
+   "source_id": "P1-90-CHIANG-2026",
+   "canonical_source_id": "doi:10.3390/met16020136",
+   "attachment_sha256": "bb4f05159e3ec28dd1179abe587bdd7e5cf711e83038d5f4a14059b875a9c079",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "84862b45b21ee4f0a8dcb71c07ea34d31cc9edc7a94c464b7802672f47663ea5"
+  },
+  {
+   "source_id": "H-MEAS-ISO5725-1",
+   "canonical_source_id": "H-MEAS-ISO5725-1",
+   "attachment_sha256": "6cf3ef1d7b8c179eb918e6d0bda9dae36c701cf19ca00b4c63ef6f0fe3c97193",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "880792f3dd446347922a8c8e0c65c4c718a142a329b1c4da748c085f4c7c5625"
+  },
+  {
+   "source_id": "H-MEAS-MULTICOMP-BIORXIV-2025",
+   "canonical_source_id": "doi:10.1101/2025.05.01.651705",
+   "attachment_sha256": "c5e462aea51f34c8f045af0be9ecd3af39a4d4efd07f1cc000b12e24d7831498",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "fbedb8208b7feae33901b0d63eda3773f1717227f7b4efd088d6db711aa3e9ba"
+  },
+  {
+   "source_id": "H-MEAS-MULTICOMP-CMD-2026",
+   "canonical_source_id": "doi:10.3390/cmd7020040",
+   "attachment_sha256": "64e335093602025df988560b5567755ec9618fd486cb4e5316458ef770d5a851",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "e9a42d7036e69f350078b62bff274ad5a798fed2b2b91a96e6e73e74dffbe1a1"
+  },
+  {
+   "source_id": "H-MEAS-ISO16700",
+   "canonical_source_id": "H-MEAS-ISO16700",
+   "attachment_sha256": "8ebee245bed3e9be727a0d2c9252aa6f8a8ba1756bcbb34f7bcdee0f8d80d36b",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "67c39e3c89daa4a4a6522382ad856af906442358442fb2469158b670053438d3"
+  },
+  {
+   "source_id": "JCGM 100:2008",
+   "canonical_source_id": "JCGM 100:2008",
+   "attachment_sha256": "41bbf068fbc0d7986c98691b2d1af6680cb3044f6a1a89b3560933ed9ef9626c",
+   "identity_status": "registered_not_reverified",
+   "basis": "exact registered DOI normalization; non-DOI IDs retained",
+   "source_row_sha256": "3ff93a76c48541a330e9db2230041c5c700c6f5b1a938e5b0d0ca3be8f6836d7"
+  }
+ ],
+ "alias_groups": [
+  {
+   "canonical_source_id": "doi:10.1016/j.procir.2020.09.157",
+   "source_ids": [
+    "doi:10.1016/j.procir.2020.09.157",
+    "candidate:Allen-2020-316-absorptance"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "053beae02e41d9663bd822bfd29de3cb27d059b8d54c570582387c7fc6e22d6d"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/met9010086",
+   "source_ids": [
+    "doi:10.3390/met9010086",
+    "candidate:Bertoli-2019-steelpowder"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "b47a852bf918dc4cef8730c38fc9b6b9a70d00cb2657a7b9687e7f4e209155b5"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/ma12172802",
+   "source_ids": [
+    "doi:10.3390/ma12172802",
+    "candidate:Hipp-2019-304-wavelength"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "82c4d7ebd9fb4d7c1eee690773207630efea54fb0d89b2a05993a5673c7231d8"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/jmmp2040084",
+   "source_ids": [
+    "doi:10.3390/jmmp2040084",
+    "candidate:Kugler-2018-absorptivity"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "41085ed435f5a8f335896f0ba91f1b4fb8652681abb4b5c9192fde0a59f1ae09"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1038/s41377-020-0242-y",
+   "source_ids": [
+    "doi:10.1038/s41377-020-0242-y",
+    "candidate:Nature-2020-fs-absorption"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "312d6a0f6173368c7fbcfc4c48fa16e850b1d632fffb550e8f4ff9c561f2672c"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1103/physrevapplied.10.044061",
+   "source_ids": [
+    "doi:10.1103/PhysRevApplied.10.044061",
+    "candidate:Simonds-2018-316-absorptance"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "93adbd7b1760a7958da0eb7cd468ab85a9760560c551c253cd10337281a46646"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1016/j.measurement.2023.112524",
+   "source_ids": [
+    "doi:10.1016/j.measurement.2023.112524",
+    "candidate:Volpp-2023-absorption"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "c5a8e39c3b00ca4435f2d17c3b93bda9aafbe6fb10c0e09f8257c9b3078f3cbf"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/met12040556",
+   "source_ids": [
+    "doi:10.3390/met12040556",
+    "candidate:Dong-2022-oxygen-304"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "e2ee3f721def9bbbff9bfb6bf991ed3c9735d6f93eb0cb6023fe1fba62204fcd"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1063/5.0047514",
+   "source_ids": [
+    "doi:10.1063/5.0047514",
+    "candidate:Kim-2021-gas-wetting"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "a9709d9938c016391d97701c07b65435669faf4e4757e42969908a1055c07085"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1088/1742-6596/85/1/012014",
+   "source_ids": [
+    "doi:10.1088/1742-6596/85/1/012014",
+    "candidate:NPL-2007-M2"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "3ae533770a1c87fc17368ca9e2cf76f363e9f0a7d062df5b63f7e23c0199ce64"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1007/s00170-026-18522-7",
+   "source_ids": [
+    "doi:10.1007/s00170-026-18522-7",
+    "candidate:Thomas-2026-beam-shape"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "1e1211a112c6281f59dc893a9d1b492cae2198b5dea348df7ab3f599c0a3a0eb"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1007/s00339-018-2040-4",
+   "source_ids": [
+    "doi:10.1007/s00339-018-2040-4",
+    "candidate:Faas-2018-heat-accumulation"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "69e795d758902adc62a4079808542136b6411878e6e9e6e2d7a81775946371fc"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1063/5.0046287",
+   "source_ids": [
+    "doi:10.1063/5.0046287",
+    "candidate:Griessmann-2020-spot-uncertainty"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "5dcbe054cd22f9b305bd8dd9c1830b420361bb77675facc4626812e17627bec4"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1007/s40516-026-00357-5",
+   "source_ids": [
+    "doi:10.1007/s40516-026-00357-5",
+    "candidate:Cheng-2026-beam-profile"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "c35e08d33c7c82b62b04094ca02013686a2f75c927b616d041a9d40f1ee32893"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.6028/nist.ams.100-67",
+   "source_ids": [
+    "doi:10.6028/NIST.AMS.100-67",
+    "candidate:NIST-AMBench2025"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "529225eb781d29859c310eb5dab22bc6195da252f9a02ee9e9dbe946616f8302"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.2184/lsj.26.723",
+   "source_ids": [
+    "doi:10.2184/lsj.26.723",
+    "candidate:JStage-1998-M2"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "c30f2a60d9be5b9532ca390d62437c28a354b63a938779dbf961fd3ae99e61c5"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/nano12020232",
+   "source_ids": [
+    "doi:10.3390/nano12020232",
+    "candidate:Wang-2022-ns-stainless-overlap"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "58ad64977250deea70c8c8bd99c4f46d83f7c69d124f484efcf229853f8470f5"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/molecules31030480",
+   "source_ids": [
+    "doi:10.3390/molecules31030480",
+    "candidate:Polarization-2026-fs-stainless"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "9fd23303ebcbecd314cda816dfcc26c7c2569e9fe887b32e8dde7faa27870091"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/coatings14040467",
+   "source_ids": [
+    "doi:10.3390/coatings14040467",
+    "candidate:Coatings-2024-ns-stainless"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "0ee99bd9308038d0c703c2011a976208e652110b740ed95d076ac33bbe2c95fc"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/cryst14040353",
+   "source_ids": [
+    "doi:10.3390/cryst14040353",
+    "candidate:Crystals-2024-ultrashort-review"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "22c6ea8633a64d0354534b22b6b086bd313d960998cf62b7afb5581987249cac"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/mi11020221",
+   "source_ids": [
+    "doi:10.3390/mi11020221",
+    "candidate:Kozak-2020-tophat"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "abeb903f6fb374e29283516df4a2d4723a431f1aa8b92d63a5dae857b089a043"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/mi14061241",
+   "source_ids": [
+    "doi:10.3390/mi14061241",
+    "candidate:Kozak-2023-scanning-review"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "4406465b3af756cd2f559a59ce2e44fbde040e98b7bb3f05ca3e8b272cd67374"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/coatings9090592",
+   "source_ids": [
+    "doi:10.3390/coatings9090592",
+    "P1-90-CONRADI-2019"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "5af4dae5cc6c22a41ce0eae4677202d1d6404ab27371fdeb355646d5b5cbb796"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.3390/met16020136",
+   "source_ids": [
+    "doi:10.3390/met16020136",
+    "P1-90-CHIANG-2026"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "bb4f05159e3ec28dd1179abe587bdd7e5cf711e83038d5f4a14059b875a9c079"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1016/j.electacta.2023.141959",
+   "source_ids": [
+    "doi:10.1016/j.electacta.2023.141959",
+    "P1-10-11-EIS-DRIFT-2023"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "d038cd23f0efdf915bff2b4240327d0ca9698e460cb54cc215494993800a9e2a"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1155/2014/525678",
+   "source_ids": [
+    "doi:10.1155/2014/525678",
+    "P1-10-11-LPR-IR-2014"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "715d579def6d93aeeb2f3d8e80c5017ba9b76c5c8322571ad244b9862673e280"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1039/d1sc06401k",
+   "source_ids": [
+    "doi:10.1039/D1SC06401K",
+    "P1-10-11-MOTT-CRITICAL-RAVISHANKAR-2022"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "89befbffc01d6697ad323240d27953de76567d93d1ec2e7cf9c99fd1bb791de1"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.20964/2021.11.05",
+   "source_ids": [
+    "doi:10.20964/2021.11.05",
+    "P1-10-11-SCANRATE-AL-2021"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "b4f845b8bc81c26f12178cc86e7e7d00414513c8ad81eb22e7b0eae62630c635"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1016/j.corsci.2015.06.019",
+   "source_ids": [
+    "doi:10.1016/j.corsci.2015.06.019",
+    "doi:10.1016/j.corsci.99.66"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "44d07de6a60e36a4d3c46cad2eed1495beb7a25959148efac81e5ef1efe2d29c"
+   ],
+   "independent_evidence_count": "not_inferred"
+  },
+  {
+   "canonical_source_id": "doi:10.1016/j.apsusc.2019.03.211",
+   "source_ids": [
+    "doi:10.1016/j.apsusc.2019.03.211",
+    "doi:10.1016/j.apsusc.2019.140155"
+   ],
+   "relationship": "same_pdf_bytes",
+   "sha256s": [
+    "d72d6317cd370fbd91c08af19d7ef5f6bbca42b8bb5a76f0dc8e5b40ec6c279e"
+   ],
+   "independent_evidence_count": "not_inferred"
+  }
+ ],
+ "cross_namespace_same_hash": [
+  [
+   "doi:10.1016/j.procir.2020.09.157",
+   "candidate:Allen-2020-316-absorptance"
+  ],
+  [
+   "doi:10.3390/met9010086",
+   "candidate:Bertoli-2019-steelpowder"
+  ],
+  [
+   "doi:10.3390/ma12172802",
+   "candidate:Hipp-2019-304-wavelength"
+  ],
+  [
+   "doi:10.3390/jmmp2040084",
+   "candidate:Kugler-2018-absorptivity"
+  ],
+  [
+   "doi:10.1038/s41377-020-0242-y",
+   "candidate:Nature-2020-fs-absorption"
+  ],
+  [
+   "doi:10.1103/PhysRevApplied.10.044061",
+   "candidate:Simonds-2018-316-absorptance"
+  ],
+  [
+   "doi:10.1016/j.measurement.2023.112524",
+   "candidate:Volpp-2023-absorption"
+  ],
+  [
+   "doi:10.3390/met12040556",
+   "candidate:Dong-2022-oxygen-304"
+  ],
+  [
+   "doi:10.1063/5.0047514",
+   "candidate:Kim-2021-gas-wetting"
+  ],
+  [
+   "doi:10.1088/1742-6596/85/1/012014",
+   "candidate:NPL-2007-M2"
+  ],
+  [
+   "doi:10.1007/s00170-026-18522-7",
+   "candidate:Thomas-2026-beam-shape"
+  ],
+  [
+   "doi:10.1007/s00339-018-2040-4",
+   "candidate:Faas-2018-heat-accumulation"
+  ],
+  [
+   "doi:10.1063/5.0046287",
+   "candidate:Griessmann-2020-spot-uncertainty"
+  ],
+  [
+   "doi:10.1007/s40516-026-00357-5",
+   "candidate:Cheng-2026-beam-profile"
+  ],
+  [
+   "doi:10.6028/NIST.AMS.100-67",
+   "candidate:NIST-AMBench2025"
+  ],
+  [
+   "doi:10.2184/lsj.26.723",
+   "candidate:JStage-1998-M2"
+  ],
+  [
+   "doi:10.3390/nano12020232",
+   "candidate:Wang-2022-ns-stainless-overlap"
+  ],
+  [
+   "doi:10.3390/molecules31030480",
+   "candidate:Polarization-2026-fs-stainless"
+  ],
+  [
+   "doi:10.3390/coatings14040467",
+   "candidate:Coatings-2024-ns-stainless"
+  ],
+  [
+   "doi:10.3390/cryst14040353",
+   "candidate:Crystals-2024-ultrashort-review"
+  ],
+  [
+   "doi:10.3390/mi11020221",
+   "candidate:Kozak-2020-tophat"
+  ],
+  [
+   "doi:10.3390/mi14061241",
+   "candidate:Kozak-2023-scanning-review"
+  ]
+ ]
+}

@@ -1,0 +1,52 @@
+# Stage 7 · 检索式构建验收
+# 检查 build-search-query.py 是否覆盖 15 类误捞模式的排除词
+
+skill: stainless-steel-laser-passivation
+stage: 7
+check: build-search-query
+
+cases:
+  - id: S7-Q1
+    description: 默认全领域检索式必须包含三类 AND 层与全部排除类
+    command: python scripts/build-search-query.py --list-exclusions
+    must_contain:
+      - 'a_additive'
+      - 'a_welding'
+      - 'a_hardening'
+      - 'a_instrument'
+      - 'a_prime_coating'
+      - 'a_prime_chemical'
+      - 'a_prime_sensitisation'
+      - 'd_medium'
+      - 'f_hydrogen'
+      - 'm_computational'
+      - 'n_potential_drop'
+      - 'b_journal_domain'
+
+  - id: S7-Q2
+    description: 默认查询必须含三层结构
+    command: python scripts/build-search-query.py
+    must_contain:
+      - 'stainless steel'
+      - 'laser surface'
+      - 'Mott-Schottky'
+      - 'NOT'
+
+  - id: S7-Q3
+    description: 禁用排除时不应出现 NOT
+    command: python scripts/build-search-query.py --exclude none
+    must_not_contain:
+      - 'NOT'
+
+  - id: S7-Q4
+    description: preset 应追加主题词
+    command: python scripts/build-search-query.py --preset mott_schottky
+    must_contain:
+      - 'donor density'
+
+  - id: S7-Q5
+    description: 未知排除键应报错（退出码 2）
+    command: python scripts/build-search-query.py --exclude bogus_key
+    expect_exit: 2
+    must_contain:
+      - 'unknown exclusion key'

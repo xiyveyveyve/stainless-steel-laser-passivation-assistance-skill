@@ -4,7 +4,7 @@ suite_id: "S6-model-behavior"
 artifact_kind: example
 is_example: true
 run_id: "example-fail-missing-output"
-skill_path: "<skill-root>"
+skill_path: "C:/Users/xiyve/.agents/skills/stainless-steel-laser-passivation"
 execution:
   status: executed
   executor: "example-review-agent"

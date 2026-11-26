@@ -1,2 +1,11 @@
-source_id,role,reference_section,anchor
-example:laser-process-001,beam/scan metrology,laser-process-metrology,Example pp. 3-6; replace with a validated page/table anchor.
+﻿source_id,role,reference_section,anchor
+doi:10.1007/s00170-024-14008-6,beam-caustic/ISS/BRS,S5 来源索引,Wittemer 2024 七种 beam-shape caustic、20kHz ISS、源内 BRS
+doi:10.3390/nano12020232,M2-spot/fluence/overlap,S2 公式/S5 来源,Hribar 2022 M²-based 38/57µm spot、20/45 J/cm²、pulse/line overlap、校准能量计/光电二极管、扫描头输出端功率计 18W
+doi:10.1016/j.matdes.2022.110919,focus-drift profiler,S3 边界反例,"Ophir Nanoscan 2, 1/e² Gaussian, 63–421µm"
+doi:10.1007/s40516-022-00199-x,fluence threshold/surface state,S3 边界反例/S4 可比性,Al-Mahdy 316L ns 单脉冲 4–614µJ
+doi:10.1039/C8RA01774C,texturing (257nm/350fs),S3 边界,Fraggelakis spot 估算值（非 profiler 实测）
+candidate:Wuppertal-2023-ODS-laserAM-metrology,transferable metrology,S5 来源,功率校准曲线/焦斑设置；ODS/AM 范围，非 304/316L 直接
+candidate:DCU-2018-316L-cylindrical-pins,stainless parameter matrix,S5 来源,316L CO2 纹理化；spot 标定不完整 → partial
+arxiv:1809.03993,316L absorptance mirror,S5 来源,NIST 316L 动态吸收率开放镜像；不独立计数
+candidate:NIST-SP250-87,beam diameter measurement,S2 公式 F-13,不确定度 pp.15-18
+candidate:P1-02-METROLOGY-NIST-SP250-87,method standard,S2 公式,NIST SP250-87 激光束直径测量

@@ -9,3 +9,8 @@ private-data/
 *.pdf
 *.sqlite
 *.db
+
+# Local temporary and backup artifacts
+references/_tmp_*.txt
+*.bak*
+references/_sidecar_backup_*/

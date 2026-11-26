@@ -5,6 +5,11 @@ type: object
 additionalProperties: false
 required: [record_id, request, scope, sources, evidence, comparability, decision]
 properties:
+  record_version:
+    type: string
+    const: "1.1"
+  artifact_state:
+    $ref: "urn:research-artifact-state:1.0"
   record_id:
     type: string
     minLength: 1
@@ -49,6 +54,15 @@ properties:
       primary_skill: {type: string, const: stainless-steel-laser-passivation}
       collaborators: {type: array, items: {type: string}}
       user_review_required: {type: boolean}
+allOf:
+  - if:
+      required: [record_version]
+    then:
+      required: [artifact_state]
+  - if:
+      required: [artifact_state]
+    then:
+      required: [record_version]
 $defs:
   request:
     type: object

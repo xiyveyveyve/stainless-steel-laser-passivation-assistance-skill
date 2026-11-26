@@ -1,0 +1,115 @@
+[
+  {
+    "record_id": "vacuum.2024.113581",
+    "stern_geary": {
+      "ba": 100,
+      "bc": 100,
+      "icorr": 0.00001,
+      "rp_reported": 5000000
+    },
+    "note": "Eq.(4) omits 2.303; tabulated R_p = true value x 2.303"
+  },
+  {
+    "record_id": "s13632-024-01120-y",
+    "complementary": [
+      {
+        "a_value": 41.67,
+        "a_sd": 2.89,
+        "b_value": 58.33,
+        "b_sd": 2.89,
+        "sum": 100
+      }
+    ],
+    "note": "gamma 41.67+/-2.89 and alpha 58.33+/-2.89 share SD exactly"
+  },
+  {
+    "record_id": "jnucmat.2019.151880",
+    "identity": [
+      {
+        "product_of": [
+          "crack_density",
+          "mean_length"
+        ],
+        "equals": [
+          "crack_length_density"
+        ],
+        "rows": [
+          {
+            "crack_density": 347,
+            "mean_length": 9.7,
+            "crack_length_density": 3.37
+          },
+          {
+            "crack_density": 107,
+            "mean_length": 12,
+            "crack_length_density": 1.28
+          }
+        ]
+      }
+    ],
+    "note": "third column == density x mean length (scale 1000)"
+  },
+  {
+    "record_id": "injury.2007.07.015",
+    "n": 3,
+    "claimed_p": 0.05,
+    "note": "SS/SS 3v3 reported p=0.05 while exact floor is 0.100"
+  },
+  {
+    "record_id": "s0010-938x_01_00039-7",
+    "extrapolation": {
+      "fitted_at": 2.1,
+      "max_observed": 1.6,
+      "axis": "w/d_crit"
+    },
+    "note": "(w/d)_crit extrapolated 31% beyond max observed"
+  },
+  {
+    "record_id": "s41529-025-00717-0",
+    "criterion": {
+      "name": "B_eff/(W-a)",
+      "typical_value": 1.6,
+      "threshold": 0.264,
+      "operator": ">="
+    },
+    "note": "screening criterion satisfied by any standard CT specimen"
+  },
+  {
+    "record_id": "s41377-025-01952-5",
+    "magnitude": {
+      "claimed": 100000,
+      "recomputed": 10000,
+      "label": "corrosion rate reduction"
+    },
+    "note": "claimed 100,000x; Faraday gives ~4 orders of magnitude"
+  },
+  {
+    "record_id": "molliq.2017.11.142",
+    "constant": {
+      "name": "equivalent weight K",
+      "reported": 27.92,
+      "expected": 87.63,
+      "tolerance_pct": 5
+    },
+    "note": "iron EW used for a Cr-bearing steel"
+  },
+  {
+    "record_id": "corsci.2026.114168",
+    "derived": {
+      "label": "film thickness LC",
+      "formula_value": 0.157,
+      "reported_value": 1.57
+    },
+    "note": "off by exactly 10x in all four samples"
+  },
+  {
+    "record_id": "apsadv.2024.100622",
+    "units": {
+      "declared": "kohm.cm2",
+      "value": 547.2,
+      "recomputed": 547200,
+      "factor": 1000
+    },
+    "note": "Table 6 header 'k ohm/cm' is actually ohm.cm2"
+  }
+]

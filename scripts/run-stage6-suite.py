@@ -10,6 +10,7 @@ unrelated non-zero exit is therefore a failed check.
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -226,6 +227,28 @@ EXAMPLE_RESULT_SUFFIXES = (
 )
 
 
+def run_checker(command: list[str], root: Path) -> tuple[int, str]:
+    """Capture bytes; decoding errors stay in this thread and fail closed."""
+    env = dict(os.environ, PYTHONUTF8="1", PYTHONIOENCODING="utf-8")
+    completed = subprocess.run(command, capture_output=True, cwd=root, env=env, timeout=300)
+    if completed is None or not isinstance(completed.stdout, bytes) or not isinstance(completed.stderr, bytes):
+        raise RuntimeError("missing or non-byte checker output")
+    stdout = completed.stdout.decode("utf-8", errors="strict")
+    stderr = completed.stderr.decode("utf-8", errors="strict")
+    return completed.returncode, "\n".join(part for part in (stdout.strip(), stderr.strip()) if part)
+
+
+def check_passed(code: int, output: str, failure_markers: tuple[str, ...] = ()) -> bool:
+    """A zero exit is insufficient; require a completed checker protocol."""
+    if "Traceback (most recent call last)" in output or "Exception in thread" in output:
+        return False
+    lines = [line.strip() for line in output.splitlines() if line.strip()]
+    if failure_markers:
+        return code == 1 and bool(lines) and all(marker in output for marker in failure_markers)
+    return (code == 0 and bool(lines) and lines[-1].startswith(("VALID:", "PASS:"))
+            and not any(line.startswith(("ERROR:", "FAILED", "[FAIL]")) for line in lines))
+
+
 def run_optional_behavior_result(
     *,
     label: str,
@@ -253,7 +276,7 @@ def run_optional_behavior_result(
         print(f"[FAIL] {label}: no behavior-result checker is installed")
         return "FAIL", False
     try:
-        completed = subprocess.run(
+        code, output = run_checker(
             [
                 sys.executable,
                 str(checker),
@@ -261,23 +284,24 @@ def run_optional_behavior_result(
                 "--cases",
                 str(cases_path),
             ],
-            capture_output=True,
-            text=True,
-            cwd=root,
+            root,
         )
-    except (OSError, subprocess.SubprocessError) as exc:
+    except (OSError, subprocess.SubprocessError, UnicodeError, RuntimeError) as exc:
         print(f"[FAIL] {label}: checker runner error: {exc}")
         return "FAIL", False
-    output = (completed.stdout + completed.stderr).strip()
-    passed = completed.returncode == 0 and "PASS:" in output
+    passed = check_passed(code, output) and output.splitlines()[-1].startswith("PASS:")
     state = "PASS" if passed else "FAIL"
-    print(f"[{state}] {label} (exit={completed.returncode})")
+    print(f"[{state}] {label} (exit={code})")
     if output:
         print(output)
     return state, passed
 
 
 def main() -> int:
+    # The runner's own redirected output must also be Unicode-safe on Windows.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="strict")
     parser = argparse.ArgumentParser()
     parser.add_argument("--skill-root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument(
@@ -293,11 +317,7 @@ def main() -> int:
     parser.add_argument(
         "--zotero-only",
         action="store_true",
-        help="run the source-evidence check against a user-supplied Zotero endpoint instead of local_path",
-    )
-    parser.add_argument(
-        "--zotero-api-url",
-        help="explicit Zotero items endpoint; required only with --zotero-only",
+        help="run the source-evidence check against Zotero attachments instead of source-map local_path",
     )
     args = parser.parse_args()
     root = args.skill_root.resolve()
@@ -316,12 +336,12 @@ def main() -> int:
     ]
     if args.zotero_only:
         source_evidence_command.append("--zotero-only")
-        if args.zotero_api_url:
-            source_evidence_command.extend(["--zotero-api-url", args.zotero_api_url])
 
     checks: list[tuple[str, list[str], bool]] = [
         ("routing", ["check-reference-routing.py", str(root / "references" / "reference-routing.yaml"), "--skill-root", str(root)], False),
         ("source-evidence", source_evidence_command, False),
+        ("source-coverage", ["check-source-coverage.py", "--references", str(root / "references")], False),
+        ("analysis-state-contract", ["check-analysis-state-contract.py"], False),
         ("stage2-fixtures", ["check-stage2-fixtures.py", str(fixtures / "stage2-failure-input-cases.yaml"), str(fixtures / "stage2-verify-fixtures.yaml")], False),
         ("stage3-fixtures", ["check-stage3-fixtures.py", str(fixtures / "stage3-laser-param-extract-qa.yaml"), str(fixtures / "stage3-laser-unit-check-fixtures.yaml")], False),
         ("stage3-unit-calculations", ["check-laser-unit-fixtures.py", str(fixtures / "stage3-laser-unit-check-fixtures.yaml")], False),
@@ -410,24 +430,21 @@ def main() -> int:
             print(f"[PASS] {name} (deterministic structural check)")
     for name, command, expect_failure in checks:
         try:
-            completed = subprocess.run(
+            code, output = run_checker(
                 [sys.executable, str(scripts / command[0]), *command[1:]],
-                capture_output=True,
-                text=True,
-                cwd=root,
+                root,
             )
-        except (OSError, subprocess.SubprocessError) as exc:
+        except (OSError, subprocess.SubprocessError, UnicodeError, RuntimeError) as exc:
             print(f"[FAIL] {name} (runner error={exc}, expected_failure={expect_failure})")
             failures.append(name)
             continue
-        output = (completed.stdout + completed.stderr).strip()
         if expect_failure:
             markers = expected_failure_markers.get(name, ("ERROR:",))
-            passed = completed.returncode == 1 and all(marker in output for marker in markers)
+            passed = check_passed(code, output, markers)
         else:
-            passed = completed.returncode == 0
+            passed = check_passed(code, output)
         state = "PASS" if passed else "FAIL"
-        print(f"[{state}] {name} (exit={completed.returncode}, expected_failure={expect_failure})")
+        print(f"[{state}] {name} (exit={code}, expected_failure={expect_failure})")
         if output:
             print(output)
         if not passed:
@@ -454,7 +471,7 @@ def main() -> int:
     if routing_passed is False:
         failures.append("routing-behavior-execution")
     deterministic_count = len(checks) + len(direct_checks)
-    print(f"DETERMINISTIC CHECKS: {deterministic_count} configured checks completed")
+    print(f"DETERMINISTIC CHECKS: {deterministic_count} configured checks attempted; failures are not completions")
     print(f"MODEL BEHAVIOR EXECUTION: {model_state} (not inferred from deterministic checks)")
     print(f"ROUTING BEHAVIOR EXECUTION: {routing_state} (not inferred from deterministic checks)")
     if failures:

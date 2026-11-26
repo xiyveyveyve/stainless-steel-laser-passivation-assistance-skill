@@ -43,7 +43,9 @@ unit_reference_qa_cases:
   category: current_density
   description: "电流密度单位混用（uA/cm2 vs A/m2）"
   input_fragment: "icorr 0.02 uA/cm2 vs 0.2 A/m2 compared without conversion"
-  expected_failure: "需单位归一（1 A/m2 = 0.1 uA/cm2）；混用禁止"
+  # Historical 0.1 factor was erroneous; do not use an old copy as a calculator.
+  expected_failure: "需单位归一（1 A/m2 = 100 uA/cm2）；0.2 A/m2 = 20 uA/cm2；未归一禁止比较"
+  numeric_check: {from_unit: A/m2, to_unit: uA/cm2, factor: 100, offset: 0, input_value: 0.2, expected_value: 20}
   assert_regex: "uA|A/m|单位"
 - case_id: UQ-06
   category: area
@@ -55,13 +57,15 @@ unit_reference_qa_cases:
   category: temperature
   description: "温度单位混用（C vs K）"
   input_fragment: "25 C and 298 K treated as different temperatures"
-  expected_failure: "T(K) = T(C)+273.15；单位声明后统一"
+  expected_failure: "25 degC = 298.15 K；T(K) = T(C)+273.15；298 K 不与 25 degC 严格相等"
+  numeric_check: {from_unit: degC, to_unit: K, factor: 1, offset: 273.15, input_value: 25, expected_value: 298.15}
   assert_regex: "temperature|273"
 - case_id: UQ-08
   category: scan_rate
   description: "扫描速率单位混用（mV/s vs V/s）"
   input_fragment: "1 mV/s and 0.001 V/s reported as different rates"
   expected_failure: "1 mV/s = 0.001 V/s；单位归一"
+  numeric_check: {from_unit: mV/s, to_unit: V/s, factor: 0.001, offset: 0, input_value: 1, expected_value: 0.001}
   assert_regex: "mV/s|V/s"
 - case_id: UQ-09
   category: eis

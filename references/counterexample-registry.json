@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "counterexamples": [
+    {
+      "id": "CE-01",
+      "claim_pattern": "laser texturing or surface modification improves corrosion resistance",
+      "counter_doi": "10.1016/j.surfin.2024.104167",
+      "quantified_penalty": "Ep lowered by 310 mV (0.460 -> 0.150 V)",
+      "root_cause": "Improvement actually comes from subsequent PFOTES grafting, not laser texturing itself"
+    },
+    {
+      "id": "CE-02",
+      "claim_pattern": "increasing Cr content via laser or alloying ensures better corrosion resistance",
+      "counter_doi": "10.1016/j.surfcoat.2024.131598",
+      "quantified_penalty": "Epit dropped from 222.4 to 19.8 mV",
+      "root_cause": "Cr segregation network acts as a cathode against the matrix"
+    },
+    {
+      "id": "CE-03",
+      "claim_pattern": "higher laser energy density always improves performance",
+      "counter_doi": "10.1016/j.electacta.2025.145913",
+      "quantified_penalty": "500 J/cm2 LSR degraded Epit below untreated value (0.225 vs 0.344 V)",
+      "root_cause": "Dose window limit exceeded; excessive thermal input causes surface degradation"
+    }
+  ]
+}

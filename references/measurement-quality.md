@@ -17,16 +17,28 @@ source_index:
 
 ## 1. 统计与不确定度基础
 
+运行时安全边界：历史 `fixture:UQ-05` 的 0.1 倍率错误，旧夹具禁止用于计算。
+正确关系为 `1 A/m² = 100 µA/cm²`（面积因子 10⁻⁴ / 电流因子 10⁻⁶）；
+`0.2 A/m² = 20 µA/cm²`。夹具修正与脚本通过不等于科学复核。
+单位计算的可用入口和限制见 `numeric-support.md`；缺依赖/验收时保持 blocked。
+
 | 主题 | 规则 | 依据 |
 |---|---|---|
 | 重复性/再现性 | 重复性标准差 sr 与再现性标准差 sR 分开；报告 n | ISO 5725-1:2023 预览 |
-| 不确定度 | GUM 合成 u_c = sqrt(Σu_i²)，扩展 U = k·u_c | JCGM 100:2008 |
+| 不确定度 | 独立输入且模型局部线性时 u_c² = Σ(c_i·u(x_i))²；仅当 c_i=1 且单位/尺度相同才可简写为 Σu_i²；扩展 U=k·u_c | JCGM 100:2008 §5；[NIST TN1297 §5](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-5-combined-standard-uncertainty) |
 | 异常值 | 用稳健统计或明确排除规则；不静默丢弃 | ISO 5725-1; Coelho 2023 |
 | 随机化/区组 | 区组中心点、随机顺序；报告设计 | Dastgerdi 2019 |
-| 多重比较 | 少重复用 Bonferroni 校正而非 Tukey（Zweifach 2025）；双因素 ANOVA+Tukey（Ramos-Negrón 2026） | 相关证据的 `source_id` 与锚点 |
+| 多重比较 | 文献中的 Bonferroni 或 ANOVA+Tukey 是特定研究方法示例，不以“少重复”单独决定通用检验；纯统计推断须确认设计、假设与执行范围，见 numeric-support.md | 相关证据的 `source_id` 与锚点；科学方法选择待任务复核 |
 | 有效数字 | 误差与均值的有效位数一致 | 相关证据的 `source_id` 与锚点 |
 
 ## 2. 电化学测量质量
+
+相关输入必须保留协方差项 `2 Σ(i<j) c_i c_j cov(x_i,x_j)`；同一标定、
+参比或拟合参数不能默认独立。灵敏度系数的单位须使 `c_i u(x_i)` 与输出
+同量纲、同尺度。非线性、非正态主导或有界输出按上游 GUM/Monte Carlo
+方法检查；`k=2` 不是默认真值。具体通用算法委托 `uncertainty-and-units`，
+不在领域 reference 重复实现。归一化成功仍不解决跨钢种、测试协议、
+参比温度、样本独立性或机理可比性；输入/模型不完整时保持待复核。
 
 | 检查项 | 规则 | 依据 |
 |---|---|---|

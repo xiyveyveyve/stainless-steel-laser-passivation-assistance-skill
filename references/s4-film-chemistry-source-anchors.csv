@@ -1,2 +1,21 @@
-source_id,role,reference_section,anchor
-example:film-chemistry-001,passive-film chemistry,XPS/passive-film guidance,Example pp. 4-6; replace with a validated page/table anchor.
+﻿source_id,role,reference_section,anchor
+doi:10.3389/fmats.2019.00232,XPS 被动膜化学态正例,surface-chemistry-xps §2 / passive-film §1,"pp.2-3,6-10,Tables 1-2（Fe/Cr/Ni/Mo/O 价态）"
+doi:10.1002/sia.1268,304 PVD Mo/W ARXPS,surface-chemistry-xps §1.3,"pp.2-4,Table 2,Figs.2-5"
+doi:10.1016/j.vacuum.2010.01.057,2205 超薄氧化层 ARXPS,surface-chemistry-xps §1.3,"pp.1-4,Figs.2-5,Table 1"
+doi:10.3390/cryst14090766,SR-50A 被动膜 Fe/Cr/Mo/Ni/O,surface-chemistry-xps §2,"pp.4-5,9-13,Figs.6-11"
+doi:10.2174/1876503300902010114,304 硫酸被动膜（历史）,surface-chemistry-xps §2,"pp.1-5,Tables 4-5（historical）"
+doi:10.1116/6.0000377,XPS 拟合方法,surface-chemistry-xps §1.2,"pp.6-27,49-51"
+doi:10.1116/1.5141395,定量 XPS,surface-chemistry-xps §1.2,pp.2-10
+doi:10.1116/6.0003439,绝缘样品荷电控制,surface-chemistry-xps §1.1,pp.45-49
+doi:10.1016/j.corsci.99.66,FeO/hydrozincite 溅射损伤,surface-chemistry-xps §1.3,"pp.2-8,Figs.1-7"
+doi:10.1016/j.apsusc.2017.01.105,Zn 腐蚀产物 Ar+/cluster/C60,surface-chemistry-xps §1.3,"pp.2-7,Table 1,Figs.1-6"
+doi:10.1016/j.apsusc.2019.140155,preferential sputtering MRI 模型,surface-chemistry-xps §1.3,"pp.1-7,13-16,Tables 1-4"
+doi:10.1002/sia.1299,Mo 注入 316L XPS 深度剖面,surface-chemistry-xps §1.3,"pp.1-4,Figs.1-6"
+candidate:Lawrence-2016-304L-laser-oxide,激光 304L 氧化层（figure_only）,surface-chemistry-xps §4,pp.1-12
+doi:10.1051/metal/2013061,直接激光 304L XPS（EDP 候选）,surface-chemistry-xps §4,source_unavailable（订阅限制）
+doi:10.3390/met11010135,304L 机械表面处理/被动行为,passive-film-formation §2,G-AUST-01
+doi:10.20964/2018.07.74,304 敏化/EPR,passive-film-formation §2,G-AUST-02
+doi:10.1016/j.electacta.2019.135159,316L 膜化学/氯离子,passive-film-formation §2,G-AUST-03
+doi:10.3390/coatings9090592,316L 织构长期润湿/腐蚀,passive-film-formation §2/§3,G-AUST-04（负/条件）
+doi:10.1016/j.jmrt.2023.11.172,430 织构（负相关）,passive-film-formation §2/§3,G-FERR-01
+candidate:P1-01-420-PASSIVE-GROWTH-2002,420 膜生长（OCR 侧车）,passive-film-formation §2,G-MART-01

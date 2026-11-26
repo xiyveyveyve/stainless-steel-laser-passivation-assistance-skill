@@ -81,8 +81,8 @@ def main() -> int:
     )
     parser.add_argument(
         "--zotero-api-url",
-        default=None,
-        help="optional user-supplied Zotero items endpoint used with --zotero-only",
+        default="http://127.0.0.1:23119/api/users/0/items?limit=1000&format=json",
+        help="Zotero local items endpoint used with --zotero-only",
     )
     args = parser.parse_args()
 
@@ -92,13 +92,10 @@ def main() -> int:
     unverified_non_pdf_rows = 0
     zotero_items: dict[str, dict] = {}
     if args.zotero_only:
-        if not args.zotero_api_url:
-            errors.append("--zotero-only requires an explicit --zotero-api-url; no local endpoint is assumed")
-        else:
-            try:
-                zotero_items = load_zotero_items(args.zotero_api_url)
-            except Exception as exc:
-                errors.append(f"cannot read Zotero API in --zotero-only mode: {exc}")
+        try:
+            zotero_items = load_zotero_items(args.zotero_api_url)
+        except Exception as exc:
+            errors.append(f"cannot read Zotero API in --zotero-only mode: {exc}")
     try:
         with args.source_map.open("r", encoding="utf-8-sig", newline="") as handle:
             reader = csv.DictReader(handle)
